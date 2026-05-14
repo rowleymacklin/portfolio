@@ -5,6 +5,8 @@
     initial-value: transparent;
   }
 
+
+  
   @property --background2 {
     syntax: '<color>';
     inherits: true;
