@@ -79,6 +79,7 @@
     cursor: text;
     transform-origin: top left;
     transition: color var(--durationM) ease;
+    max-width: 100px;
 
     @media (--mediaUseMotion) {
       transition: transform var(--durationM) var(--bezierFastoutSlowin),
