@@ -1,38 +1,48 @@
 import config from '~/config.json';
 
 export const navLinks = [
+   {
+     label: 'Home',
+     pathname: '/',
+     hash: '#intro',
+   },
   {
-    label: 'Projects',
-    pathname: '/#project-1',
+    label: 'Info',
+    pathname: '/info',
+  },   
+  {
+    label: 'Skills',
+    pathname: '/skills',
+  },     
+  {
+    label: 'Clients',
+    pathname: '/clients',
   },
   {
-    label: 'Details',
-    pathname: '/#details',
-  },
-  {
-    label: 'Articles',
-    pathname: '/articles',
-  },
-  {
-    label: 'Contact',
-    pathname: '/contact',
-  },
+    label: 'Random',
+    pathname: '/random',
+  },  
 ];
 
 export const socialLinks = [
   {
-    label: 'Bluesky',
-    url: `https://bsky.app/profile/${config.bluesky}`,
-    icon: 'bluesky',
+    label: 'Linkedin',
+    url: 'https://uk.linkedin.com/in/rowleymacklin',
+    icon: 'linkedin',
   },
   {
-    label: 'Figma',
-    url: `https://www.figma.com/${config.figma}`,
-    icon: 'figma',
-  },
+    label: 'Email',
+    url: 'mailto:rowley@rowleymacklin.com',
+    icon: 'email',
+  }, 
+  {
+    label: 'Call',
+    url: 'tel:07947600444',
+    icon: 'call',
+  },  
   {
     label: 'Github',
-    url: `https://github.com/${config.github}`,
+    url: 'https://github.com/rowleymacklin',
     icon: 'github',
   },
 ];

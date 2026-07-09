@@ -58,5 +58,17 @@
   "bluesky": {
     "width": 24,
     "height": 24
+  },
+  "linkedin": {
+    "width": 24,
+    "height": 24
+  },
+  "email": {
+    "width": 24,
+    "height": 24
+  },
+  "call": {
+    "width": 24,
+    "height": 24
   }
 }
