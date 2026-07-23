@@ -1,0 +1,1 @@
+export { Barbour as default, meta } from './barbour';

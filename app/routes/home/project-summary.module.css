@@ -195,7 +195,7 @@
   grid-template-columns: 90px 1fr;
   gap: var(--spaceM);
   align-items: center;
-  margin-bottom: var(--spaceXL);
+  margin-bottom: var(--space2XL);
 }
 
 .indexNumber {
@@ -220,7 +220,7 @@
 }
 
 .title {
-  margin-bottom: var(--spaceL);
+  margin-bottom: var(--spaceXS);
   transition-property: opacity;
   transition-timing-function: var(--bezierFastoutSlowin);
   transition-duration: var(--durationXL);
@@ -238,8 +238,10 @@
   }
 }
 
+.projectDateDescription,
+.projectJobTitleDescription,
 .description {
-  margin-bottom: var(--spaceXL);
+  margin-bottom: var(--spaceXS);
   transition-property: opacity;
   transition-timing-function: var(--bezierFastoutSlowin);
   transition-duration: var(--durationXL);
@@ -256,6 +258,23 @@
     opacity: 1;
   }
 }
+
+.projectDateDescription {
+  margin-bottom: var(--spaceXS);
+  letter-spacing: var(--letterSpacingSpacyXL);
+  font-size: var(--fontSizeBodyS);
+}
+
+.projectJobTitleDescription {
+  margin-bottom: var(--spaceM);
+    font-size: var(--fontSizeBodyS);
+}
+
+.description {
+  margin-bottom: var(--space2XL);
+  font-size: var(--fontSizeBodyS);
+}
+
 
 .button {
   transition-property: opacity;
@@ -275,3 +294,4 @@
     opacity: 1;
   }
 }
+

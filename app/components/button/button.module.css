@@ -29,6 +29,7 @@
       transition-property: opacity, color, background;
       transition-duration: var(--durationM);
       transition-timing-function: var(--bezierFastoutSlowin);
+      border-radius: 20px;
       background: var(--primary);
       position: absolute;
       inset: 0;
@@ -174,7 +175,7 @@
 
     @media (--mediaUseMotion) {
       .button:hover &[data-shift='true'] {
-        transform: translate3d(var(--spaceXS), 0, 0);
+        transform: translate3d(var(--spaceS), 0, 0);
       }
     }
 

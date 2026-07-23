@@ -4,8 +4,8 @@ import styles from './divider.module.css';
 export const Divider = ({
   lineWidth,
   lineHeight,
-  notchWidth,
-  notchHeight,
+  // notchWidth,
+  // notchHeight,
   collapseDelay,
   collapsed,
   className,
@@ -18,8 +18,8 @@ export const Divider = ({
       {
         lineWidth: lineWidth,
         lineHeight: lineHeight,
-        notchWidth: notchWidth,
-        notchHeight: notchHeight,
+        // notchWidth: notchWidth,
+        // notchHeight: notchHeight,
         collapseDelay: numToMs(collapseDelay),
       },
       style
@@ -27,19 +27,19 @@ export const Divider = ({
     {...rest}
   >
     <div className={styles.line} data-collapsed={collapsed} />
-    <div
+    {/* <div
       className={styles.notch}
       data-collapsed={collapsed}
       style={cssProps({ collapseDelay: numToMs(collapseDelay + 160) })}
-    />
+    /> */}
   </div>
 );
 
 Divider.defaultProps = {
   lineWidth: '100%',
   lineHeight: '2px',
-  notchWidth: '90px',
-  notchHeight: '10px',
+  // notchWidth: '90px',
+  // notchHeight: '10px',
   collapsed: false,
   collapseDelay: 0,
 };

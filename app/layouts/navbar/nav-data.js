@@ -15,8 +15,8 @@ export const navLinks = [
     pathname: '/skills',
   },     
   {
-    label: 'Clients',
-    pathname: '/clients',
+    label: 'Testimonials',
+    pathname: '/testimonials',
   },
   {
     label: 'Random',

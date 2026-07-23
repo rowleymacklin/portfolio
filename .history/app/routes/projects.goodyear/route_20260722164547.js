@@ -1,0 +1,1 @@
+export { Goodyear as default, meta } from './goodyear';

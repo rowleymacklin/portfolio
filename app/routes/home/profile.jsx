@@ -12,7 +12,7 @@ import { Text } from '~/components/text';
 import { Transition } from '~/components/transition';
 import { Fragment, useState } from 'react';
 import { media } from '~/utils/style';
-import katakana from './katakana.svg';
+import textDecorationProjects from './textDecorationProjects.svg';
 import styles from './profile.module.css';
 
 const ProfileText = ({ visible, titleId }) => (
@@ -68,8 +68,6 @@ export const Profile = ({ id, visible, sectionRef }) => {
             <div className={styles.column}>
               <div className={styles.tag} aria-hidden>
                 <Divider
-                  notchWidth="64px"
-                  notchHeight="8px"
                   collapsed={!visible}
                   collapseDelay={1000}
                 />
@@ -89,7 +87,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   alt="Me smiling like a goofball at the Qwilr office in Sydney"
                 />
                 <svg className={styles.svg} data-visible={visible} viewBox="0 0 136 766">
-                  <use href={`${katakana}#katakana-profile`} />
+                  <use href={`${textDecorationProjects}#textDecorationProjects`} />
                 </svg>
               </div>
             </div>

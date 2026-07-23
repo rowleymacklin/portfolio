@@ -1,0 +1,1 @@
+export { Tkmaxx as default, meta } from './tkmaxx';

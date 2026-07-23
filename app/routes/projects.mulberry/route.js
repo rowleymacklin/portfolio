@@ -1,0 +1,1 @@
+export { Mulberry as default, meta } from './mulberry';

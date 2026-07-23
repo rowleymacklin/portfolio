@@ -4,6 +4,7 @@ import { Heading } from '~/components/heading';
 import { deviceModels } from '~/components/model/device-models';
 import { Section } from '~/components/section';
 import { Text } from '~/components/text';
+import { Image } from '~/components/image';
 import { useTheme } from '~/components/theme-provider';
 import { Transition } from '~/components/transition';
 import { Loader } from '~/components/loader';
@@ -11,7 +12,8 @@ import { useWindowSize } from '~/hooks';
 import { Suspense, lazy, useState } from 'react';
 import { cssProps, media } from '~/utils/style';
 import { useHydrated } from '~/hooks/useHydrated';
-import katakana from './katakana.svg';
+import textDecorationProjects from './textDecorationProjects.svg';
+
 import styles from './project-summary.module.css';
 
 const Model = lazy(() =>
@@ -24,6 +26,9 @@ export function ProjectSummary({
   sectionRef,
   index,
   title,
+  image,
+  projectDate,
+  projectJobTitle,
   description,
   model,
   buttonText,
@@ -37,6 +42,8 @@ export function ProjectSummary({
   const { width } = useWindowSize();
   const isHydrated = useHydrated();
   const titleId = `${id}-title`;
+  const projectDateId = `${id}-projectDate`;  
+  const projectJobTitleId = `${id}-projectJobTitle`;    
   const isMobile = width <= media.tablet;
   const svgOpacity = theme === 'light' ? 0.7 : 1;
   const indexText = index < 10 ? `0${index}` : index;
@@ -47,7 +54,7 @@ export function ProjectSummary({
     setModelLoaded(true);
   }
 
-  function renderKatakana(device, visible) {
+  function renderTextDecorationProjects(device, visible) {
     return (
       <svg
         type="project"
@@ -58,7 +65,7 @@ export function ProjectSummary({
         data-device={device}
         viewBox="0 0 751 136"
       >
-        <use href={`${katakana}#katakana-project`} />
+        <use href={`${textDecorationProjects}#textDecorationProjects`} />
       </svg>
     );
   }
@@ -68,8 +75,6 @@ export function ProjectSummary({
       <div className={styles.details}>
         <div aria-hidden className={styles.index}>
           <Divider
-            notchWidth="64px"
-            notchHeight="8px"
             collapsed={!visible}
             collapseDelay={1000}
           />
@@ -78,7 +83,7 @@ export function ProjectSummary({
           </span>
         </div>
         <Heading
-          level={3}
+          level={2}
           as="h2"
           className={styles.title}
           data-visible={visible}
@@ -86,6 +91,12 @@ export function ProjectSummary({
         >
           {title}
         </Heading>
+        <Text className={styles.projectDateDescription} data-visible={visible} data-weight="medium" as="p">
+          {projectDate}
+        </Text>     
+        <Text className={styles.projectJobTitleDescription} data-visible={visible} data-weight="regular" data-secondary="true" as="p">
+          {projectJobTitle}
+        </Text>           
         <Text className={styles.description} data-visible={visible} as="p">
           {description}
         </Text>
@@ -103,7 +114,7 @@ export function ProjectSummary({
       <div className={styles.preview}>
         {model.type === 'laptop' && (
           <>
-            {renderKatakana('laptop', visible)}
+            {renderTextDecorationProjects('laptop', visible)}
             <div className={styles.model} data-device="laptop">
               {!modelLoaded && (
                 <Loader center className={styles.loader} data-visible={visible} />
@@ -133,7 +144,7 @@ export function ProjectSummary({
         )}
         {model.type === 'phone' && (
           <>
-            {renderKatakana('phone', visible)}
+            {renderTextDecorationProjects('phone', visible)}
             <div className={styles.model} data-device="phone">
               {!modelLoaded && (
                 <Loader center className={styles.loader} data-visible={visible} />

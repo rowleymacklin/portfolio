@@ -1,0 +1,1 @@
+export { Debeers as default, meta } from './debeers';
