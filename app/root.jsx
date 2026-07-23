@@ -17,6 +17,7 @@ import { useEffect } from 'react';
 import { Error } from '~/layouts/error';
 import { VisuallyHidden } from '~/components/visually-hidden';
 import { Navbar } from '~/layouts/navbar';
+import { NavbarWork } from '~/layouts/navbarwork';
 import { Progress } from '~/components/progress';
 import config from '~/config.json';
 import styles from './root.module.css';
@@ -123,6 +124,7 @@ export default function App() {
             Skip to main content
           </VisuallyHidden>
           <Navbar />
+          <NavbarWork />
           <main
             id="main-content"
             className={styles.container}

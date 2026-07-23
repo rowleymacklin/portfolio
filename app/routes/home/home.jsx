@@ -67,6 +67,7 @@ import { Profile } from './profile';
 import { ProjectSummary } from './project-summary';
 import { Image } from '~/components/image';
 import { useEffect, useRef, useState } from 'react';
+import { useScrollToHash, useWindowSize } from '~/hooks';
 import config from '~/config.json';
 import styles from './home.module.css';
 
@@ -101,23 +102,22 @@ export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
   const [scrollIndicatorHidden, setScrollIndicatorHidden] = useState(false);
   const intro = useRef();
-  const projectOne = useRef();
-  const projectTwo = useRef();
-  const projectThree = useRef();
-  const projectFour = useRef();  
-  const projectFive = useRef();  
-  const projectSix = useRef();  
-  const projectSeven = useRef();     
-  const projectEight = useRef();
-  const projectNine = useRef();  
-  const projectTen = useRef();  
-  const projectEleven = useRef();  
-  const projectTwelve = useRef();  
-
+  const Debeers = useRef();   
+  const Autosport = useRef(); 
+  const Mulberry = useRef(); 
+  const Aviva = useRef(); 
+  const Oasis = useRef(); 
+  const Tkmaxx = useRef();  
+  const Gucci = useRef(); 
+  const Goodyear = useRef(); 
+  const Sainsburys = useRef();   
+  const Barbour = useRef(); 
+  const Drmartens = useRef();  
+  const Various = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, projectFive, projectSix, projectSeven, projectEight, projectNine, projectTen, projectEleven, projectTwelve, details];
+    const sections = [intro, Debeers, Autosport, Mulberry, Aviva, Oasis, Tkmaxx, Gucci, Goodyear, Sainsburys, Barbour, Drmartens, Various, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -151,6 +151,15 @@ export const Home = () => {
       indicatorObserver.disconnect();
     };
   }, [visibleSections]);
+
+
+
+
+
+
+
+
+  
 
   return (
     <div className={styles.home}>
@@ -226,9 +235,9 @@ export const Home = () => {
         }}
       /> */}
       <ProjectSummary
-        id="project-12"
-        sectionRef={projectTwelve}
-        visible={visibleSections.includes(projectTwelve.current)}
+        id="Debeers"
+        sectionRef={Debeers}
+        visible={visibleSections.includes(Debeers.current)}
         index={1}
         title="De Beers"
         projectDate="May 2021 - Jul 2026"
@@ -248,9 +257,9 @@ export const Home = () => {
         }}
       />        
       <ProjectSummary
-        id="project-11"
-        sectionRef={projectEleven}
-        visible={visibleSections.includes(projectEleven.current)}
+        id="Autosport"
+        sectionRef={Autosport}
+        visible={visibleSections.includes(Autosport.current)}
         index={2}
         title="Autosport"
         projectDate="Mar 2019 - Dec 2020"
@@ -270,9 +279,9 @@ export const Home = () => {
         }}
       />  
       <ProjectSummary
-        id="project-10"
-        sectionRef={projectTen}
-        visible={visibleSections.includes(projectTen.current)}
+        id="Mulberry"
+        sectionRef={Mulberry}
+        visible={visibleSections.includes(Mulberry.current)}
         index={3}
         title="Mulberry"
         projectDate="Sept 2016 - Dec 2018"
@@ -292,9 +301,9 @@ export const Home = () => {
         }}
       />        
       <ProjectSummary
-        id="project-9"
-        sectionRef={projectNine}
-        visible={visibleSections.includes(projectNine.current)}
+        id="Aviva"
+        sectionRef={Aviva}
+        visible={visibleSections.includes(Aviva.current)}
         index={4}
         title="Aviva Investors"
         projectDate="September 2016"
@@ -314,9 +323,9 @@ export const Home = () => {
         }}
       />        
       <ProjectSummary
-        id="project-8"
-        sectionRef={projectEight}
-        visible={visibleSections.includes(projectEight.current)}
+        id="Oasis"
+        sectionRef={Oasis}
+        visible={visibleSections.includes(Oasis.current)}
         index={5}
         title="Oasis Clothing"
         projectDate="August 2016"
@@ -336,9 +345,9 @@ export const Home = () => {
         }}
       />        
       <ProjectSummary
-        id="project-7"
-        sectionRef={projectSeven}
-        visible={visibleSections.includes(projectSeven.current)}
+        id="Tkmaxx"
+        sectionRef={Tkmaxx}
+        visible={visibleSections.includes(Tkmaxx.current)}
         index={6}
         title="TKMaxx"
         projectDate="Jan 2016 - Jul 2016"
@@ -358,9 +367,9 @@ export const Home = () => {
         }}
       />        
       <ProjectSummary
-        id="project-6"
-        sectionRef={projectSix}
-        visible={visibleSections.includes(projectSix.current)}
+        id="Gucci"
+        sectionRef={Gucci}
+        visible={visibleSections.includes(Gucci.current)}
         index={7}
         title="Gucci"
         projectDate="Aug 2014 - Dec 2015"
@@ -380,9 +389,9 @@ export const Home = () => {
         }}
       />       
       <ProjectSummary
-        id="project-5"
-        sectionRef={projectFive}
-        visible={visibleSections.includes(projectFive.current)}
+        id="Goodyear"
+        sectionRef={Goodyear}
+        visible={visibleSections.includes(Goodyear.current)}
         index={8}
         title="Goodyear"
         projectDate="Feb 2014 - Aug 2014"
@@ -402,9 +411,9 @@ export const Home = () => {
         }}
       />        
       <ProjectSummary
-        id="project-4"
-        sectionRef={projectFour}
-        visible={visibleSections.includes(projectFour.current)}
+        id="Sainsburys"
+        sectionRef={Sainsburys}
+        visible={visibleSections.includes(Sainsburys.current)}
         index={9}
         title="Sainsbury's Tu"
         projectDate="Dec 2013 - Feb 2014"
@@ -424,9 +433,9 @@ export const Home = () => {
         }}
       />  
       <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
+        id="Barbour"
+        sectionRef={Barbour}
+        visible={visibleSections.includes(Barbour.current)}
         index={10}
         title="Barbour"
         projectDate="Nov 2013 - Dec 2013"
@@ -446,9 +455,9 @@ export const Home = () => {
         }}
       />         
       <ProjectSummary
-        id="project-2"
-        sectionRef={projectTwo}
-        visible={visibleSections.includes(projectOne.current)}
+        id="Drmartens"
+        sectionRef={Drmartens}
+        visible={visibleSections.includes(Drmartens.current)}
         index={11}
         title="Dr Marten's"
         projectDate="Jan 2013 - Nov 2013"
@@ -468,9 +477,9 @@ export const Home = () => {
         }}
       />      
       <ProjectSummary
-        id="project-1"
-        sectionRef={projectOne}
-        visible={visibleSections.includes(projectOne.current)}
+        id="Various"
+        sectionRef={Various}
+        visible={visibleSections.includes(Various.current)}
         index={12}
         title="Various"
         projectDate="Renaissance - Nov 2012"

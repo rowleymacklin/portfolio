@@ -25,6 +25,13 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
+
+  {
+    label: 'Cv',
+    url: 'https://github.com/rowleymacklin',
+    icon: 'cv',
+  },  
+
   {
     label: 'Linkedin',
     url: 'https://uk.linkedin.com/in/rowleymacklin',
@@ -40,6 +47,12 @@ export const socialLinks = [
     url: 'tel:07947600444',
     icon: 'call',
   },  
+  {
+    label: 'Codepen',
+    url: 'https://github.com/rowleymacklin',
+    icon: 'codepen',
+  },  
+  
   {
     label: 'Github',
     url: 'https://github.com/rowleymacklin',
