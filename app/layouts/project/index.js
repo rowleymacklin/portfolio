@@ -5,8 +5,10 @@ export {
   ProjectImage,
   ProjectSectionContent,
   ProjectSectionHeading,
+  ProjectSectionSubHeading,  
   ProjectSectionText,
   ProjectTextRow,
   ProjectSectionColumns,
+  ProjectSectionColumnsTextOnly,  
   ProjectSection,
 } from './project';

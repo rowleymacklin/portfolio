@@ -153,6 +153,16 @@ export const ProjectSectionHeading = ({ className, level = 3, as = 'h2', ...rest
   />
 );
 
+export const ProjectSectionSubHeading = ({ className, level = 4, as = 'h3', ...rest }) => (
+  <Heading
+    className={classes(styles.sectionSubHeading, className)}
+    as={as}
+    level={level}
+    align="auto"
+    {...rest}
+  />
+);
+
 export const ProjectSectionText = ({ className, ...rest }) => (
   <Text className={classes(styles.sectionText, className)} size="l" as="p" {...rest} />
 );
@@ -182,6 +192,14 @@ export const ProjectTextRow = ({
 export const ProjectSectionColumns = ({ className, centered, ...rest }) => (
   <ProjectSectionContent
     className={classes(styles.sectionColumns, className)}
+    data-centered={centered}
+    {...rest}
+  />
+);
+
+export const ProjectSectionColumnsTextOnly = ({ className, centered, ...rest }) => (
+  <ProjectSectionContent
+    className={classes(styles.sectionColumnsTextOnly, className)}
     data-centered={centered}
     {...rest}
   />

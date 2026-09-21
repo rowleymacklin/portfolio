@@ -37,7 +37,7 @@ export const NavbarWork = () => {
 
   // Handle swapping the theme when intersecting with inverse themed elements
   useEffect(() => {
-    const navItems = document.querySelectorAll('[data-navbar-item]');
+    const navItemsWork = document.querySelectorAll('[data-navbar-item]');
     const inverseTheme = theme === 'dark' ? 'light' : 'dark';
     const { innerHeight } = window;
 
@@ -91,7 +91,7 @@ export const NavbarWork = () => {
 
     // Currently only the light theme has dark full-width elements
     if (theme === 'light') {
-      navItemMeasurements = Array.from(navItems).map(item => {
+      navItemMeasurements = Array.from(navItemsWork).map(item => {
         const rect = item.getBoundingClientRect();
 
         return {
@@ -146,8 +146,8 @@ export const NavbarWork = () => {
       >
       </RouterLink>
       <NavToggle onClick={() => setMenuOpen(!menuOpen)} menuOpen={menuOpen} />
-      <nav className={styles.nav}>
-        <div className={styles.navList}>
+      <nav className={styles.navWork}>
+        <div className={styles.navListWork}>
           {navWorkLinks.map(({ label, pathname, hash }) => (
             <RouterLink
               unstable_viewTransition
@@ -155,7 +155,8 @@ export const NavbarWork = () => {
               to={{ pathname, hash, state: hashKey }}
               key={label}
               data-navbar-item
-              className={styles.navLink}
+              className={styles.navLinkWork}
+              isActive={match => isMatch({ match, hash })}
               aria-current={getCurrent(pathname)}
               onClick={handleNavItemClick}
             >
@@ -166,14 +167,15 @@ export const NavbarWork = () => {
       </nav>
       <Transition unmount in={menuOpen} timeout={msToNum(tokens.base.durationL)}>
         {({ visible, nodeRef }) => (
-          <nav className={styles.mobileNav} data-visible={visible} ref={nodeRef}>
+          <nav className={styles.mobileNavWork} data-visible={visible} ref={nodeRef}>
             {navWorkLinks.map(({ label, pathname, hash }, index) => (
               <RouterLink
                 unstable_viewTransition
                 prefetch="intent"
                 to={{ pathname, hash, state: hashKey }}
                 key={label}
-                className={styles.mobileNavLink}
+                className={styles.mobileNavLinkWork}
+                isActive={match => isMatch({ match, hash })}                
                 data-visible={visible}
                 aria-current={getCurrent(pathname)}
                 onClick={handleMobileNavClick}
@@ -195,3 +197,4 @@ export const NavbarWork = () => {
     </header>
   );
 };
+

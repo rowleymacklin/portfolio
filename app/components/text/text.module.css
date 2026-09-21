@@ -3,6 +3,10 @@
     line-height: var(--lineHeightBody);
     color: var(--textBody);
 
+    &[data-size='xs'] {
+      font-size: var(--fontSizeBodyXS);
+    }
+
     &[data-size='s'] {
       font-size: var(--fontSizeBodyS);
     }

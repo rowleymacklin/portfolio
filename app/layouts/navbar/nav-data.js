@@ -1,11 +1,10 @@
 import config from '~/config.json';
 
 export const navLinks = [
-   {
-     label: 'Home',
-     pathname: '/',
-     hash: '#intro',
-   },
+  {
+    label: 'Projects',
+    pathname: '/#Debeers',
+  },
   {
     label: 'Info',
     pathname: '/info',

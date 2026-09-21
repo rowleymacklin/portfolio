@@ -17,6 +17,7 @@ const baseTokens = {
     'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace',
   japaneseFontStack:
     'IPA Gothic, ヒラギノ角ゴ Pro W3, Hiragino Kaku Gothic Pro, Hiragino Sans, Osaka, メイリオ, Meiryo, Segoe UI, sans-serif',
+  fontWeightLight: 300,  
   fontWeightRegular: 400,
   fontWeightMedium: 500,
   fontWeightBold: 700,
@@ -31,6 +32,7 @@ const baseTokens = {
   fontSizeBodyM: pxToRem(18),
   fontSizeBodyS: pxToRem(16),
   fontSizeBodyXS: pxToRem(14),
+  fontSizeBodyXXS: pxToRem(12),  
   lineHeightTitle: '1.1',
   lineHeightBody: '1.6',
   letterSpacingSpacy: '2px',
@@ -40,6 +42,7 @@ const baseTokens = {
   maxWidthL: '1096px',
   maxWidthXL: '1680px',
   spaceOuter: '64px',
+  spaceXXS: '2px',  
   spaceXS: '4px',
   spaceS: '8px',
   spaceM: '16px',

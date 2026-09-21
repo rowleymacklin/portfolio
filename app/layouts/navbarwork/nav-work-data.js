@@ -2,6 +2,11 @@ import config from '~/config.json';
 
 export const navWorkLinks = [
   {
+    label: 'De Beers',
+    pathname: '/',
+    hash: '#Debeers',
+  },   
+  {
     label: 'Autosport',
     pathname: '/',
     hash: '#Autosport',
