@@ -42,9 +42,9 @@
       background: var(--backgroundLight);
     }
 
-    &:nth-child(even) {
+    /* &:nth-child(even) {
       background: white;
-    }
+    } */
   }
 
   .sectionInner {
@@ -266,7 +266,7 @@
   }
 
   .title {
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
 
     @media (--mediaUseMotion) {
       opacity: 0;
@@ -275,12 +275,40 @@
     }
   }
 
+  .date {
+    margin-bottom: 0;
+    font-weight: var(--fontWeightMedium);
+    letter-spacing: 4px;
+    font-size: var(--fontSizeBodyM);
+    padding-bottom: 0;
+
+    @media (--mediaUseMotion) {
+      opacity: 0;
+      animation: projectFadeSlide 1.6s var(--bezierFastoutSlowin) var(--initDelay)
+        forwards;
+    }
+  }  
+
+  .job {
+    margin-bottom: 0.5em;
+        padding-bottom: var(--spaceL);
+    font-weight: var(--fontWeightNormal);
+    letter-spacing: 0;
+    font-size: var(--fontSizeBodyM);
+
+    @media (--mediaUseMotion) {
+      opacity: 0;
+      animation: projectFadeSlide 1.8s var(--bezierFastoutSlowin) var(--initDelay)
+        forwards;
+    }
+  } 
+
   .description {
     padding-bottom: var(--spaceS);
 
     @media (--mediaUseMotion) {
       opacity: 0;
-      animation: projectFadeSlide 1.4s var(--bezierFastoutSlowin)
+      animation: projectFadeSlide 2s var(--bezierFastoutSlowin)
         calc(var(--initDelay) + 100ms) forwards;
     }
   }
@@ -370,11 +398,12 @@
   }
 
   .sectionSubHeading {
-    margin-bottom: 0.6em;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 
-    &:last-of-type {
+    /* &:last-of-type {
       Margin-top: 2rem;
-    }
+    } */
   }  
 
   .sectionText {

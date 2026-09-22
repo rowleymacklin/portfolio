@@ -1,6 +1,4 @@
-import backgroundDebeersLarge from '~/assets/work-debeers-preview-large.jpg';
-import backgroundDebeersPlaceholder from '~/assets/work-debeers-preview-large.jpg';
-import backgroundDebeers from '~/assets/work-debeers-preview-large.jpg';
+
 
 import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-large.jpg';
 import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
@@ -44,6 +42,10 @@ import imageSprStoryboarderDark from '~/assets/spr-storyboarder-dark.png';
 import imageSprStoryboarderLightLarge from '~/assets/spr-storyboarder-light-large.png';
 import imageSprStoryboarderLightPlaceholder from '~/assets/spr-storyboarder-light-placeholder.png';
 import imageSprStoryboarderLight from '~/assets/spr-storyboarder-light.png';
+
+import backgroundDebeersLarge from '~/assets/work-debeers-preview-large.jpg';
+import backgroundDebeersPlaceholder from '~/assets/work-debeers-preview-large.jpg';
+import backgroundDebeers from '~/assets/work-debeers-preview-large.jpg';
 
 import imageDebeersIntroImage from '~/assets/work-debeers-intro-image.jpg';
 import imageDebeersIntroImageLarge from '~/assets/work-debeers-intro-image-large.jpg';
@@ -93,6 +95,8 @@ import { media } from '~/utils/style';
 import styles from './debeers.module.css';
 
 const title = 'De Beers';
+const date = 'Jan 2021 - Jul 2026';
+const job = 'Lead Frontend developer';
 const description =
   'I worked as the Lead Frontent Developer/ Software Engineer on a huge variety of really enjoyable tasks. I was with DeBeers for nearly 6 years and enjoyed every single project. We had some great achievements here, including: Optimizing the rendered media by 50%, introducing new visual documentation for new developers and for all teams to have visibility of the whole eco-system, re-writing the whole codebase for easier readability and of course exciting new campaigns every month.';
 const roles = [
@@ -129,6 +133,8 @@ export const Debeers = () => {
         />
         <ProjectHeader
           title={title}
+          date={date}
+          job={job}          
           description={description}
           url="https://www.debeers.com"
           roles={roles}
@@ -243,9 +249,23 @@ export const Debeers = () => {
               />
             </div>
           </ProjectSectionColumns>
-        </ProjectSection>      
+        </ProjectSection>   
 
-        <ProjectSection light={isDark}>
+
+      <ThemeProvider theme="dark" data-invert>
+          <ProjectSection
+            backgroundOverlayOpacity={0.5}
+            backgroundElement={
+              <Image
+                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
+                width={1280}
+                height={900}
+                placeholder={imageSprBackgroundVolcanismPlaceholder}
+                alt="A dramatic ocean scene with lava forming a new land mass."
+                sizes="100vw"
+              />
+            }
+          >
           <ProjectSectionContent>
             <Image
               key={theme}
@@ -266,6 +286,9 @@ export const Debeers = () => {
             />
           </ProjectSectionContent>
         </ProjectSection>
+        </ThemeProvider>
+
+
 
           <ProjectSection>
           <ProjectTextRow>

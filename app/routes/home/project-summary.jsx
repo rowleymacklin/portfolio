@@ -26,9 +26,9 @@ export function ProjectSummary({
   sectionRef,
   index,
   title,
+  date,
+  job,
   image,
-  projectDate,
-  projectJobTitle,
   description,
   model,
   buttonText,
@@ -41,9 +41,7 @@ export function ProjectSummary({
   const { theme } = useTheme();
   const { width } = useWindowSize();
   const isHydrated = useHydrated();
-  const titleId = `${id}-title`;
-  const projectDateId = `${id}-projectDate`;  
-  const projectJobTitleId = `${id}-projectJobTitle`;    
+  const titleId = `${id}-title`;   
   const isMobile = width <= media.tablet;
   const svgOpacity = theme === 'light' ? 0.7 : 1;
   const indexText = index < 10 ? `0${index}` : index;
@@ -91,11 +89,11 @@ export function ProjectSummary({
         >
           {title}
         </Heading>
-        <Text className={styles.projectDateDescription} data-visible={visible} data-weight="medium" as="p">
-          {projectDate}
+        <Text className={styles.date} data-visible={visible} data-weight="medium" as="p">
+          {date}
         </Text>     
-        <Text className={styles.projectJobTitleDescription} data-visible={visible} data-weight="regular" data-secondary="true" as="p">
-          {projectJobTitle}
+        <Text className={styles.job} data-visible={visible} data-weight="regular" data-secondary="true" as="p">
+          {job}
         </Text>           
         <Text className={styles.description} data-visible={visible} as="p">
           {description}
