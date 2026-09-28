@@ -142,7 +142,7 @@
   }
 
   .backgroundImage {
-    --imageHeight: 800px;
+    --imageHeight: 100vh;
 
     position: absolute;
     top: 0;

@@ -42,3 +42,7 @@
     top: -5%;
   }
 }
+
+  .sectionContent {
+    align-items: flex-start;
+  }

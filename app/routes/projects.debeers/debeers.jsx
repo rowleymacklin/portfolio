@@ -144,20 +144,12 @@ export const Debeers = () => {
             <ProjectImage
               raised
               key={theme}
-              srcSet={
-                isDark
-                  ? `${imageDebeersIntroImage} 1280w, ${imageDebeersIntroImageLarge} 2560w`
-                  : `${imageDebeersIntroImage} 1280w, ${imageDebeersIntroImageLarge} 2560w`
-              }
+              src={imageDebeersIntroImage}
+              srcSet={`${imageDebeersIntroImage} 1080w, ${imageDebeersIntroImageLarge} 2160w`}
+              placeholder={imageDebeersIntroImagePlaceholder}
               width={1280}
               height={800}
-              placeholder={
-                isDark
-                  ? imageDebeersIntroImagePlaceholder
-                  : imageDebeersIntroImagePlaceholder
-              }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="DeBeers Lotus AN ICON OF QUIET STRENGTH"
             />
           </ProjectSectionContent>
         </ProjectSection>
@@ -215,36 +207,22 @@ export const Debeers = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageDebeersCampaignsImageOne} 260w, ${imageDebeersCampaignsImageOneLarge} 520w`
-                    : `${imageDebeersCampaignsImageOne} 260w, ${imageDebeersCampaignsImageOneLarge} 520w`
-                }
+                src={imageDebeersCampaignsImageOne}
+                srcSet={`${imageDebeersCampaignsImageOne} 1080w, ${imageDebeersCampaignsImageOneLarge} 2160w`}
+                placeholder={imageDebeersCampaignsImageOnePlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageDebeersCampaignsImageOnePlaceholder
-                    : imageDebeersCampaignsImageOnePlaceholder
-                }
                 alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageDebeersCampaignsImageTwo} 260w, ${imageDebeersCampaignsImageTwoLarge} 520w`
-                    : `${imageDebeersCampaignsImageTwo} 260w, ${imageDebeersCampaignsImageTwoLarge} 520w`
-                }
+                src={imageDebeersCampaignsImageTwo}
+                srcSet={`${imageDebeersCampaignsImageTwo} 1080w, ${imageDebeersCampaignsImageTwoLarge} 2160w`}
+                placeholder={imageDebeersCampaignsImageTwoPlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageDebeersCampaignsImageTwoPlaceholder
-                    : imageDebeersCampaignsImageTwoPlaceholder
-                }
-                alt="Configuration options for text."
+                alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
             </div>
@@ -269,20 +247,13 @@ export const Debeers = () => {
           <ProjectSectionContent>
             <Image
               key={theme}
-              srcSet={
-                isDark
-                  ? `${imageDebeersCampaignsLandscape} 1024w, ${imageDebeersCampaignsLandscapeLarge} 2048w`
-                  : `${imageDebeersCampaignsLandscape} 1024w, ${imageDebeersCampaignsLandscapeLarge} 2048w`
-              }
-              width={1024}
-              hright={800}
-              placeholder={
-                isDark
-                  ? imageDebeersCampaignsLandscapePlaceholder
-                  : imageDebeersCampaignsLandscapePlaceholder
-              }
-              alt={`A set of ${theme} themed components for the aero design system`}
-              sizes="100vw"
+              src={imageDebeersCampaignsLandscape}
+              srcSet={`${imageDebeersCampaignsLandscape} 1080w, ${imageDebeersCampaignsLandscapeLarge} 2160w`}
+              placeholder={imageDebeersCampaignsLandscapePlaceholder}
+              width={1280}
+              height={800}
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
+              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
             />
           </ProjectSectionContent>
         </ProjectSection>

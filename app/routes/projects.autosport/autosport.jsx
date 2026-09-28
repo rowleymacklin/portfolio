@@ -139,10 +139,10 @@ const roles = [
   'CSS (SCSS/SASS) · HTML · Responsive Design · CSS (SCSS/SASS) · Web Performance Optimization · Testing & Debugging · UI/ UX Design Principles · jQuery · JavaScript · Sublime · CMS Content Editing & Development · Zeplin · Photoshop · Illustrator · Piano DXP · AMP (Accelerated Mobile Pages) · Attention to detail · Adaptability · Creative thinking · Time Management · Problem-solving · Client meetings',
 
   'Frontend Development',
-  'Media Optimization',
+  'Global Bug Fixing',
   'Piano Content Experience Platform Integration',
   'AMP',
-  'Microsites'
+  'Seasonal Microsites'
 ];
 
 export const meta = () => {
@@ -180,26 +180,19 @@ export const Autosport = () => {
             <ProjectImage
               raised
               key={theme}
-              srcSet={
-                isDark
-                  ? `${imageAutosportIntroImage} 1280w, ${imageAutosportIntroImageLarge} 2560w`
-                  : `${imageAutosportIntroImage} 1280w, ${imageAutosportIntroImageLarge} 2560w`
-              }
+              src={imageAutosportIntroImage}
+              srcSet={`${imageAutosportIntroImage} 1080w, ${imageAutosportIntroImageLarge} 2160w`}
+              placeholder={imageAutosportIntroImagePlaceholder}
               width={1280}
               height={800}
-              placeholder={
-                isDark
-                  ? imageAutosportIntroImagePlaceholder
-                  : imageAutosportIntroImagePlaceholder
-              }
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="Autosport collage of Piano integration pages"
+              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
             />
           </ProjectSectionContent>
         </ProjectSection>
 
 
-          <ProjectSection>
+        <ProjectSection>
           <ProjectSectionColumns>
             <ProjectSectionContent>
               <ProjectTextRow>
@@ -220,35 +213,21 @@ export const Autosport = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportPianoImageTwo} 260w, ${imageAutosportPianoImageTwoLarge} 520w`
-                    : `${imageAutosportPianoImageTwo} 260w, ${imageAutosportPianoImageTwoLarge} 520w`
-                }
+                src={imageAutosportPianoImageTwo}
+                srcSet={`${imageAutosportPianoImageTwo} 1080w, ${imageAutosportPianoImageTwoLarge} 2160w`}
+                placeholder={imageAutosportPianoImageTwoPlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportPianoImageTwoPlaceholder
-                    : imageAutosportPianoImageTwoPlaceholder
-                }
-                alt="Configuration options for text."
+                alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportPianoImageOne} 260w, ${imageAutosportPianoImageOneLarge} 520w`
-                    : `${imageAutosportPianoImageOne} 260w, ${imageAutosportPianoImageOneLarge} 520w`
-                }
+                src={imageAutosportPianoImageOne}
+                srcSet={`${imageAutosportPianoImageOne} 1080w, ${imageAutosportPianoImageOneLarge} 2160w`}
+                placeholder={imageAutosportPianoImageOnePlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportPianoImageOnePlaceholder
-                    : imageAutosportPianoImageOnePlaceholder
-                }
                 alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
@@ -291,35 +270,21 @@ export const Autosport = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportAmpImageTwo} 260w, ${imageAutosportAmpImageTwoLarge} 520w`
-                    : `${imageAutosportAmpImageTwo} 260w, ${imageAutosportAmpImageTwoLarge} 520w`
-                }
+                src={imageAutosportAmpImageTwo}
+                srcSet={`${imageAutosportAmpImageTwo} 1080w, ${imageAutosportAmpImageTwoLarge} 2160w`}
+                placeholder={imageAutosportAmpImageTwoPlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportAmpImageTwoPlaceholder
-                    : imageAutosportAmpImageTwoPlaceholder
-                }
-                alt="Configuration options for text."
+                alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportAmpImageOne} 260w, ${imageAutosportAmpImageOneLarge} 520w`
-                    : `${imageAutosportAmpImageOne} 260w, ${imageAutosportAmpImageOneLarge} 520w`
-                }
+                src={imageAutosportAmpImageOne}
+                srcSet={`${imageAutosportAmpImageOne} 1080w, ${imageAutosportAmpImageOneLarge} 2160w`}
+                placeholder={imageAutosportAmpImageOnePlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportAmpImageOnePlaceholder
-                    : imageAutosportAmpImageOnePlaceholder
-                }
                 alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
@@ -350,35 +315,21 @@ export const Autosport = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportNavImageTwo} 260w, ${imageAutosportNavImageTwoLarge} 520w`
-                    : `${imageAutosportNavImageTwo} 260w, ${imageAutosportNavImageTwoLarge} 520w`
-                }
+                src={imageAutosportNavImageTwo}
+                srcSet={`${imageAutosportNavImageTwo} 1080w, ${imageAutosportNavImageTwoLarge} 2160w`}
+                placeholder={imageAutosportNavImageTwoPlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportNavImageTwoPlaceholder
-                    : imageAutosportNavImageTwoPlaceholder
-                }
-                alt="Configuration options for text."
+                alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportNavImageOne} 260w, ${imageAutosportNavImageOneLarge} 520w`
-                    : `${imageAutosportNavImageOne} 260w, ${imageAutosportNavImageOneLarge} 520w`
-                }
+                src={imageAutosportNavImageOne}
+                srcSet={`${imageAutosportNavImageOne} 1080w, ${imageAutosportNavImageOneLarge} 2160w`}
+                placeholder={imageAutosportNavImageOnePlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportNavImageOnePlaceholder
-                    : imageAutosportNavImageOnePlaceholder
-                }
                 alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
@@ -407,35 +358,21 @@ export const Autosport = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportPowerlistImageTwo} 260w, ${imageAutosportPowerlistImageTwoLarge} 520w`
-                    : `${imageAutosportPowerlistImageTwo} 260w, ${imageAutosportPowerlistImageTwoLarge} 520w`
-                }
+                src={imageAutosportPowerlistImageTwo}
+                srcSet={`${imageAutosportPowerlistImageTwo} 1080w, ${imageAutosportPowerlistImageTwoLarge} 2160w`}
+                placeholder={imageAutosportPowerlistImageTwoPlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportPowerlistImageTwoPlaceholder
-                    : imageAutosportPowerlistImageTwoPlaceholder
-                }
-                alt="Configuration options for text."
+                alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportPowerlistImageOne} 260w, ${imageAutosportPowerlistImageOneLarge} 520w`
-                    : `${imageAutosportPowerlistImageOne} 260w, ${imageAutosportPowerlistImageOneLarge} 520w`
-                }
+                src={imageAutosportPowerlistImageOne}
+                srcSet={`${imageAutosportPowerlistImageOne} 1080w, ${imageAutosportPowerlistImageOneLarge} 2160w`}
+                placeholder={imageAutosportPowerlistImageOnePlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportPowerlistImageOnePlaceholder
-                    : imageAutosportPowerlistImageOnePlaceholder
-                }
                 alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
@@ -461,20 +398,13 @@ export const Autosport = () => {
             <Image
               raised
               key={theme}
-              srcSet={
-                isDark
-                  ? `${imageAutosportTop50CollageImage} 1280w, ${imageAutosportTop50CollageImageLarge} 2560w`
-                  : `${imageAutosportTop50CollageImage} 1280w, ${imageAutosportTop50CollageImageLarge} 2560w`
-              }
+              src={imageAutosportTop50CollageImage}
+              srcSet={`${imageAutosportTop50CollageImage} 1080w, ${imageAutosportTop50CollageImageLarge} 2160w`}
+              placeholder={imageAutosportTop50CollageImagePlaceholder}
               width={1280}
               height={800}
-              placeholder={
-                isDark
-                  ? imageAutosportTop50CollageImagePlaceholder
-                  : imageAutosportTop50CollageImagePlaceholder
-              }
-              alt="The homepage of the aero design system docs website linking to principles and components."
-              sizes="100vw"
+              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
+              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
             />
           </ProjectSectionContent>
         </ProjectSection>
@@ -501,35 +431,21 @@ export const Autosport = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportTop50ImageTwo} 260w, ${imageAutosportTop50ImageTwoLarge} 520w`
-                    : `${imageAutosportTop50ImageTwo} 260w, ${imageAutosportTop50ImageTwoLarge} 520w`
-                }
+                src={imageAutosportTop50ImageTwo}
+                srcSet={`${imageAutosportTop50ImageTwo} 1080w, ${imageAutosportTop50ImageTwoLarge} 2160w`}
+                placeholder={imageAutosportTop50ImageTwoPlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportTop50ImageTwoPlaceholder
-                    : imageAutosportTop50ImageTwoPlaceholder
-                }
-                alt="Configuration options for text."
+                alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportTop50ImageOne} 260w, ${imageAutosportTop50ImageOneLarge} 520w`
-                    : `${imageAutosportTop50ImageOne} 260w, ${imageAutosportTop50ImageOneLarge} 520w`
-                }
+                src={imageAutosportTop50ImageOne}
+                srcSet={`${imageAutosportTop50ImageOne} 1080w, ${imageAutosportTop50ImageOneLarge} 2160w`}
+                placeholder={imageAutosportTop50ImageOnePlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportTop50ImageOnePlaceholder
-                    : imageAutosportTop50ImageOnePlaceholder
-                }
                 alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
@@ -560,36 +476,22 @@ export const Autosport = () => {
             <div className={styles.sidebarImages}>
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportAwardsImageOne} 260w, ${imageAutosportAwardsImageOneLarge} 520w`
-                    : `${imageAutosportAwardsImageOne} 260w, ${imageAutosportAwardsImageOneLarge} 520w`
-                }
+                src={imageAutosportAwardsImageOne}
+                srcSet={`${imageAutosportAwardsImageOne} 1080w, ${imageAutosportAwardsImageOneLarge} 2160w`}
+                placeholder={imageAutosportAwardsImageOnePlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportAwardsImageOnePlaceholder
-                    : imageAutosportAwardsImageOnePlaceholder
-                }
                 alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
                 className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageAutosportAwardsImageTwo} 260w, ${imageAutosportAwardsImageTwoLarge} 520w`
-                    : `${imageAutosportAwardsImageTwo} 260w, ${imageAutosportAwardsImageTwoLarge} 520w`
-                }
+                src={imageAutosportAwardsImageTwo}
+                srcSet={`${imageAutosportAwardsImageTwo} 1080w, ${imageAutosportAwardsImageTwoLarge} 2160w`}
+                placeholder={imageAutosportAwardsImageTwoPlaceholder}
                 width={260}
                 height={660}
-                placeholder={
-                  isDark
-                    ? imageAutosportAwardsImageTwoPlaceholder
-                    : imageAutosportAwardsImageTwoPlaceholder
-                }
-                alt="Configuration options for text."
+                alt="Configuration options for a component."
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
             </div>
@@ -598,7 +500,7 @@ export const Autosport = () => {
 
 
       <ThemeProvider theme="dark" data-invert>
-            <ProjectSection
+        <ProjectSection
             backgroundOverlayOpacity={0.5}
             backgroundElement={
               <Image
@@ -645,7 +547,7 @@ export const Autosport = () => {
             </ProjectSectionContent>
           </ProjectSectionColumnsTextOnly>
         </ProjectSection>  
-        </ThemeProvider> 
+      </ThemeProvider> 
 
 
       </ProjectContainer>
