@@ -66,6 +66,7 @@ export function ProjectHeader({
             ))}
           </ul>
         )}
+        
       </div>
     </Section>
   );
@@ -208,6 +209,22 @@ export const ProjectSectionColumns = ({ className, centered, ...rest }) => (
 export const ProjectSectionColumnsTextOnly = ({ className, centered, ...rest }) => (
   <ProjectSectionContent
     className={classes(styles.sectionColumnsTextOnly, className)}
+    data-centered={centered}
+    {...rest}
+  />
+);
+
+export const ProjectSectionColumnsTestimonials = ({ className, centered, ...rest }) => (
+  <ProjectSectionContent
+    className={classes(styles.sectionColumnsTestimonials, className)}
+    data-centered={centered}
+    {...rest}
+  />
+);
+
+export const ProjectSectionSubHeadingAbove = ({ className, centered, ...rest }) => (
+  <ProjectSectionSubHeadingAbove
+    className={classes(styles.sectionColumnsTestimonials, className)}
     data-centered={centered}
     {...rest}
   />

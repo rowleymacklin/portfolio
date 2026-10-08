@@ -142,7 +142,6 @@ export const Goodyear = () => {
             <ProjectImage
               raised
               key={theme}
-
               src={imageGoodyearIntroImage}
               srcSet={`${imageGoodyearIntroImage} 1080w, ${imageGoodyearIntroImageLarge} 2160w`}
               placeholder={imageGoodyearIntroImagePlaceholder}
@@ -150,7 +149,6 @@ export const Goodyear = () => {
               height={800}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
               alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
-
             />
           </ProjectSectionContent>
         </ProjectSection>
@@ -228,8 +226,6 @@ export const Goodyear = () => {
                 </ProjectSectionText>                                                                                  
               </ProjectTextRow>
             </ProjectSectionContent>
-
-
             <ProjectSectionContent>
               <ProjectTextRow>
                 <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>

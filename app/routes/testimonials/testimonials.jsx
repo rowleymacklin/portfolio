@@ -1,6 +1,4 @@
-import backgroundDebeersLarge from '~/assets/work-debeers-preview-large.jpg';
-import backgroundDebeersPlaceholder from '~/assets/work-debeers-preview-large.jpg';
-import backgroundDebeers from '~/assets/work-debeers-preview-large.jpg';
+
 
 import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-large.jpg';
 import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
@@ -44,6 +42,22 @@ import imageSprStoryboarderDark from '~/assets/spr-storyboarder-dark.png';
 import imageSprStoryboarderLightLarge from '~/assets/spr-storyboarder-light-large.png';
 import imageSprStoryboarderLightPlaceholder from '~/assets/spr-storyboarder-light-placeholder.png';
 import imageSprStoryboarderLight from '~/assets/spr-storyboarder-light.png';
+
+import imageBackgroundRowley from '~/assets/about-rmacklin-new.svg';
+import imageLogoDebeers from '~/assets/logo-debeers.png';
+import imageLogoAutosport from '~/assets/logo-autosport.png';
+import imageLogoMulberry from '~/assets/logo-mulberry.png';
+import imageLogoTkmaxx from '~/assets/logo-tkmaxx.png';
+import imageLogoGucci from '~/assets/logo-gucci.png';
+import imageLogoGoodyear from '~/assets/logo-goodyear.png';
+import imageLogoSainsburys from '~/assets/logo-sainsburys.png';
+import imageLogoEvalue from '~/assets/logo-evalue.png';
+import imageLogoBlackberry from '~/assets/logo-blackberry.png';
+import imageLogoRated from '~/assets/logo-rated.png';
+import imageLogoCisco from '~/assets/logo-cisco.png';
+
+
+
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
 import { Link } from '~/components/link';
@@ -56,6 +70,7 @@ import {
   ProjectImage,
   ProjectSection,
   ProjectSectionColumns,
+  ProjectSectionColumnsTestimonials,
   ProjectSectionContent,
   ProjectSectionHeading,
   ProjectSectionText,
@@ -68,19 +83,38 @@ import styles from './testimonials.module.css';
 
 const title = 'Testimonials';
 const description =
-  'I worked as the design lead on a major iteration of Smart Sparrow’s product. We took the platform in a bold new direction, focusing on becoming the best tool for learning designers.';
+  "I've been very fortunate to work for some fantastic clients and amazing people. lorem  ipsum";
 const roles = [
-  'Art Direction',
-  'UX and UI Design',
-  'Front End Development',
-  'Motion Design',
+  'DeBeers',
+  'Autosport',
+  'Mulberry',
+  'Aviva',
+  'Oasis Clothing',
+  'TKMaxx',
+  'Gucci',
+  'Goodyear',  
+  "Sainsbury's",
+  'Barbour',
+  'Dr Martens',
+  'eValue',  
+  'Blackberry',
+  'M&G',
+  'Man Group',
+  'Financial Express', 
+  'Dorset Cereals',
+  'Peugeot',  
+  "Kellogg’s",
+  'Rated People',
+  'Cisco Systems',
+  'Nikkei',  
+  'NHK',    
 ];
 
 export const meta = () => {
   return baseMeta({ title, description });
 };
 
-export const Testimonials = () => {
+export const Testimonials = ({ visible, titleId }) => {
   const { theme, toggleTheme } = useTheme();
   const isDark = theme === 'dark';
   const themes = ['dark', 'light'];
@@ -94,249 +128,938 @@ export const Testimonials = () => {
       <ProjectContainer>
         <ProjectBackground
           opacity={isDark ? 0.5 : 0.8}
-          src={backgroundDebeers}
-          srcSet={`${backgroundDebeers} 1080w, ${backgroundDebeersLarge} 2160w`}
-          placeholder={backgroundDebeersPlaceholder}
+          src={imageBackgroundRowley}
         />
         <ProjectHeader
           title={title}
           description={description}
-          url="https://www.smartsparrow.com/"
           roles={roles}
+          className={styles.sectionTestimonialsRoles}
         />
-        <ProjectSection padding="top">
-          <ProjectSectionContent>
-            <ProjectImage
-              raised
-              key={theme}
-              srcSet={
-                isDark
-                  ? `${imageSprLessonBuilderDark} 1280w, ${imageSprLessonBuilderDarkLarge} 2560w`
-                  : `${imageSprLessonBuilderLight} 1280w, ${imageSprLessonBuilderLightLarge} 2560w`
-              }
-              width={1280}
-              height={800}
-              placeholder={
-                isDark
-                  ? imageSprLessonBuilderDarkPlaceholder
-                  : imageSprLessonBuilderLightPlaceholder
-              }
-              sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
-            />
-          </ProjectSectionContent>
-        </ProjectSection>
-        <ProjectSection>
-          <ProjectTextRow>
-            <ProjectSectionHeading>The problem</ProjectSectionHeading>
-            <ProjectSectionText>
-              In 2017, Smart Sparrow began a project to build an entirely new platform to
-              from the ground up to serve as the most powerful tool for educators to
-              create online learning experiences. The old platform was built in Flash, and
-              there were a number of user experience problems to solve in the process of
-              moving the platform to Javascript. The primary goals for the project were
-              reducing barriers to collaboration, and making the platform both easier for
-              new users, but with plenty of room to scale for advanced users.
-            </ProjectSectionText>
-          </ProjectTextRow>
-        </ProjectSection>
-        <ProjectSection light={isDark}>
-          <ProjectSectionContent>
-            <Image
-              key={theme}
-              srcSet={
-                isDark
-                  ? `${imageSprComponentsDark} 1024w, ${imageSprComponentsDarkLarge} 2048w`
-                  : `${imageSprComponentsLight} 1024w, ${imageSprComponentsLightLarge} 2048w`
-              }
-              width={1024}
-              hright={800}
-              placeholder={
-                isDark
-                  ? imageSprComponentsDarkPlaceholder
-                  : imageSprComponentsLightPlaceholder
-              }
-              alt={`A set of ${theme} themed components for the aero design system`}
-              sizes="100vw"
-            />
-            <ProjectTextRow>
-              <SegmentedControl
-                currentIndex={themes.indexOf(theme)}
-                onChange={handleThemeChange}
-              >
-                <SegmentedControlOption>Dark theme</SegmentedControlOption>
-                <SegmentedControlOption>Light theme</SegmentedControlOption>
-              </SegmentedControl>
-            </ProjectTextRow>
-            <ProjectTextRow>
-              <ProjectSectionHeading>The aero design system</ProjectSectionHeading>
-              <ProjectSectionText>
-                To streamline the design process across designers and engineers for such a
-                large project, it was important to lay the foundations with a strong,
-                flexible design system that could evolve during the product’s development
-                cycle. This would inform both the aesthetics and user experience across
-                the product itself as well as the website and marketing material.
-              </ProjectSectionText>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
-        <ProjectSection>
-          <ProjectSectionContent>
-            <Image
-              raised
-              key={theme}
-              srcSet={
-                isDark
-                  ? `${imageSprDesignSystemDark} 1280w, ${imageSprDesignSystemDarkLarge} 2560w`
-                  : `${imageSprDesignSystemLight} 1280w, ${imageSprDesignSystemLightLarge} 2560w`
-              }
-              width={1280}
-              height={800}
-              placeholder={
-                isDark
-                  ? imageSprDesignSystemDarkPlaceholder
-                  : imageSprDesignSystemLightPlaceholder
-              }
-              alt="The homepage of the aero design system docs website linking to principles and components."
-              sizes="100vw"
-            />
-            <ProjectTextRow>
-              <ProjectSectionHeading>Design system docs</ProjectSectionHeading>
-              <ProjectSectionText>
-                A design system is useless if no one knows how to use it, so we put
-                together a comprehensive documentation website to cover principles, ux,
-                accessibility, and component guidelines for designers and engineers
-                working with the system.
-              </ProjectSectionText>
-            </ProjectTextRow>
-          </ProjectSectionContent>
-        </ProjectSection>
-        <ThemeProvider theme="dark" data-invert>
-          <ProjectSection
-            backgroundOverlayOpacity={0.5}
-            backgroundElement={
+        
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials data-padding={0} className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
               <Image
-                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
-                width={1280}
-                height={900}
-                placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
-                sizes="100vw"
+                reveal
+                delay={100}
+                placeholder={imageLogoDebeers}
+                srcSet={`${imageLogoDebeers} 480w, ${imageLogoDebeers} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
               />
-            }
-          >
-            <ProjectSectionColumns width="full">
-              <ProjectSectionContent width="full">
-                <ProjectTextRow width="s">
-                  <ProjectSectionHeading>Motion design</ProjectSectionHeading>
-                  <ProjectSectionText>
-                    Animation was a core principle in making the authoring experience a
-                    more understandable process. Elements animate in ways that indicate
-                    the cause and effect of each interaction to improve the fluidity of
-                    the overall experience.
-                  </ProjectSectionText>
-                </ProjectTextRow>
-              </ProjectSectionContent>
-              <Image
-                raised
-                className={styles.video}
-                srcSet={`${videoSprMotion} 1280w, ${videoSprMotionLarge} 2560w`}
-                width={1280}
-                height={800}
-                placeholder={videoSprMotionPlaceholder}
-                alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
-                sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
-              />
-            </ProjectSectionColumns>
-          </ProjectSection>
-        </ThemeProvider>
-        <ProjectSection>
-          <ProjectSectionContent>
-            <ProjectTextRow>
-              <ProjectSectionHeading>Encouraging adaptivity</ProjectSectionHeading>
-              <ProjectSectionText>
-                A major part of solving for collaboration was being able to visualize the
-                learner experience in the editor. This was especially beneficial for
-                subject matter experts and instructors need to review and give feedback on
-                the higher level structure without having to dig through all of the
-                adaptivity scenarios screen by screen.
-              </ProjectSectionText>
-            </ProjectTextRow>
-            <Image
-              raised
-              key={theme}
-              srcSet={
-                isDark
-                  ? `${imageSprStoryboarderDark} 1280w, ${imageSprStoryboarderDarkLarge} 2560w`
-                  : `${imageSprStoryboarderLight} 1280w, ${imageSprStoryboarderLightLarge} 2560w`
-              }
-              width={1280}
-              height={800}
-              placeholder={
-                isDark
-                  ? imageSprStoryboarderDarkPlaceholder
-                  : imageSprStoryboarderLightPlaceholder
-              }
-              alt="A drag and drop storyboard style editor for creating an adaptive lesson."
-              sizes={`(max-width: ${media.mobile}px) 100vw, 80vw`}
-            />
-          </ProjectSectionContent>
-        </ProjectSection>
-        <ProjectSection>
-          <ProjectSectionColumns>
-            <ProjectSectionContent>
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
               <ProjectTextRow>
-                <ProjectSectionHeading>
-                  An extensible plugin ecosystem usable by everyone
-                </ProjectSectionHeading>
-                <ProjectSectionText>
-                  The most powerful aspect of the platform is the ability to create custom
-                  plugins for any content, whether it be a degree, course, lesson, screen,
-                  or interactive component. Out of the box these can be made configurable
-                  with minimal effort from developers. Learning designers can then edit
-                  everything using a common configuration interface.
-                </ProjectSectionText>
+                <span>
+                  July 2026
+                </span>      
+                <h2>
+                  Ozge Ozcan
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Business Analyst
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  He is a calm, kind, and knowledgeable person. He is one of the best teammates I ever worked with. He is a good listener; he listens to everyone and answers their questions and helps his teammates any time they need. Even if he has work to do, he stops and spends time with his team. He is very capable of what he is doing and this makes teams' life easier especially for PM, BA, and QA roles. I'd like to work with him in the future.
+                </p>
               </ProjectTextRow>
             </ProjectSectionContent>
-            <div className={styles.sidebarImages}>
+          </ProjectSectionColumnsTestimonials>
+        </section>
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
               <Image
-                className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageSprSchema2Dark} 260w, ${imageSprSchema2DarkLarge} 520w`
-                    : `${imageSprSchema2Light} 260w, ${imageSprSchema2LightLarge} 520w`
-                }
-                width={260}
-                height={660}
-                placeholder={
-                  isDark
-                    ? imageSprSchema2DarkPlaceholder
-                    : imageSprSchema2LightPlaceholder
-                }
-                alt="Configuration options for a component."
-                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
+                reveal
+                delay={100}
+                placeholder={imageLogoDebeers}
+                srcSet={`${imageLogoDebeers} 480w, ${imageLogoDebeers} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
               />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  June 2026
+                </span>      
+                <h2>
+                  Prashant Vadher
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Senior Testing Engineer
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley consistently delivers high-quality Amplience solutions with great attention to detail and scalability. He consistently demonstrates strong technical leadership, from designing effective content models to ensuring seamless integrations with frontend frameworks. He has deep platform knowledge, collaboration with clients, design and frontend teams, commitment to best practices, performance optimization, continuous improvement, and problem-solving skills that have greatly benefited our project.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
               <Image
-                className={styles.sidebarImage}
-                srcSet={
-                  isDark
-                    ? `${imageSprSchema1Dark} 260w, ${imageSprSchema1DarkLarge} 520w`
-                    : `${imageSprSchema1Light} 260w, ${imageSprSchema1LightLarge} 520w`
-                }
-                width={260}
-                height={660}
-                placeholder={
-                  isDark
-                    ? imageSprSchema1DarkPlaceholder
-                    : imageSprSchema1LightPlaceholder
-                }
-                alt="Configuration options for text."
-                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
+                reveal
+                delay={100}
+                placeholder={imageLogoDebeers}
+                srcSet={`${imageLogoDebeers} 480w, ${imageLogoDebeers} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
               />
-            </div>
-          </ProjectSectionColumns>
-        </ProjectSection>
-        <ProjectSection>
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  February 2026
+                </span>      
+                <h2>
+                  Artem Zhuravlov
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Senior Software Engineer
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is a vital part of the project as the lead Amplience Frontend developer. He brings a wealth of experience and an open-minded attitude, always eager to engage in discussions and support his teammates while following best practices in his work. I'd like to work with him on further projects.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>
+
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoDebeers}
+                srcSet={`${imageLogoDebeers} 480w, ${imageLogoDebeers} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  January 2026
+                </span>      
+                <h2>
+                  Mahesh Gurjal
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Testing Engineer
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  I must say Rowley is one of the best colleagues I have worked with. He is a gem of a person. Rowley is a very talented developer and with his expertise he has always delivered great results, and he has shown an exceptional ability to resolve complex issues efficiently. He understands the requirements very well and raises the required queries, which are very important in order not to impact the existing system. Our client is very much impressed with Rowley's contributions to the team and for the most the important work, they rely on Rowley. Apart from technical skills, with his humble nature and impressive soft skills, he has managed to become a favorite member of our team. It's always been a very pleasant experience while having conversations with Rowley. He is a very good listener as well. From a QA perspective, we are really happy to work with a colleague like Rowley, as he resolves our queries very well. I would really like to continue this partnership of working with Rowley as long as it can be!
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoDebeers}
+                srcSet={`${imageLogoDebeers} 480w, ${imageLogoDebeers} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  January 2026
+                </span>      
+                <h2>
+                  Iryna Blotska
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Software Engineer
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is the longest-serving member of our project, and his experience and dedication are clear in everything he does. Sometimes it feels like without Rowley, our project simply wouldn't run as smoothly. He consistently delivers high-quality work in his responsibilities related to creating content pages. His expertise with Amplience and his strong frontend skills demonstrate just how well he knows his job. Rowley is always polite, approachable, and a true team player. He communicates well with everyone and is always ready to help whenever support is needed. Every day Rowley does an outstanding job, and I genuinely appreciate his ongoing commitment and positive attitude.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoDebeers}
+                srcSet={`${imageLogoDebeers} 480w, ${imageLogoDebeers} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  January 2026
+                </span>      
+                <h2>
+                  Shailesh Hatte
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Senior Software Engineer
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley consistently provides high-quality solutions and takes full ownership from planning to release. His Amplience and frontend skills are deep, content is clear, and his troubleshooting skills are reliable, which helps keep projects on track. He is sincere and dependable, always meets deadlines, and communicates proactively with clients to set expectations and identify risks early. He collaborates well with the team, shares important context to help others move forward, and resolves issues quickly. He demonstrates strong ownership by flagging risks early, proposing workable alternatives, and collaborating smoothly across QA, dev, and PM.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoDebeers}
+                srcSet={`${imageLogoDebeers} 480w, ${imageLogoDebeers} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  January 2026
+                </span>      
+                <h2>
+                  Aleksandar Golubic
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Software Engineer
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley has been a fantastic colleague for over two years. His expertise in frontend development is impressive, and he's always ready to tackle tasks beyond his usual role when necessary. He pays great attention to detail and consistently seeks the best solutions. Rowley is very client-focused and stands out for his calm and friendly demeanor, making him approachable for both casual conversations and in-depth technical discussions. His extensive experience equips him to handle any unexpected situation, question, or misunderstanding with ease.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>      
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoAutosport}
+                srcSet={`${imageLogoAutosport} 480w, ${imageLogoAutosport} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  November 2020
+                </span>      
+                <h2>
+                  Pradip Patel
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Lead UX/UI
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is a consummate professional, always ready to help where he can and very adaptive to various types of projects. As a FE developer, you want someone you can discuss the designs with and potentially develop them with, and that person was Rowley. At the other end of the spectrum he was at hand to roll his sleeves up and help implement our new e-commerce funnel that had many limitations; he was able to adapt and push and bend the environment where he could to build the best possible experience.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>     
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoMulberry}
+                srcSet={`${imageLogoMulberry} 480w, ${imageLogoMulberry} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  March 2018
+                </span>      
+                <h2>
+                  Nick Bowman
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Technical Solutions Architect
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley has worked at Mulberry on several occasions over the last couple of years and each time he slotted right into the team and helped us to deliver the UI on a variety of different sized projects. His meticulous attention to detail, coupled with his zen-like personality, made for a great colleague each time Rowley worked for us. He has a great ability to work under his own steam and was able to get on with projects with little to no supervision - his knowledge of the Hybris platform and all of our systems that we use to develop on it meant that we were able to give the UI work over and know that Rowley would get straight on with it and present back in a timely fashion a quality of work that matched the brand.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>     
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoTkmaxx}
+                srcSet={`${imageLogoTkmaxx} 480w, ${imageLogoTkmaxx} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  July 2016
+                </span>      
+                <h2>
+                  Julian Hatton
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Tech Lead
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley was the front-end practice lead on the project. He gives clear direction to his front end team and leads by example. Rowley is approachable and will go out of his way to help. He is also very good in a client-facing role; he has excellent communication skills, and you can be confident he's not going to say the wrong thing! I would enjoy working with Rowley again!
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoGucci}
+                srcSet={`${imageLogoGucci} 480w, ${imageLogoGucci} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  December 2015 2016
+                </span>      
+                <h2>
+                  David Rushton
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Director of Service Delivery
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is a very capable and experienced senior FE Developer. He led our thinking and approach on how we develop UI on a range of very high-profile retail eCommerce projects. I wouldn't hesitate to recommend Rowley and look forward to working with him again in the future
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoGucci}
+                srcSet={`${imageLogoGucci} 480w, ${imageLogoGucci} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  December 2015
+                </span>      
+                <h2>
+                  Pasquale Campitiello
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Senior E-Commerce Application Developer
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  I worked with Rowley on an SAP Hybris B2C project (Gucci.com). He has a very long experience as a Front End Developer and it's great to work with him. He surely has ingenious web skills with an eye for detail. Rowley is innovative, very keen to discover new solutions and fresh ideas that can improve a project as a whole. Simplification and great Front End performance are always his main goals. All these qualities make him a great person to work with and an asset for the company.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoGoodyear}
+                srcSet={`${imageLogoGoodyear} 480w, ${imageLogoGoodyear} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  August 2014
+                </span>      
+                <h2>
+                  David Wyllie
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Managing Partner
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is a highly capable front end developer who worked with Sceneric/DigitasLBi Commerce on four of our very high profile projects, one after another. He is a consummate professional, talented, and a very safe pair of hands whom you know will get the job completed. He can be trusted to effectively manage a team of front end developers to ensure that quality is produced and that the team interfaces properly with development and test teams.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoSainsburys}
+                srcSet={`${imageLogoSainsburys} 480w, ${imageLogoSainsburys} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  February 2014
+                </span>      
+                <h2>
+                  Matthew Francis
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Business Analyst
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  I worked with Rowley at Sceneric (Digitas LBi Commerce) initially in my role as UAT Tester 'downstream' of his involvement and later on in my role as Business Analyst 'upstream', all as part of a wider team creating and launching Sainsbury's multi-channel e-Commerce platform for Tu Clothing. A very skilled developer and manager, Rowley always produced work of the highest caliber and ensured his team worked efficiently and effectively. His attention to detail and adherence to process mark him out as an invaluable member of any project delivery team and I hope I get the chance to work with him again in the future.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoEvalue}
+                srcSet={`${imageLogoEvalue} 480w, ${imageLogoEvalue} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  May 2013
+                </span>      
+                <h2>
+                  Tony Rae
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Client Support
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Fantastic professional. Rowley was efficient, friendly and many people were sad to see him leave. Will be an asset to any company.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoEvalue}
+                srcSet={`${imageLogoEvalue} 480w, ${imageLogoEvalue} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  April 2013
+                </span>      
+                <h2>
+                  Mez Solanki
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  UI Designer
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley has always been considered as a valuable member of any team. His technical ability is spot on and always brings ideas to the table. I have no problem in recommending Rowley to any organisation that requires a dedicated and reliable individual.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoEvalue}
+                srcSet={`${imageLogoEvalue} 480w, ${imageLogoEvalue} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  April 2013
+                </span>      
+                <h2>
+                  Chris McSheehy
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Test Engineer
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  I worked closely with Rowley over many months on a web-based actuarial product. His work was always of high quality, and I found him always friendly and personable. I have no hesitation in recommending him.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoEvalue}
+                srcSet={`${imageLogoEvalue} 480w, ${imageLogoEvalue} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  April 2013
+                </span>      
+                <h2>
+                  Adam Brundrett
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Team Leader
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  As senior developer in the team Rowley worked with during his contract with eValue, I can only say that he was an absolute pleasure to have on the team. He slotted right in from the word go and quickly got to grips with our systems and practices. His work could not be faulted and he was also willing to share the benefit of his wider experience when asked. I hope I have the opportunity to work with him again in the future.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoBlackberry}
+                srcSet={`${imageLogoBlackberry} 480w, ${imageLogoBlackberry} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  June 2012
+                </span>      
+                <h2>
+                  Leon Gunning
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Project Manager
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is very friendly, inquisitive and hard working. He's also inventive, proficient and is always looking to make a positive contribution to the team. It was a pleasure having him as part of my team.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoRated}
+                srcSet={`${imageLogoRated} 480w, ${imageLogoRated} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  March 2011
+                </span>      
+                <h2>
+                  Anita Dirschuweit
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  SEM Manager
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is always very focused on doing an excellent job and delivering great results. Never one to be beaten he achieves what he set out to do. Always there and always someone you can rely on.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+        
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoRated}
+                srcSet={`${imageLogoRated} 480w, ${imageLogoRated} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  January 2011
+                </span>      
+                <h2>
+                  Otto Rosenberger
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Commercial Director
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is a professional and passionate designer, a great team player and hard worker, made great inroads into taking the Ratedpeople.com website forward.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section> 
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoRated}
+                srcSet={`${imageLogoRated} 480w, ${imageLogoRated} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  January 2011
+                </span>      
+                <h2>
+                  Emma Harvey
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Customer Experience Director
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is an experienced front end developer with great interpersonal skills. He had a tough job in the Rated People team being the only design & front end developer in the team working with approximately 6 back end developers. He took this challenge on with a calm / can-do demeanor and was instrumental in product delivery.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>         
+        
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoRated}
+                srcSet={`${imageLogoRated} 480w, ${imageLogoRated} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  January 2011
+                </span>      
+                <h2>
+                  Zsolt Laposa
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Principal Developer
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley was an absolute pleasure to work with. He is a good designer with strong HTML and CSS knowledge. He is a strong team player and a fun guy to be around.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>    
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoRated}
+                srcSet={`${imageLogoRated} 480w, ${imageLogoRated} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  January 2011
+                </span>      
+                <h2>
+                  Andrew Skipwith
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Founder & CEO
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is a talented front-end web designer and developer. Also a great character and a dedicated team player.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>          
+         
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoRated}
+                srcSet={`${imageLogoRated} 480w, ${imageLogoRated} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  January 2011
+                </span>      
+                <h2>
+                  Sheetal Thaker
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  CMS Consultant
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Rowley is an absolute pleasure to work with, he's passionate, ambitious and highly knowledgeable in his field of Website Design. He's also very personable, so he's good to have around in the work environment.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>   
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoCisco}
+                srcSet={`${imageLogoCisco} 480w, ${imageLogoCisco} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  February 2005
+                </span>      
+                <h2>
+                  Vi Cuong Luong
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Client Manager
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Whilst working with Rowley he has shown that he is highly organized and has a exceptional ability to not only deliver what was asked but also to provide a higher than expected quality of work.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>   
+
+        <section className={styles.sectionTestimonials}>
+          <ProjectSectionColumnsTestimonials className={styles.sectionColumnsTestimonials}>
+            <div className={styles.image}>
+              <Image
+                reveal
+                delay={100}
+                placeholder={imageLogoCisco}
+                srcSet={`${imageLogoCisco} 480w, ${imageLogoCisco} 960w`}
+                width={200}
+                height={200}
+                background={('#ffffff')}
+                sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
+                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+              />
+            </div>            
+            <ProjectSectionContent className={styles.testimonialsSection}>
+              <ProjectTextRow>
+                <span>
+                  February 2005
+                </span>      
+                <h2>
+                  Adam Garner
+                </h2>
+                <span className={styles.testimonialsJobDescr}>
+                  Creative Lead
+                </span>
+                <p className={styles.testimonialsMainDescr}>
+                  Ahh, Rowley, top notch skills and experience, a keen eye for design and a dedicated hard worker. Not forgetting he's also a generally all round great guy. No hesitations in heartily recommending his work.
+                </p>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTestimonials>
+        </section>  
+
+
+
+
+        {/* <ProjectSection>
           <ProjectSectionContent>
             <ProjectTextRow center centerMobile noMargin>
               <svg
@@ -363,7 +1086,7 @@ export const Testimonials = () => {
               </ProjectSectionText>
             </ProjectTextRow>
           </ProjectSectionContent>
-        </ProjectSection>
+        </ProjectSection> */}
       </ProjectContainer>
       <Footer />
     </>

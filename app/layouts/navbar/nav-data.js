@@ -7,11 +7,11 @@ export const navLinks = [
   },
   {
     label: 'Info',
-    pathname: '/info',
+    pathname: '/#details',
   },   
   {
     label: 'Skills',
-    pathname: '/skills',
+    pathname: '/#skills',
   },     
   {
     label: 'Testimonials',

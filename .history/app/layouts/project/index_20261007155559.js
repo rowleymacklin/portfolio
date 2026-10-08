@@ -1,0 +1,15 @@
+export {
+  ProjectHeader,
+  ProjectContainer,
+  ProjectBackground,
+  ProjectImage,
+  ProjectSectionContent,
+  ProjectSectionHeading,
+  ProjectSectionSubHeading,  
+  ProjectSectionText,
+  ProjectTextRow,
+  ProjectSectionColumns,
+  ProjectSectionColumnsTextOnly,  
+  ProjectSectionColumnsTestimonials,
+  ProjectSection,
+} from './project';

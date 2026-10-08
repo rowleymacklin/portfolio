@@ -10,5 +10,6 @@ export {
   ProjectTextRow,
   ProjectSectionColumns,
   ProjectSectionColumnsTextOnly,  
+  ProjectSectionColumnsTestimonials,
   ProjectSection,
 } from './project';

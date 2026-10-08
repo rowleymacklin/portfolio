@@ -31,7 +31,9 @@
     &[data-level='5'] {
       font-size: var(--fontSizeH5);
     }
-
+    &[data-level='6'] {
+      font-size: var(--fontSizeH6);
+    }
     &[data-align='auto'] {
       text-align: inherit;
     }

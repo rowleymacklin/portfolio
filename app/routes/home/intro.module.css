@@ -108,9 +108,15 @@
   font-size: 1rem;
   margin-top: 1rem;
   letter-spacing: 0;
+  font-weight: normal;
+  max-width: 65%;
 
   &[data-hidden='true'] {
     opacity: 0;
+  }
+
+  span {
+    line-height: 1.5rem;
   }
 }
 
@@ -196,6 +202,7 @@
     z-index: var(--zIndex0);
   }
 }
+
 
 @keyframes introLine {
   0% {

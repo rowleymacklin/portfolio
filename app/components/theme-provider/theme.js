@@ -10,6 +10,7 @@ const baseTokens = {
   durationM: '400ms',
   durationL: '600ms',
   durationXL: '800ms',
+  durationXXL: '1200ms',
   systemFontStack:
     'system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif',
   fontStack: `Gotham, var(--systemFontStack)`,
@@ -27,6 +28,7 @@ const baseTokens = {
   fontSizeH3: pxToRem(38),
   fontSizeH4: pxToRem(28),
   fontSizeH5: pxToRem(24),
+  fontSizeH6: pxToRem(18),  
   fontSizeBodyXL: pxToRem(22),
   fontSizeBodyL: pxToRem(20),
   fontSizeBodyM: pxToRem(18),
@@ -78,6 +80,7 @@ const tokensLaptop = {
   fontSizeH3: pxToRem(36),
   fontSizeH4: pxToRem(26),
   fontSizeH5: pxToRem(22),
+  fontSizeH6: pxToRem(18), 
 };
 
 const tokensTablet = {
@@ -87,6 +90,7 @@ const tokensTablet = {
   fontSizeH3: pxToRem(32),
   fontSizeH4: pxToRem(24),
   fontSizeH5: pxToRem(20),
+  fontSizeH6: pxToRem(16),  
 };
 
 const tokensMobile = {
@@ -97,6 +101,7 @@ const tokensMobile = {
   fontSizeH3: pxToRem(28),
   fontSizeH4: pxToRem(22),
   fontSizeH5: pxToRem(18),
+  fontSizeH6: pxToRem(16),  
   fontSizeBodyL: pxToRem(17),
   fontSizeBodyM: pxToRem(16),
   fontSizeBodyS: pxToRem(14),
@@ -115,7 +120,7 @@ const tokensMobileSmall = {
 const dark = {
   background: 'oklch(17.76% 0 0)',
   backgroundLight: 'oklch(21.78% 0 0)',
-  primary: 'oklch(84.42% 0.19 202.24)',
+  primary: 'oklch(89.9% 0.187 101)',
   accent: 'oklch(89.9% 0.187 101)',
   error: 'oklch(65.91% 0.249 13.76)',
   text: 'var(--white)',

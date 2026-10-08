@@ -64,6 +64,7 @@ import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
 import { Profile } from './profile';
+import { Skills } from './skills';
 import { ProjectSummary } from './project-summary';
 import { Image } from '~/components/image';
 import { useEffect, useRef, useState } from 'react';
@@ -115,9 +116,10 @@ export const Home = () => {
   const Drmartens = useRef();  
   const Various = useRef();
   const details = useRef();
+  const skills = useRef();  
 
   useEffect(() => {
-    const sections = [intro, Debeers, Autosport, Mulberry, Aviva, Oasis, Tkmaxx, Gucci, Goodyear, Sainsburys, Barbour, Drmartens, Various, details];
+    const sections = [intro, Debeers, Autosport, Mulberry, Aviva, Oasis, Tkmaxx, Gucci, Goodyear, Sainsburys, Barbour, Drmartens, Various, details, skills];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -503,6 +505,11 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
+      <Skills
+        sectionRef={skills}
+        visible={visibleSections.includes(skills.current)}
+        id="skills"
+      />      
       <Footer />
     </div>
   );

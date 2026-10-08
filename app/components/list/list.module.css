@@ -13,15 +13,14 @@
   }
 
   .item {
-    --bulletSize: min(1.2em, 24px);
+    --bulletSize: min(0.9em, 18px);
     --markerGap: var(--spaceS);
-
-    margin-bottom: 0.6em;
+      margin-bottom: 0.6em;
 
     ol &::marker {
       color: var(--primary);
       font-variant-numeric: ordinal;
-      font-size: min(1.2em, 16px);
+      font-size: min(1em, 14px);
       font-weight: var(--fontWeightMedium);
       font-family: var(--monoFontStack);
     }

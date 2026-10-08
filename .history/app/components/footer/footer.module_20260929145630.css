@@ -1,0 +1,38 @@
+@layer components {
+  .footer {
+    --lineHeightBody: 1.1;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    width: 100vw;
+    padding: var(--space3XL) var(--spaceL);
+    z-index: var(--zIndex2);
+    position: relative;
+    color: var(--textLight);
+
+
+
+
+    @media (--mediaLaptop) {
+      display: grid;
+      align-items: flex-start;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space3XL);
+      margin: 0;
+    }
+
+  }
+
+  .link {
+    display: inline-flex;
+  }
+
+
+
+  .date {
+    padding-right: var(--spaceXS);
+    display: inline-flex;
+  }
+}

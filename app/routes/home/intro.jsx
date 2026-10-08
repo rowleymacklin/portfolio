@@ -1,5 +1,6 @@
 import { DecoderText } from '~/components/decoder-text';
 import { Heading } from '~/components/heading';
+import { Text } from '~/components/text';
 import { Section } from '~/components/section';
 import { useTheme } from '~/components/theme-provider';
 import { tokens } from '~/components/theme-provider/theme';
@@ -126,7 +127,9 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                           data-status={status}
                           style={cssProps({ delay: tokens.base.durationL })}
                         >
-                          {item}
+                          Hello, I'm Rowley and I build pixel-perfect, interactive, and accessible user interfaces.
+                        ***Mantion Accessibility testing + fixing, and add lots of detail of day to day work and process
+                        
                         </span>
                       )}
                     </Transition>
@@ -135,7 +138,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               </Heading>
             </header>
             <RouterLink
-              to="/#project-1"
+              to="/#Debeers"
               className={styles.scrollIndicator}
               data-status={status}
               data-hidden={scrollIndicatorHidden}
@@ -144,7 +147,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               <VisuallyHidden>Scroll to projects</VisuallyHidden>
             </RouterLink>
             <RouterLink
-              to="/#project-1"
+              to="/#Debeers"
               className={styles.mobileScrollIndicator}
               data-status={status}
               data-hidden={scrollIndicatorHidden}
