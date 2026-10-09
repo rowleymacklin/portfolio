@@ -81,7 +81,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                   <span
                     className={styles.word}
                     data-status={status}
-                    style={cssProps({ delay: tokens.base.durationXS })}
+                    style={cssProps({ delay: tokens.base.durationS })}
                   >
                     {config.role}
                   </span>
@@ -102,7 +102,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                           className={styles.word}
                           data-plus={true}
                           data-status={status}
-                          style={cssProps({ delay: tokens.base.durationL })}
+                          style={cssProps({ delay: tokens.base.durationM })}
                         >
                           {item}
                         </span>
@@ -110,31 +110,21 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                     </Transition>
                   ))}
                 </div>
-                <div className={styles.rowThree}>
-                  {disciplines.map(item => (
-                    <Transition
-                      unmount
-                      in={item === currentDiscipline}
-                      timeout={{ enter: 3000, exit: 2000 }}
-                      key={item}
-                    >
-                      {({ status, nodeRef }) => (
-                        <span
-                          aria-hidden
-                          ref={nodeRef}
-                          className={styles.word}
-                          data-plus={false}
-                          data-status={status}
-                          style={cssProps({ delay: tokens.base.durationL })}
-                        >
-                          Hello, I'm Rowley and I build pixel-perfect, interactive, and accessible user interfaces.
-                        ***Mantion Accessibility testing + fixing, and add lots of detail of day to day work and process
-                        
-                        </span>
-                      )}
-                    </Transition>
-                  ))}
-                </div>                
+                <span aria-hidden className={styles.rowThree}>
+                  <span
+                    className={styles.word}
+                    data-status={status}
+                    style={cssProps({ delay: tokens.base.durationXL })}
+                  >
+                    <div>
+                      <span>
+                        Hello, I'm Rowley and I build pixel-perfect, interactive, and accessible user interfaces. 
+                        I specialize in the sweet spot between design and code, turning wireframes and designs into 
+                        beautifully smooth web experiences. I also have a huge amount of experience working with various CMSs.
+                      </span>
+                    </div>
+                  </span>
+                </span>
               </Heading>
             </header>
             <RouterLink

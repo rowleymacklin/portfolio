@@ -109,7 +109,7 @@
   margin-top: 1rem;
   letter-spacing: 0;
   font-weight: normal;
-  max-width: 65%;
+  max-width: 75%;
 
   &[data-hidden='true'] {
     opacity: 0;
@@ -117,7 +117,7 @@
 
   span {
     line-height: 1.5rem;
-  }
+  }  
 }
 
 @keyframes introTextReveal {

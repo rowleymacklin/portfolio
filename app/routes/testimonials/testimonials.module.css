@@ -19,7 +19,6 @@
 }
 
 .sectionTestimonialsRoles {
-  height:100vh;
   ul {
     display: flex; 
     flex-wrap: wrap; 
@@ -31,7 +30,11 @@
   li {
     flex-grow: 1;
     width: 45%; 
+    &:nth-last-child(2) {
+      border-bottom: 1px solid color-mix(in lab, var(--text) 20%, transparent);
+    }
   }
+
 }
 
 .sectionColumns {

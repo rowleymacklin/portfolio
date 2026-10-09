@@ -17,17 +17,13 @@ export const navLinks = [
     label: 'Testimonials',
     pathname: '/testimonials',
   },
-  {
-    label: 'Random',
-    pathname: '/random',
-  },  
 ];
 
 export const socialLinks = [
 
   {
     label: 'Cv',
-    url: 'https://github.com/rowleymacklin',
+    url: 'https://rowleymacklin.com/RMacklin-frontEndDeveloper-2026-q4.pdf',
     icon: 'cv',
   },  
 
@@ -42,13 +38,8 @@ export const socialLinks = [
     icon: 'email',
   }, 
   {
-    label: 'Call',
-    url: 'tel:07947600444',
-    icon: 'call',
-  },  
-  {
     label: 'Codepen',
-    url: 'https://github.com/rowleymacklin',
+    url: 'https://codepen.io/oioisaveloy',
     icon: 'codepen',
   },  
   

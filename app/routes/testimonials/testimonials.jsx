@@ -106,6 +106,7 @@ const roles = [
   "Kellogg’s",
   'Rated People',
   'Cisco Systems',
+  'Supply Serve',  
   'Nikkei',  
   'NHK',    
 ];
