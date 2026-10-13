@@ -17,19 +17,9 @@ export const navWorkLinks = [
     hash: '#Mulberry',
   }, 
   {
-    label: 'Aviva',
-    pathname: '/',
-    hash: '#Aviva',
-  },  
-  {
-    label: 'Oasis',
-    pathname: '/',
-    hash: '#Oasis',
-  }, 
-  {
     label: 'TKMaxx',
     pathname: '/',
-    hash: '#TKMaxx',
+    hash: '#Tkmaxx',
   },  
   {
     label: 'Gucci',
@@ -54,7 +44,7 @@ export const navWorkLinks = [
   {
     label: 'Dr Martens',
     pathname: '/',
-    hash: '#DrMartens',
+    hash: '#Drmartens',
   }, 
   {
     label: 'Various',

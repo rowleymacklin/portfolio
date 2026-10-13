@@ -30,6 +30,10 @@ export function ProjectSummary({
   job,
   image,
   description,
+  descriptionTwo,  
+  projectDate,
+  projectJobTitle,
+  skills,
   model,
   buttonText,
   buttonLink,
@@ -90,14 +94,20 @@ export function ProjectSummary({
           {title}
         </Heading>
         <Text className={styles.date} data-visible={visible} data-weight="medium" as="p">
-          {date}
+          {projectDate}
         </Text>     
         <Text className={styles.job} data-visible={visible} data-weight="regular" data-secondary="true" as="p">
-          {job}
-        </Text>           
+          {projectJobTitle}
+        </Text>             
         <Text className={styles.description} data-visible={visible} as="p">
           {description}
-        </Text>
+        </Text>     
+        <Text className={styles.descriptionTwo} data-visible={visible} as="p">
+          {descriptionTwo}
+        </Text> 
+        <Text className={styles.skills} data-visible={visible} as="p">
+          {skills}
+        </Text>         
         <div className={styles.button} data-visible={visible}>
           <Button iconHoverShift href={buttonLink} iconEnd="arrow-right">
             {buttonText}

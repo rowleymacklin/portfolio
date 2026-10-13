@@ -11,6 +11,13 @@ import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
 
+import volkiharEnderalLarge from '~/assets/volkihar-enderal-large.jpg';
+import volkiharEnderalLogoLarge from '~/assets/volkihar-enderal-logo-large.png';
+import volkiharEnderalLogoPlaceholder from '~/assets/volkihar-enderal-logo-placeholder.png';
+import volkiharEnderalLogo from '~/assets/volkihar-enderal-logo.png';
+import volkiharEnderalPlaceholder from '~/assets/volkihar-enderal-placeholder.jpg';
+import volkiharEnderal from '~/assets/volkihar-enderal.jpg';
+
 import workDebeersPlaceholder from '~/assets/work-debeers-home-large.jpg';
 import workDebeersMedium from '~/assets/work-debeers-home-large.jpg';
 import workDebeersLarge from '~/assets/work-debeers-home-large.jpg';
@@ -67,7 +74,9 @@ import { Profile } from './profile';
 import { Skills } from './skills';
 import { ProjectSummary } from './project-summary';
 import { Image } from '~/components/image';
+import { Button } from '~/components/button';
 import { useEffect, useRef, useState } from 'react';
+import { media } from '~/utils/style';
 import { useScrollToHash, useWindowSize } from '~/hooks';
 import config from '~/config.json';
 import styles from './home.module.css';
@@ -106,8 +115,6 @@ export const Home = () => {
   const Debeers = useRef();   
   const Autosport = useRef(); 
   const Mulberry = useRef(); 
-  const Aviva = useRef(); 
-  const Oasis = useRef(); 
   const Tkmaxx = useRef();  
   const Gucci = useRef(); 
   const Goodyear = useRef(); 
@@ -116,10 +123,10 @@ export const Home = () => {
   const Drmartens = useRef();  
   const Various = useRef();
   const details = useRef();
-  const skills = useRef();  
+  const skills = useRef();
 
   useEffect(() => {
-    const sections = [intro, Debeers, Autosport, Mulberry, Aviva, Oasis, Tkmaxx, Gucci, Goodyear, Sainsburys, Barbour, Drmartens, Various, details, skills];
+    const sections = [intro, Debeers, Autosport, Mulberry, Tkmaxx, Gucci, Goodyear, Sainsburys, Barbour, Drmartens, Various, details, skills];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -154,15 +161,6 @@ export const Home = () => {
     };
   }, [visibleSections]);
 
-
-
-
-
-
-
-
-  
-
   return (
     <div className={styles.home}>
       <Intro
@@ -170,72 +168,6 @@ export const Home = () => {
         sectionRef={intro}
         scrollIndicatorHidden={scrollIndicatorHidden}
       />
-      {/* <ProjectSummary
-        id="project-12"
-        sectionRef={projectTwelve}
-        visible={visibleSections.includes(projectTwelve.current)}
-        index={1}
-        title="Debeers Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
-        model={{
-          type: 'laptop',
-          alt: 'Debeers',
-          textures: [
-            {
-              srcSet: `${workDebeersMedium} 1280w, ${workDebeersLarge} 2560w`,
-              placeholder: workDebeersPlaceholder,
-            },
-          ],
-        }}
-      /> */}
-          
-      {/* <ProjectSummary
-        id="project-3"
-        sectionRef={projectThree}
-        visible={visibleSections.includes(projectThree.current)}
-        index={2}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
-        buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
-        model={{
-          type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
-          textures: [
-            {
-              srcSet: `${sprTexture} 1280w, ${sprTextureLarge} 2560w`,
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
-        }}
-      />
-      <ProjectSummary
-        id="project-22"
-        alternate
-        sectionRef={projectTwentyTwo}
-        visible={visibleSections.includes(projectTwentyTwo.current)}
-        index={3}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.rowleymacklin.com"
-        model={{
-          type: 'phone',
-          alt: 'App login screen',
-          textures: [
-            {
-              srcSet: `${gamestackTexture} 375w, ${gamestackTextureLarge} 750w`,
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
-        }}
-      /> */}
       <ProjectSummary
         id="Debeers"
         sectionRef={Debeers}
@@ -243,8 +175,10 @@ export const Home = () => {
         index={1}
         title="De Beers"
         projectDate="May 2021 - Jul 2026"
-        projectJobTitle="Lead Frontend developer"        
-        description="Primary tasks: Creating responsive, accessible, usable components for campaigns and adding them to the Amplience CMS environment. I also worked on a lot of code optimization locally and within Amplience, introducing Atomic Components to improve content team's workflow, introducing high media compression (image and video) for page performance as well as numerous other tasks."
+        projectJobTitle="Lead Frontend developer"   
+        description="Primary tasks: Creating responsive, accessible, usable components for campaigns and adding them to the Amplience CMS environment. I also worked on a lot of code optimization locally and within Amplience, introducing Atomic Components to improve content team's workflow."
+        descriptionTwo="Proudest of: Optimizing global media by introducing high media compression (image and video) for page performance as well as numerous other tasks. Most image and video file sizes reduced by 45%." 
+        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Media Compression & Optimization | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | Accessible Code/Guidelines | JSON Data | Handlebars Templates | jQuery | JavaScript | Amplience CMS | Bootstrap CSS | Git | CMS Content Editing & Development | Azure Devops | Salesforce | Generative AI Fundamentals | Gulp | Figma | GSAP | Design Patterns & Principles | Problem-solving | Client meetings"
         buttonText="View project"
         buttonLink="/projects/debeers"
         model={{
@@ -257,16 +191,20 @@ export const Home = () => {
             },
           ],
         }}
-      />        
+        
+      /> 
+
       <ProjectSummary
         id="Autosport"
         sectionRef={Autosport}
         visible={visibleSections.includes(Autosport.current)}
         index={2}
         title="Autosport"
-        projectDate="Mar 2019 - Dec 2020"
+        projectDate="Mar 2019 - Feb 2021"
         projectJobTitle="Frontend developer"        
-        description="Initial primary task: Learn the new Piano content experience platform, and help integrate existing content and code into the system. Basically, I had to hit the road running as I'd never used Piano before. After three weeks of intense study and learning the hard way I was up and running.  Other major tasks: I created four powerlist microsites for F1 drivers, awards and power people in the industry."
+        description="Primary tasks: Setup and integrated new components to use the new digital experience platform; Piano content experience platform. Also worked on multiple microsites and existing component re-styling."
+        descriptionTwo="Proudest of: Learning the Piano content experience platform at pace and implementing styling and layout changes within Piano for the content team" 
+        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | jQuery | JavaScript | Git | CMS Content Editing & Development | Gulp | Zeplin | Photoshop | Piano DXP | AMP (Accelerated Mobile Pages) | Attention to Detail | Adaptability | Time Management | Problem Solving | Client Meetings"
         buttonText="View project"
         buttonLink="/projects/autosport"
         model={{
@@ -287,8 +225,10 @@ export const Home = () => {
         index={3}
         title="Mulberry"
         projectDate="Sept 2016 - Dec 2018"
-        projectJobTitle="Frontend developer"        
-        description="Initial primary task: Learn the Amplience CMS, and create a new codebase to add to Amplience. Again, I had to hit the road running as I'd never used Amplience before. After a few weeks of intense study and learning the hard way I was up and running. Other major tasks: I created microsites for the annual Korean fashion show: Eccentric Sensibility Korea Fashion Show"
+        projectJobTitle="Frontend developer"      
+        description="Primary tasks: Set up and integrate all existing and new components for Amplience usage. There was also a lot of work on Microsites for Fashion Week."
+        descriptionTwo="Proudest of: Learning Amplience CMS at pace and creating a new codebase to add to Amplience. I had to hit the road running as I'd never used Amplience before." 
+        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Media Compression & Optimization | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | JSON Data | Handlebars Templates | jQuery | JavaScript | Amplience CMS | Bootstrap CSS | CMS Content Editing & Development | Figma | Problem-solving | Client meetings"
         buttonText="View project"
         buttonLink="/projects/mulberry"
         model={{
@@ -303,58 +243,16 @@ export const Home = () => {
         }}
       />        
       <ProjectSummary
-        id="Aviva"
-        sectionRef={Aviva}
-        visible={visibleSections.includes(Aviva.current)}
-        index={4}
-        title="Aviva Investors"
-        projectDate="September 2016"
-        projectJobTitle="Frontend developer"        
-        description="Microsite: Convert the desktop version of Chinese Economy to a responsive, mobile-first site | Daily global bug fixes and tweaks and regular content updates"
-        buttonText="View project"
-        buttonLink="/projects/aviva"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: `${workAvivaMedium} 800w, ${workAvivaLarge} 1920w`,
-              placeholder: workAvivaPlaceholder,
-            },
-          ],
-        }}
-      />        
-      <ProjectSummary
-        id="Oasis"
-        sectionRef={Oasis}
-        visible={visibleSections.includes(Oasis.current)}
-        index={5}
-        title="Oasis Clothing"
-        projectDate="August 2016"
-        projectJobTitle="Frontend developer"        
-        description="Create responsive components and localised content within demandware | Bug fixing the current live site"
-        buttonText="View project"
-        buttonLink="/projects/oasis"
-        model={{
-          type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: `${workOasisMedium} 800w, ${workOasisLarge} 1920w`,
-              placeholder: workOasisPlaceholder,
-            },
-          ],
-        }}
-      />        
-      <ProjectSummary
         id="Tkmaxx"
         sectionRef={Tkmaxx}
         visible={visibleSections.includes(Tkmaxx.current)}
         index={6}
         title="TKMaxx"
         projectDate="Jan 2016 - Jul 2016"
-        projectJobTitle="Lead frontend developer"        
-        description="Get new front end environment up and running within Hybris, using gulp and git | Co-ordinate front end team tasks and workload in Jira and daily scrums/ stand ups and write a front end best practices document | Create new Hybris components"
+        projectJobTitle="Lead Frontend Developer"        
+        description="Primary tasks: TKMaxx were refreshing their global site to a new Hybris environment. My main role was to setup the front end environment, lead the front end team and create some of the new components. As well as advise various in-house teams on integration and running Hybris."
+        descriptionTwo="Proudest of: For discovery phase and sprint 1 I had to set up the front end environment using Gulp as the task runner and Git as version control within Hybris Accelerator. This was my first time to set everything up myself. A daunting, but enjoyable task." 
+        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | JSON Data | Handlebars Templates | jQuery | JavaScript | Hybris (Now SAP Hybris) | Bootstrap CSS | CMS Content Editing & Development | Figma | Problem-solving | Client meetings"
         buttonText="View project"
         buttonLink="/projects/tkmaxx"
         model={{
@@ -375,8 +273,10 @@ export const Home = () => {
         index={7}
         title="Gucci"
         projectDate="Aug 2014 - Dec 2015"
-        projectJobTitle="Lead frontend developer"        
-        description="Create new Hybris components | Review the static code base (provided by a design agency), clean it up and merge it into Gucci’s new Hybris system | Co-ordinate front end team tasks and workload in Jira and daily scrums/ standups | Bug fixing the current live site"
+        projectJobTitle="Lead Frontend Developer"        
+        description="Primary tasks: Gucci were switching their global site over to a new Hybris environment. My main role was to review the static code provided by the Gucci in-house designers and developers. Then convert them to Hybris working code."
+        descriptionTwo="Proudest of: Optimizing the provided code for efficiency and also for compatability within Hybris. And as a bonus the whole site went live slightly earlier than expected." 
+        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | JSP | TAG Files | jQuery | JavaScript | Hybris (Now SAP Hybris) | Bootstrap CSS | CMS Content Editing & Development | Figma | Problem-solving | Client meetings | Diplomacy | Adaptability | Mentoring | Agile | Code Audits"
         buttonText="View project"
         buttonLink="/projects/gucci"
         model={{
@@ -397,8 +297,10 @@ export const Home = () => {
         index={8}
         title="Goodyear"
         projectDate="Feb 2014 - Aug 2014"
-        projectJobTitle="Frontend developer"        
-        description="Create new Hybris components | Review the static code base (provided by a design agency based in Costa Rica), clean it up and merge it into Goodyear’s new Hybris system | Assist the on-site Boston team with Hybris integration | Bug fixing the current live site"
+        projectJobTitle="Frontend Developer"        
+        description="Primary tasks: Goodyear were switching their global site over to a new Hybris environment. My main role was to review the static code provided by off-shore designers and developers in Costa Rica. Then I integrated the code within Hybris."
+        descriptionTwo="Proudest of: Optimizing the provided code for efficiency. Helping to train all departments in how to work with Hybris Accelerator. And of course, surviving the arctic conditions of mid-Winter Boston." 
+        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | jQuery | JavaScript | Hybris (Now SAP Hybris) | JSP | TAG Files | Bootstrap CSS | CMS Content Editing & Development | Problem-solving | Client meetings | Diplomacy | Adaptability | Mentoring | Agile | Code Audits"
         buttonText="View project"
         buttonLink="/projects/goodyear"
         model={{
@@ -419,8 +321,10 @@ export const Home = () => {
         index={9}
         title="Sainsbury's Tu"
         projectDate="Dec 2013 - Feb 2014"
-        projectJobTitle="Frontend developer"        
-        description="Create and style new Hybris forms and hero components | Bug fixing the current live site"
+        projectJobTitle="Frontend Developer"        
+        description="Primary tasks: I came onboard this project mid-sprint. My main focus for the three sprints was form data. I worked on most of the Sainsbury's Tu forms."
+        descriptionTwo="Proudest of: Producing very functional forms perfectly matching designs and vision." 
+        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Testing & Debugging | jQuery | JavaScript | Hybris (Now SAP Hybris) | JSP | TAG Files | Bootstrap CSS | CMS Content Editing & Development | Problem-solving | Client meetings |  Agile"
         buttonText="View project"
         buttonLink="/projects/sainsburys"
         model={{
@@ -441,8 +345,10 @@ export const Home = () => {
         index={10}
         title="Barbour"
         projectDate="Nov 2013 - Dec 2013"
-        projectJobTitle="Frontend developer"        
-        description="Pre-production bug fixing (Last 2 sprints)"
+        projectJobTitle="Frontend Developer"        
+        description="Primary tasks: I was brought onto this project purely for go-live bug fixing within Hybris."
+        descriptionTwo="Proudest of: Hitting the ground running understanding the project and codebase and fixing many varied bugs: functional, styling, accessbility and optimisation." 
+        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Testing & Debugging | jQuery | JavaScript | Hybris (Now SAP Hybris) | JSP | TAG Files | Bootstrap CSS | CMS Content Editing & Development | Problem-solving | Client meetings |  Agile"
         buttonText="View project"
         buttonLink="/projects/barbour"
         model={{
@@ -462,9 +368,11 @@ export const Home = () => {
         visible={visibleSections.includes(Drmartens.current)}
         index={11}
         title="Dr Marten's"
-        projectDate="Jan 2013 - Nov 2013"
-        projectJobTitle="Designer | Lead front end developer"        
-        description="Create new designs based on wireframes | Create semantic code based on the designs within Hybris & bug fixing"
+        projectDate="May 2013 - Oct 2013"
+        projectJobTitle="Designer | Lead Frontend Developer"        
+        description="Primary tasks: Create new wireframes and designs based on notes and requirements from the client. These were then converted to code directly within Hybris."
+        descriptionTwo="Proudest of: The designs came out really well and was appreciated by the client: focussing on the black and yellows colour theme and large, over-bold text to represent the strangth of Dr Martens footwear. Ultimately the whole project was released to production on time." 
+        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | JSP | TAG Files | jQuery | JavaScript | Hybris (Now SAP Hybris) | Bootstrap CSS | CMS Content Editing & Development | Figma | Problem-solving | Client meetings | Diplomacy | Adaptability | Mentoring | Agile | Photoshop | Illustrator"
         buttonText="View project"
         buttonLink="/projects/drmartens"
         model={{
@@ -484,9 +392,11 @@ export const Home = () => {
         visible={visibleSections.includes(Various.current)}
         index={12}
         title="Various"
-        projectDate="Renaissance - Nov 2012"
-        projectJobTitle="Web designer | Web analyst | Front end developer"        
-        description="Various: web design, web analyst, frontend, print and logo work"
+        projectDate="Jan 2000 - Apr 2013"
+        projectJobTitle="Designer | Web Designer | Web Analyst | Frontend Developer"        
+        description="Primary tasks: These ranged from logo designs to corporate web analysis."
+        descriptionTwo="Proudest of: Working at Cisco Systems was probaly the most impactful role I've ever had, as I learned a whole set of new skillsets. This ranged from meetings etiquette to managing a team of remote developers, as well as real world frontend development within a very large corporation. The work here set me up until now. Also, in hindshight it was interesting creating vanilla CSS without the use of SCSS/ SASS or preprocessors, as this was before SASS they were introduced globally." 
+        skills="CSS | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | Problem-solving | Client meetings | Client Relationship Management | Diplomacy | Adaptability | Mentoring | Agile | Photoshop | ImageReady | Illustrator | Typography Principles | Colour Theory"
         buttonText="View project"
         buttonLink="/projects/various"
         model={{

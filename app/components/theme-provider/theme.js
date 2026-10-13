@@ -11,6 +11,7 @@ const baseTokens = {
   durationL: '600ms',
   durationXL: '800ms',
   durationXXL: '1200ms',
+  durationXXXL: '1600ms',  
   systemFontStack:
     'system-ui, -apple-system, BlinkMacSystemFont, San Francisco, Roboto, Segoe UI, Ubuntu, Helvetica Neue, sans-serif',
   fontStack: `Gotham, var(--systemFontStack)`,
@@ -37,6 +38,7 @@ const baseTokens = {
   fontSizeBodyXXS: pxToRem(12),  
   lineHeightTitle: '1.1',
   lineHeightBody: '1.6',
+  lineHeightBodyHome: '1.4',  
   letterSpacingSpacy: '2px',
   letterSpacingSpacyXL: '4px',  
   maxWidthS: '540px',

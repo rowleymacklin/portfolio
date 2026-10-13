@@ -114,9 +114,6 @@ const SkillsText = ({ visible, titleId }) => (
             Azure Devops
           </ListItem>
           <ListItem>
-            Generative AI Fundamentals
-          </ListItem>
-          <ListItem>
             Sublime
           </ListItem>     
         </List>
@@ -141,7 +138,10 @@ const SkillsText = ({ visible, titleId }) => (
           </ListItem>
           <ListItem>
             Foundation CSS
-          </ListItem>                               
+          </ListItem>    
+          <ListItem>
+            Generative AI Fundamentals
+          </ListItem>                           
         </List>
         <Heading className={styles.title} data-visible={visible} level={6} id={titleId}>
           Basics

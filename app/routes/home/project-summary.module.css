@@ -1,7 +1,7 @@
 .summary {
   height: 100vh;
   width: 100%;
-  max-height: 1080px;
+  max-height: 1280px;
   padding-bottom: var(--spaceL);
   margin: 120px 0;
   position: relative;
@@ -33,7 +33,7 @@
 }
 
 .content {
-  --textColumnWidth: 36%;
+  --textColumnWidth: 40%;
 
   width: 100%;
   max-width: var(--maxWidthL);
@@ -195,7 +195,7 @@
   grid-template-columns: 90px 1fr;
   gap: var(--spaceM);
   align-items: center;
-  margin-bottom: var(--space2XL);
+  margin-bottom: var(--spaceL);
 }
 
 .indexNumber {
@@ -226,6 +226,7 @@
   transition-duration: var(--durationXL);
   transition-delay: var(--durationM);
   opacity: 0;
+  margin-left: -3px;
 
   @media (--mediaUseMotion) {
     transition-property: transform, opacity;
@@ -240,13 +241,18 @@
 
 .projectDateDescription,
 .projectJobTitleDescription,
-.description {
+.description,
+.descriptionTwo,
+.date,
+.job,
+.skills {
   margin-bottom: var(--spaceXS);
   transition-property: opacity;
   transition-timing-function: var(--bezierFastoutSlowin);
   transition-duration: var(--durationXL);
   transition-delay: var(--durationL);
   opacity: 0;
+  display: inline-block;
 
   @media (--mediaUseMotion) {
     transition-property: transform, opacity;
@@ -259,6 +265,41 @@
   }
 }
 
+
+
+.date {
+  display: block;
+  font-weight: var(--fontWeightMedium);
+  letter-spacing: 4px;
+  font-size: var(--fontSizeBodyS);
+  margin-bottom: 0;
+}
+
+.job {
+    display: block;
+    font-weight: var(--fontWeightNormal);
+    letter-spacing: 0;
+    font-size: var(--fontSizeBodyS);
+    margin-bottom: var(--spaceXL);
+}
+
+.skills {
+    width: 80%;
+    display: block;
+    margin-top: var(--spaceM);
+    font-size: var(--fontSizeBody3XS);
+    text-transform: uppercase;
+    font-size: 0.688rem;
+
+  transition-duration: var(--durationXL);
+  transition-delay: var(--durationXXL);
+
+  @media (--mediaUseMotion) {
+    transform: translate3d(0, var(--spaceL), 0);
+  }
+
+}
+
 .projectDateDescription {
   margin-bottom: var(--spaceXS);
   letter-spacing: var(--letterSpacingSpacyXL);
@@ -267,22 +308,42 @@
 
 .projectJobTitleDescription {
   margin-bottom: var(--spaceM);
-    font-size: var(--fontSizeBodyS);
-}
-
-.description {
-  margin-bottom: var(--space2XL);
   font-size: var(--fontSizeBodyS);
 }
 
+.description {
+  margin-bottom: var(--spaceS);
+  font-size: var(--fontSizeBodyS);
+  line-height: var(--lineHeightBodyHome);
+
+  transition-duration: var(--durationXL);
+  transition-delay: var(--durationXL);
+
+  @media (--mediaUseMotion) {
+    transform: translate3d(0, var(--spaceL), 0);
+  }
+}
+
+.descriptionTwo {
+  margin-bottom: var(--spaceM);
+  font-size: var(--fontSizeBodyS);
+  line-height: var(--lineHeightBodyHome);
+  transition-duration: var(--durationXL);
+  transition-delay: var(--durationXL);
+
+  @media (--mediaUseMotion) {
+    transform: translate3d(0, var(--spaceL), 0);
+  }
+}
 
 .button {
   transition-property: opacity;
   transition-timing-function: var(--bezierFastoutSlowin);
   transition-duration: var(--durationXL);
-  transition-delay: var(--durationXL);
+  transition-delay: var(--durationXXXL);
   transform: translate3d(0, var(--spaceL), 0);
   opacity: 0;
+  margin-top: var(--space2XL);
 
   @media (--mediaUseMotion) {
     transition-property: transform, opacity;

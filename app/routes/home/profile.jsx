@@ -24,16 +24,13 @@ const ProfileText = ({ visible, titleId }) => (
       Hello, I'm Rowley, a frontend developer, currently located in sunny, tropical Watford. I love the work I do and the constantly evolving industry I work in, that always keeps me on my toes and challenges me. I'm pretty experienced with at least 20 years of front end work.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      If I’m totally honest with my job title I’d say I lean more towards ‘visual’ front end developer. Although I love working with the more programmatic languages like JS and jQuery and always want to improve myself, my passion really is how pages and components look and feel for the end user.
+      If I’m totally honest with my job title I’d say I lean more towards ‘visual’ frontend developer. Although I love working with the more programmatic languages like JS and jQuery and always want to improve myself, my passion really is how pages and components look and feel for the end user.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       I’m full of energy, experience, hard work, enthusiasm, ideas, great interpersonal skills and a relaxed temperament.
     </Text>    
     <Text className={styles.description} data-visible={visible} size="l" as="p">
       In my spare time I like to go to the gym, watch new and old films and I read a lot. My reading taste usually goes through phases. Last month I went through a Colombian magic realism phase, reading three of Gabriel García Márquez's outstanding books. This month I'm reading an interesting post-apocalyptic series of books by Alex Scarrow, called the Last Light and Afterlight.
-    </Text>
-    <Text className={styles.description} data-visible={visible} size="l" as="p">
-      If you're interested in travel or some random facts about me, check out my <Link href="/random">random</Link> page. 
     </Text>
   </Fragment>
 );

@@ -118,13 +118,45 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                   >
                     <div>
                       <span>
+                        Available:
+                      </span>
+                      <span>
+                        01/11/2026
+                      </span>                      
+                    </div>
+                  </span>
+                </span>
+                <span aria-hidden className={styles.rowFour}>
+                  <span
+                    className={styles.word}
+                    data-status={status}
+                    style={cssProps({ delay: tokens.base.durationXL })}
+                  >
+                    <div>
+                      <span>
+                        Location:
+                      </span>
+                      <span>
+                        Watford, Hertfordshire
+                      </span>                      
+                    </div>
+                  </span>
+                </span>   
+                <span aria-hidden className={styles.rowFive}>
+                  <span
+                    className={styles.word}
+                    data-status={status}
+                    style={cssProps({ delay: tokens.base.durationXL })}
+                  >
+                    <div>
+                      <span>
                         Hello, I'm Rowley and I build pixel-perfect, interactive, and accessible user interfaces. 
                         I specialize in the sweet spot between design and code, turning wireframes and designs into 
                         beautifully smooth web experiences. I also have a huge amount of experience working with various CMSs.
                       </span>
                     </div>
                   </span>
-                </span>
+                </span>                                
               </Heading>
             </header>
             <RouterLink
