@@ -143,55 +143,10 @@ export const Gucci = () => {
               width={1280}
               height={800}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="Gucci Project Collage Of Components Created Within Hybris"
             />
           </ProjectSectionContent>
         </ProjectSection>
-
-
-
-        <ProjectSection>
-          <ProjectSectionColumns>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Create new Hybris components</ProjectSectionHeading>
-                <ProjectSectionText>
-                  As I was the lead on this project I wasn't very hands-on, but I did work on a few of the new components to help the team out: the homepage hero component, mega menu navigation (responsive), footer layout, header navigation icons, PDP layout and global bug fixing.
-                </ProjectSectionText>
-                <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
-                <ProjectSectionText>
-                  Gucci were understandably extremely particular on designs and how the site looked visually. Even once completed, a lot of the components had to be re-worked, based on new designs. This wasn't in any way unique to Gucci, but proved challenging after every sprint. Some of the bug fixes proved very tricky; especially one where the parallaxing product card stuttered on scroll. The fix was to make sure images were properly optimised for loading.
-                </ProjectSectionText>
-                <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
-                <ProjectSectionText>
-                  The mega menu was especially challenging, so I was particularly pleased it worked and looked great on mobile and desktop. All in all this was my favourite project to work on, not only because of Gucci being such a well known brand, but because it was the most challenging from start to production.
-                </ProjectSectionText>       
-              </ProjectTextRow>
-            </ProjectSectionContent>
-            <div className={styles.sidebarImages}>
-              <Image
-                className={styles.sidebarImage}
-                src={imageGucciComponentsImageTwo}
-                srcSet={`${imageGucciComponentsImageTwo} 1080w, ${imageGucciComponentsImageTwoLarge} 2160w`}
-                placeholder={imageGucciComponentsImageTwoPlaceholder}
-                width={260}
-                height={660}
-                alt="Configuration options for a component."
-                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
-              />              
-              <Image
-                className={styles.sidebarImage}
-                src={imageGucciComponentsImageOne}
-                srcSet={`${imageGucciComponentsImageOne} 1080w, ${imageGucciComponentsImageOneLarge} 2160w`}
-                placeholder={imageGucciComponentsImageOnePlaceholder}
-                width={260}
-                height={660}
-                alt="Configuration options for a component."
-                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
-              />
-            </div>
-          </ProjectSectionColumns>
-        </ProjectSection>   
 
 
       <ThemeProvider theme="dark" data-invert>
@@ -223,8 +178,6 @@ export const Gucci = () => {
                 </ProjectSectionText>                                                                                  
               </ProjectTextRow>
             </ProjectSectionContent>
-
-
             <ProjectSectionContent>
               <ProjectTextRow>
                 <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
@@ -236,8 +189,7 @@ export const Gucci = () => {
                 </ProjectSectionText>  
                 <ProjectSectionText>
                   Spending time at the Gucci HQ in Florence, Italy
-                </ProjectSectionText>                                      
-                    
+                </ProjectSectionText>     
               </ProjectTextRow>
             </ProjectSectionContent>
           </ProjectSectionColumnsTextOnly>
@@ -245,9 +197,48 @@ export const Gucci = () => {
       </ThemeProvider> 
 
 
-
-
-
+        <ProjectSection>
+          <ProjectSectionColumns>
+            <ProjectSectionContent>
+              <ProjectTextRow>
+                <ProjectSectionHeading>Create new Hybris components</ProjectSectionHeading>
+                <ProjectSectionText>
+                  As I was the lead on this project I wasn't very hands-on, but I did work on a few of the new components to help the team out: the homepage hero component, mega menu navigation (responsive), footer layout, header navigation icons, PDP layout and global bug fixing.
+                </ProjectSectionText>
+                <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
+                <ProjectSectionText>
+                  Gucci were understandably extremely particular on designs and how the site looked visually. Even once completed, a lot of the components had to be re-worked, based on new designs. This wasn't in any way unique to Gucci, but proved challenging after every sprint. Some of the bug fixes proved very tricky; especially one where the parallaxing product card stuttered on scroll. The fix was to make sure images were properly optimised for loading.
+                </ProjectSectionText>
+                <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
+                <ProjectSectionText>
+                  The mega menu was especially challenging, so I was particularly pleased it worked and looked great on mobile and desktop. All in all this was my favourite project to work on, not only because of Gucci being such a well known brand, but because it was the most challenging from start to production.
+                </ProjectSectionText>       
+              </ProjectTextRow>
+            </ProjectSectionContent>
+            <div className={styles.sidebarImages}>
+              <Image
+                className={styles.sidebarImage}
+                src={imageGucciComponentsImageTwo}
+                srcSet={`${imageGucciComponentsImageTwo} 1080w, ${imageGucciComponentsImageTwoLarge} 2160w`}
+                placeholder={imageGucciComponentsImageTwoPlaceholder}
+                width={260}
+                height={660}
+                alt="Gucci Project Example of Homepage With Hero and Product Link"
+                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
+              />              
+              <Image
+                className={styles.sidebarImage}
+                src={imageGucciComponentsImageOne}
+                srcSet={`${imageGucciComponentsImageOne} 1080w, ${imageGucciComponentsImageOneLarge} 2160w`}
+                placeholder={imageGucciComponentsImageOnePlaceholder}
+                width={260}
+                height={660}
+                alt="Gucci Project Example of Hero Carousel"
+                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
+              />
+            </div>
+          </ProjectSectionColumns>
+        </ProjectSection>   
 
       </ProjectContainer>
       <Footer />

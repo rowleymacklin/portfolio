@@ -157,6 +157,115 @@ export const Various = () => {
         </ProjectSection>
 
 
+      <ThemeProvider theme="dark" data-invert>
+            <ProjectSection
+            backgroundOverlayOpacity={0.5}
+            backgroundElement={
+              <Image
+                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
+                width={1280}
+                height={900}
+                placeholder={imageSprBackgroundVolcanismPlaceholder}
+                alt="Collage of Various Design, Web Design and Frontend Work"
+                sizes="100vw"
+              />
+            }
+          >
+          <ProjectSectionColumnsTextOnly>
+            <ProjectSectionContent>
+              <ProjectTextRow>
+                <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
+                <ProjectSectionText>
+                  2012: eValue/Aviva - Frontend Developer
+                </ProjectSectionText>
+                <ProjectSectionText>
+                  2012: Blackberry - Frontend Developer
+                </ProjectSectionText>  
+                <ProjectSectionText>
+                  2012: M&G/ Man Group - Designer and Frontend Developer
+                </ProjectSectionText>     
+                <ProjectSectionText>
+                  2012: Financial Express - Designer and Frontend Developer
+                </ProjectSectionText>      
+                <ProjectSectionText>
+                  2011: Dorset Cereals - Frontend Developer
+                </ProjectSectionText>   
+                <ProjectSectionText>
+                  2011: Peugeot 508 - Frontend Developer
+                </ProjectSectionText>      
+                <ProjectSectionText>
+                  2011: Kellogg’s Coco Pops - Frontend Developer
+                </ProjectSectionText>     
+                <ProjectSectionText>
+                  2011: Luna Di Miele - Designer and Frontend Developer
+                </ProjectSectionText>      
+                <ProjectSectionText>
+                  2010: Rated People - Frontend Developer
+                </ProjectSectionText>    
+                <ProjectSectionText>
+                  2009: Africasolo - Frontend Developer
+                </ProjectSectionText>      
+                <ProjectSectionText>
+                  2008: Rolls Round the World - Frontend Developer and Travel
+                </ProjectSectionText>    
+                <ProjectSectionText>
+                  2005: Cisco Systems - Designer, Frontend Developer, Web Analyst
+                </ProjectSectionText>   
+                <ProjectSectionText>
+                  2004: Diginuts - Frontend Developer
+                </ProjectSectionText>   
+                <ProjectSectionText>
+                  2004: Laura Carstensen - Frontend Developer
+                </ProjectSectionText>   
+                <ProjectSectionText>
+                  2003: PW Finlayson - Designer
+                </ProjectSectionText>   
+                <ProjectSectionText>
+                  2003: Football Mitoo - Logo Designer
+                </ProjectSectionText>    
+                <ProjectSectionText>
+                  2002: Edible Systems - Logo Designer
+                </ProjectSectionText>  
+                <ProjectSectionText>
+                  2002: L Jalley & Co - Logo Designer
+                </ProjectSectionText>  
+                <ProjectSectionText>
+                  2002: Supply Serve - Designer and Web Designer
+                </ProjectSectionText>                  
+                <ProjectSectionText>
+                  2001: Nikkei NEEDS - Web Designer
+                </ProjectSectionText>                  
+                <ProjectSectionText>
+                  2001: NHK Japan - Web Designer
+                </ProjectSectionText>   
+                <ProjectSectionText>
+                  2000: Portobello Festival - Designer and Web Designer
+                </ProjectSectionText>                                                                 
+              </ProjectTextRow>
+            </ProjectSectionContent>
+
+            <ProjectSectionContent>
+              <ProjectTextRow>
+                <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
+                <ProjectSectionText>
+                  My first ever foray into design and web design, creating the 2000 Portobello Festival site.
+                </ProjectSectionText>
+                <ProjectSectionText>
+                  I enjoyed the simplicity of designing logos for clients. Simple in concept but probably more challenging than any other design as you have bring across a message with a few letters and maybe a graphic.
+                </ProjectSectionText>   
+                <ProjectSectionText>
+                  Producing graphics and websites for clients, which the clients' were very happy with and I was very proud of them as a junior designer
+                </ProjectSectionText>  
+                <ProjectSectionText>
+                  Working at Cisco Systems was probaly the most impactful role I've ever had, as I learned a whole set of new skillsets. This ranged from meetings etiquette to managing a team of remote developers, as well as real world frontend development within a very large corporation. The work here set me up until now. Also, in hindshight it was interesting creating vanilla CSS without the use of SCSS/ SASS or preprocessors, as this was before they were introduced globally.
+                </ProjectSectionText>                     
+                    
+              </ProjectTextRow>
+            </ProjectSectionContent>
+          </ProjectSectionColumnsTextOnly>
+        </ProjectSection>  
+      </ThemeProvider> 
+
         <ProjectSection>
           <ProjectSectionColumns>
             <ProjectSectionContent>
@@ -183,7 +292,7 @@ export const Various = () => {
                 placeholder={imageVariousDesignImageTwoPlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Blackberry Example of new Homepage Showing Special Offer"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
@@ -193,7 +302,7 @@ export const Various = () => {
                 placeholder={imageVariousDesignImageOnePlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Cisco Example of new Homepage Showing Hero Component"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
             </div>
@@ -227,7 +336,7 @@ export const Various = () => {
                 placeholder={imageVariousPrintImageTwoPlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Collection of New Leaflet Designs For Financial Express and P.W. Finlayson"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
@@ -237,121 +346,12 @@ export const Various = () => {
                 placeholder={imageVariousPrintImageOnePlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Collection of New Logo Designs"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
             </div>
           </ProjectSectionColumns>
         </ProjectSection>   
-
-
-
-
-      <ThemeProvider theme="dark" data-invert>
-            <ProjectSection
-            backgroundOverlayOpacity={0.5}
-            backgroundElement={
-              <Image
-                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
-                width={1280}
-                height={900}
-                placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
-                sizes="100vw"
-              />
-            }
-          >
-          <ProjectSectionColumnsTextOnly>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
-                <ProjectSectionText>
-                  2012 - eValue/Aviva - front end developer
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  2012 - Blackberry - front end developer
-                </ProjectSectionText>  
-                <ProjectSectionText>
-                  2012 - M&G/ Man Group - design & front end work
-                </ProjectSectionText>     
-                <ProjectSectionText>
-                  2012 - Financial Express - leaflet design
-                </ProjectSectionText>      
-                <ProjectSectionText>
-                  2011 - Dorset Cereals - front end developer
-                </ProjectSectionText>   
-                <ProjectSectionText>
-                  2011 - Peugeot 508 - front end developer
-                </ProjectSectionText>      
-                <ProjectSectionText>
-                  2011 - Kellogg’s Coco Pops - front end developer
-                </ProjectSectionText>     
-                <ProjectSectionText>
-                  2011 - Luna Di Miele - logo design
-                </ProjectSectionText>      
-                <ProjectSectionText>
-                  2010 - Rated People - front end developer
-                </ProjectSectionText>    
-                <ProjectSectionText>
-                  2009 - Africasolo - front end developer
-                </ProjectSectionText>      
-                <ProjectSectionText>
-                  2008 - Rolls Round the World - front end developer & travel
-                </ProjectSectionText>    
-                <ProjectSectionText>
-                  2005 - Cisco Systems - designer/ web analyst
-                </ProjectSectionText>   
-                <ProjectSectionText>
-                  2004 - Diginuts - front end developer
-                </ProjectSectionText>   
-                <ProjectSectionText>
-                  2004 - Laura Carstensen - front end developer
-                </ProjectSectionText>   
-                <ProjectSectionText>
-                  2003 - PW Finlayson - leaflet design & logo design
-                </ProjectSectionText>   
-                <ProjectSectionText>
-                  2003 - Football Mitoo - logo design
-                </ProjectSectionText>    
-                <ProjectSectionText>
-                  2002 - Edible Systems - logo design
-                </ProjectSectionText>  
-                <ProjectSectionText>
-                  2002 - L Jalley & Co - logo design
-                </ProjectSectionText>  
-                <ProjectSectionText>
-                  2001 - Nikkei NEEDS - front end developer
-                </ProjectSectionText>                  
-                <ProjectSectionText>
-                  2001 - NHK Japan - front end developer
-                </ProjectSectionText>   
-                <ProjectSectionText>
-                  2000 - Portobello Festival - front end developer
-                </ProjectSectionText>                                                                 
-              </ProjectTextRow>
-            </ProjectSectionContent>
-
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
-                <ProjectSectionText>
-                  My first ever foray into design and web design, creating the 2000 Portobello Festival site.
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  I enjoyed the simplicity of designing logos for clients. Simple in concept but probably more challenging than any other design as you have bring across a message with a few letters and maybe a graphic.
-                </ProjectSectionText>   
-                <ProjectSectionText>
-                  Producing graphics and websites for clients, which the clients' were very happy with and I was very proud of them as a junior designer
-                </ProjectSectionText>  
-                <ProjectSectionText>
-                  Working at Cisco Systems was probaly the most impactful role I've ever had, as I learned a whole set of new skillsets. This ranged from meetings etiquette to managing a team of remote developers, as well as real world frontend development within a very large corporation. The work here set me up until now. Also, in hindshight it was interesting creating vanilla CSS without the use of SCSS/ SASS or preprocessors, as this was before they were introduced globally.
-                </ProjectSectionText>                     
-                    
-              </ProjectTextRow>
-            </ProjectSectionContent>
-          </ProjectSectionColumnsTextOnly>
-        </ProjectSection>  
-        </ThemeProvider> 
 
       </ProjectContainer>
       <Footer />

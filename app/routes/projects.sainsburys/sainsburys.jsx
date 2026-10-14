@@ -140,10 +140,49 @@ export const Sainsburys = () => {
               width={1280}
               height={800}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="Sainsbury's Tu Collage of New Components Including Online Forms"
             />
           </ProjectSectionContent>
         </ProjectSection>
+
+        <ThemeProvider theme="dark" data-invert>
+          <ProjectSection
+              backgroundOverlayOpacity={0.5}
+              backgroundElement={
+                <Image
+                  srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
+                  width={1280}
+                  height={900}
+                  placeholder={imageSprBackgroundVolcanismPlaceholder}
+                  alt="A dramatic ocean scene with lava forming a new land mass."
+                  sizes="100vw"
+                />
+              }
+            >
+            <ProjectSectionColumnsTextOnly>
+              <ProjectSectionContent>
+                <ProjectTextRow>
+                  <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    I came onboard this project mid-sprint. My main focus for the three sprints was form data. I worked on most of the Sainsbury's Tu forms.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Regular meetings with various teams: design, backend Hybris developers, business analysts, client, third-party design and developer agency. The main focus was clarifications, estimates, expectations and workloads
+                  </ProjectSectionText>                                                                                  
+                </ProjectTextRow>
+              </ProjectSectionContent>
+              <ProjectSectionContent>
+                <ProjectTextRow>
+                  <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    Producing very functional, semantic and accessible forms which perfectly matched designs and vision.
+                  </ProjectSectionText>
+                </ProjectTextRow>
+              </ProjectSectionContent>
+            </ProjectSectionColumnsTextOnly>
+          </ProjectSection>  
+        </ThemeProvider> 
+
 
         <ProjectSection>
           <ProjectSectionColumns>
@@ -171,7 +210,7 @@ export const Sainsburys = () => {
                 placeholder={imageSainsburysFormsImageTwoPlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Sainsbury's Tu New Home Page With Navigation and Hero Banner"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
@@ -181,51 +220,12 @@ export const Sainsburys = () => {
                 placeholder={imageSainsburysFormsImageOnePlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Sainsbury's Tu New Register Form"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
             </div>
           </ProjectSectionColumns>
         </ProjectSection>  
-
-
-      <ThemeProvider theme="dark" data-invert>
-        <ProjectSection
-            backgroundOverlayOpacity={0.5}
-            backgroundElement={
-              <Image
-                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
-                width={1280}
-                height={900}
-                placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
-                sizes="100vw"
-              />
-            }
-          >
-          <ProjectSectionColumnsTextOnly>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
-                <ProjectSectionText>
-                  I came onboard this project mid-sprint. My main focus for the three sprints was form data. I worked on most of the Sainsbury's Tu forms.
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  Regular meetings with various teams: design, backend Hybris developers, business analysts, client, third-party design and developer agency. The main focus was clarifications, estimates, expectations and workloads
-                </ProjectSectionText>                                                                                  
-              </ProjectTextRow>
-            </ProjectSectionContent>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
-                <ProjectSectionText>
-                  Producing very functional, semantic and accessible forms which perfectly matched designs and vision.
-                </ProjectSectionText>
-              </ProjectTextRow>
-            </ProjectSectionContent>
-          </ProjectSectionColumnsTextOnly>
-        </ProjectSection>  
-      </ThemeProvider> 
 
 
       </ProjectContainer>

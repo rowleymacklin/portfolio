@@ -183,7 +183,7 @@ export const Home = () => {
         buttonLink="/projects/debeers"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'DeBeers Lotus Campaign',
           textures: [
             {
               srcSet: `${workDebeersMedium} 800w, ${workDebeersLarge} 1920w`,
@@ -209,7 +209,7 @@ export const Home = () => {
         buttonLink="/projects/autosport"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Autosport Homepage',
           textures: [
             {
               srcSet: `${workAutosportMedium} 800w, ${workAutosportLarge} 1920w`,
@@ -233,7 +233,7 @@ export const Home = () => {
         buttonLink="/projects/mulberry"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Mulberry Homepage',
           textures: [
             {
               srcSet: `${workMulberryMedium} 800w, ${workMulberryLarge} 1920w`,
@@ -257,7 +257,7 @@ export const Home = () => {
         buttonLink="/projects/tkmaxx"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'TKMaxx Homepage',
           textures: [
             {
               srcSet: `${workTkmaxxMedium} 800w, ${workTkmaxxLarge} 1920w`,
@@ -281,7 +281,7 @@ export const Home = () => {
         buttonLink="/projects/gucci"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Gucci Homepage',
           textures: [
             {
               srcSet: `${workGucciMedium} 800w, ${workGucciLarge} 1920w`,
@@ -305,7 +305,7 @@ export const Home = () => {
         buttonLink="/projects/goodyear"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Goodyear Homepage',
           textures: [
             {
               srcSet: `${workGoodyearMedium} 800w, ${workGoodyearLarge} 1920w`,
@@ -329,7 +329,7 @@ export const Home = () => {
         buttonLink="/projects/sainsburys"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: "Sainsbury's Tu Homepage",
           textures: [
             {
               srcSet: `${workSainsburysMedium} 800w, ${workSainsburysLarge} 1920w`,
@@ -353,7 +353,7 @@ export const Home = () => {
         buttonLink="/projects/barbour"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Burberry Homepage',
           textures: [
             {
               srcSet: `${workBarbourMedium} 800w, ${workBarbourLarge} 1920w`,
@@ -367,7 +367,7 @@ export const Home = () => {
         sectionRef={Drmartens}
         visible={visibleSections.includes(Drmartens.current)}
         index={11}
-        title="Dr Marten's"
+        title="Dr Martens"
         projectDate="May 2013 - Oct 2013"
         projectJobTitle="Designer | Lead Frontend Developer"        
         description="Primary tasks: Create new wireframes and designs based on notes and requirements from the client. These were then converted to code directly within Hybris."
@@ -377,7 +377,7 @@ export const Home = () => {
         buttonLink="/projects/drmartens"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Dr Martens Homepage',
           textures: [
             {
               srcSet: `${workdrmartensMedium} 800w, ${workdrmartensLarge} 1920w`,
@@ -401,7 +401,7 @@ export const Home = () => {
         buttonLink="/projects/various"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Various Projects Collage',
           textures: [
             {
               srcSet: `${workVariousMedium} 800w, ${workVariousLarge} 1920w`,

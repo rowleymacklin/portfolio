@@ -137,7 +137,7 @@ export const Drmartens = () => {
               width={1280}
               height={800}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="Dr Martens Collage of Various Components and Design"
             />
           </ProjectSectionContent>
         </ProjectSection>
@@ -170,7 +170,7 @@ export const Drmartens = () => {
                 placeholder={imageDrMartensImageTwoPlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Dr Martens Example of New Homepage Showing New Product Listing Page"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
@@ -180,7 +180,7 @@ export const Drmartens = () => {
                 placeholder={imageDrMartensImageOnePlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Dr Martens Example of New Homepage Showing New Hero Product Carousel"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
             </div>

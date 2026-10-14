@@ -10,9 +10,16 @@ import { media } from '~/utils/style';
 import profileImgLarge from '~/assets/book-cover.jpg';
 import profileImgPlaceholder from '~/assets/book-cover.jpg';
 import profileImg from '~/assets/book-cover.jpg';
+
+import photoFooterBackground from '~/assets/photo-tayrona-beach.jpg';
+
 import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-large.jpg';
 import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from '~/assets/spr-background-volcanism.jpg';
+
+import imageSprBackgroundVolcanismDarkLarge from '~/assets/spr-background-volcanism-dark-large.jpg';
+import imageSprBackgroundVolcanismDarkPlaceholder from '~/assets/spr-background-volcanism-dark-placeholder.jpg';
+import imageSprBackgroundVolcanismDark from '~/assets/spr-background-volcanism-dark.jpg';
 
 import { ThemeProvider, useTheme } from '~/components/theme-provider';
 import {
@@ -66,20 +73,21 @@ export const Footer = ({ className }) => (
   //   </Text>
   // </footer>
   
-      <ThemeProvider theme="dark" data-invert>
-            <ProjectSection
-            backgroundOverlayOpacity={0.5}
+    <ThemeProvider theme="dark" data-invert>
+        <ProjectSection
+            backgroundOverlayOpacity={0.99}
+            className={styles.footerSectionContainer}
             backgroundElement={
-              <Image
-                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
-                width={1280}
-                height={900}
-                placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
-                sizes="100vw"
-              />
+                <Image
+                    srcSet={`${photoFooterBackground} 1280w, ${photoFooterBackground} 2560w`}
+                    width={1280}
+                    height={900}
+                    placeholder={photoFooterBackground}
+                    alt="Photo of Tyrona National Park - Shot By Rowley Macklin"
+                    sizes="100vw"
+                />
             }
-          >
+        >
       <footer className={classes(styles.footer, className)}>
         <div className={styles.footerContainer}>
             <div className={styles.footerMain}>
@@ -112,7 +120,7 @@ export const Footer = ({ className }) => (
                         In the very distant past I've lived and traveled extensively in Africa. And in 2007 travelled throughout North America, Mexico, Central America, South America, South-east Asia and Oceania.
                     </p>
                     <p>
-                        I did write a travel diary book called <Link className={styles.inlineLink}href="https://rowleymacklin.com/rollsroundtheworld/">Rolls Round the World</Link>, based on my backpacking trip around the World in 2007. It’s ranked an astonishingly modest #7,497,357 in books, and #36,427 in travel writing books on Amazon (perfectly understandable, as the reviews aren’t exactly shining).
+                        I did write a travel diary book called <Link className={styles.inlineLink}href="https://rowleymacklin.com/rollsroundtheworld/">Rolls Round the World</Link>, based on my backpacking trip around the World in 2007. It’s ranked an astonishingly modest #7,497,357 in books, and #36,427 in travel writing books on Amazon.
                     </p>
                     <div className={styles.image}>
                         <Image
@@ -123,7 +131,7 @@ export const Footer = ({ className }) => (
                             width={960}
                             height={1280}
                             sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                            alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                            alt="Roll's Round the World Book Cover - Rowley Standing Reading Map"
                         />
                     </div>                    
                 </div>                
@@ -141,8 +149,6 @@ export const Footer = ({ className }) => (
                             <li>Lists </li>
                             <li>Mango shakes</li>
                             <li>Thai Food</li>
-                            <li>70’s guilty pleasures music</li>
-                            <li>Tea (Milk & half a sugar)</li>
                         </ul>
                     </div>
                     <div className={styles.footerLikesDislikesItem}>
@@ -190,6 +196,7 @@ export const Footer = ({ className }) => (
                             <li>Reading </li>
                             <li>Good & Bad films</li>
                             <li>Music and Music History</li>
+                            <li>World of Warcraft (When time allows)</li>
                         </ul>
                     </div>
                     <div className={styles.footerLikesDislikesItem}>
@@ -224,7 +231,7 @@ export const Footer = ({ className }) => (
                             <li>Gabriel García Márquez: One Hundred Years of Solitude</li>
                             <li>J. R. R. Tolkien: The Lord of the Rings Trilogy</li>
                             <li>Hugh Cook: The Werewolf and the Wormlord</li>
-                            <li>Alexandre Dumas: The Three Musketeers</li>
+                            <li>Joe Abercrombie: The First Law trilogy</li>
                             <li>John Keegan: Second World War</li>
                         </ul>
                     </div>                                      
@@ -237,7 +244,7 @@ export const Footer = ({ className }) => (
                       {`© ${new Date().getFullYear()} ${config.name}.`}
                     </span>
                     <Link secondary className={styles.link} href="/humans.txt" target="_self">
-                      Crafted by yours truly
+                      Re-design by Rowley Macklin
                     </Link>
                   </Text>
                 <div className={styles.footerPortfolioArchive}>

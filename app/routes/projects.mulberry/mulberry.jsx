@@ -163,11 +163,60 @@ export const Mulberry = () => {
               width={1280}
               height={800}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="Mulberry Various Projects Collage"
             />
           </ProjectSectionContent>
         </ProjectSection>
 
+        <ThemeProvider theme="dark" data-invert>
+          <ProjectSection
+              backgroundOverlayOpacity={0.5}
+              backgroundElement={
+                <Image
+                  srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
+                  width={1280}
+                  height={900}
+                  placeholder={imageSprBackgroundVolcanismPlaceholder}
+                  alt="A dramatic ocean scene with lava forming a new land mass."
+                  sizes="100vw"
+                />
+              }
+            >
+            <ProjectSectionColumnsTextOnly>
+              <ProjectSectionContent>
+                <ProjectTextRow>
+                  <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    Set up and integrate all current + new Amplience components
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Create new micro site + live updates for the Eccentric Sensibility Korea Fashion Show
+                  </ProjectSectionText>  
+                  <ProjectSectionText>
+                    Re-styled the pre-Amplience site: Wish list, Global Header, Secondary Header, Videos and PLP
+                  </ProjectSectionText>     
+                  <ProjectSectionText>
+                    Overhauled the localized fonts: Latin vs. Asian font rendering
+                  </ProjectSectionText>      
+                  <ProjectSectionText>
+                    Regular meetings with various teams: design, PM, business analysts, client, third-party design agency. The main focus was clarification, estimates, expectations and workloads
+                  </ProjectSectionText>                                                                                  
+                </ProjectTextRow>
+              </ProjectSectionContent>
+              <ProjectSectionContent>
+                <ProjectTextRow>
+                  <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    Learning Amplience at pace
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Training developers and marketing team in Amplience content editing
+                  </ProjectSectionText>    
+                </ProjectTextRow>
+              </ProjectSectionContent>
+            </ProjectSectionColumnsTextOnly>
+          </ProjectSection>  
+        </ThemeProvider> 
 
         <ProjectSection>
           <ProjectSectionColumns>
@@ -175,7 +224,7 @@ export const Mulberry = () => {
               <ProjectTextRow>
                 <ProjectSectionHeading>Setup and integrate new Amplience CMS Dynamic Content</ProjectSectionHeading>
                 <ProjectSectionText>
-                  As Mulberry wanted to update their content via Amplience I set up the Amplience Headless CMS Dynamic Content. I created the styled and functional components for the Mulberry content and marketing team so they could edit content live via Amplience. This included various image layouts, text layouts, videos, carousels, grids, heros and banners.
+                  As Mulberry wanted to update their content via Amplience I set up the Amplience CMS Dynamic Content. I created the styled and functional components for the Mulberry content and marketing team so they could edit content live via Amplience. This included various image layouts, text layouts, videos, carousels, grids, heroes and banners.
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
                 <ProjectSectionText>
@@ -195,7 +244,7 @@ export const Mulberry = () => {
                 placeholder={imageMulberryAmplienceImageTwoPlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Mulberry New Product Listing Page Example"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
@@ -205,7 +254,7 @@ export const Mulberry = () => {
                 placeholder={imageMulberryAmplienceImageOnePlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Mulberry New Product Page Showing Alexa Bag"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
             </div>
@@ -238,7 +287,7 @@ export const Mulberry = () => {
                 placeholder={imageMulberryEccentricImageTwoPlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Mulberry Annual Eccentric Sensibility Korea Fashion Show Gallery Page"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
@@ -248,7 +297,7 @@ export const Mulberry = () => {
                 placeholder={imageMulberryEccentricImageOnePlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Mulberry Annual Eccentric Sensibility Korea Fashion Show Landing Page"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
             </div>
@@ -283,7 +332,7 @@ export const Mulberry = () => {
                 placeholder={imageMulberryGlobalImageTwoPlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Mulberry New Product Page Showing Alexa Bag Details"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
@@ -293,67 +342,12 @@ export const Mulberry = () => {
                 placeholder={imageMulberryGlobalImageOnePlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Mulberry Code Example Showing Loading Localized Fonts For China and Korea Only"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
             </div>
           </ProjectSectionColumns>
         </ProjectSection>   
-
-
-
-      <ThemeProvider theme="dark" data-invert>
-        <ProjectSection
-            backgroundOverlayOpacity={0.5}
-            backgroundElement={
-              <Image
-                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
-                width={1280}
-                height={900}
-                placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
-                sizes="100vw"
-              />
-            }
-          >
-          <ProjectSectionColumnsTextOnly>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
-                <ProjectSectionText>
-                  Set up and integrate all current + new Amplience components
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  Create new micro site + live updates for the Eccentric Sensibility Korea Fashion Show
-                </ProjectSectionText>  
-                <ProjectSectionText>
-                  Re-styled the pre-Amplience site: Wish list, Global Header, Secondary Header, Videos and PLP
-                </ProjectSectionText>     
-                <ProjectSectionText>
-                  Overhauled the localized fonts: Latin vs. Asian font rendering
-                </ProjectSectionText>      
-                <ProjectSectionText>
-                  Regular meetings with various teams: design, PM, business analysts, client, third-party design agency. The main focus was clarification, estimates, expectations and workloads
-                </ProjectSectionText>                                                                                  
-              </ProjectTextRow>
-            </ProjectSectionContent>
-
-
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
-                <ProjectSectionText>
-                  Learning Amplience at pace
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  Training developers and marketing team in Amplience content editing
-                </ProjectSectionText>                      
-                    
-              </ProjectTextRow>
-            </ProjectSectionContent>
-          </ProjectSectionColumnsTextOnly>
-        </ProjectSection>  
-      </ThemeProvider> 
 
       </ProjectContainer>
       <Footer />

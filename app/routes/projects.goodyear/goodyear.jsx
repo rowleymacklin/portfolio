@@ -148,11 +148,55 @@ export const Goodyear = () => {
               width={1280}
               height={800}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="Goodyear Project Showing Collage of New Tire Finder Component"
             />
           </ProjectSectionContent>
         </ProjectSection>
 
+
+        <ThemeProvider theme="dark" data-invert>
+          <ProjectSection
+              backgroundOverlayOpacity={0.5}
+              backgroundElement={
+                <Image
+                  srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
+                  width={1280}
+                  height={900}
+                  placeholder={imageSprBackgroundVolcanismPlaceholder}
+                  alt="A dramatic ocean scene with lava forming a new land mass."
+                  sizes="100vw"
+                />
+              }
+            >
+            <ProjectSectionColumnsTextOnly>
+              <ProjectSectionContent>
+                <ProjectTextRow>
+                  <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    Goodyear were switching over to a new Hybris environment. My main role was to review the static code provided by the design and development team in Costa Rica. Then convert them to Hybris working code.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    These are the components i focussed on: Tire Finder, Store Locator and PDP Details
+                  </ProjectSectionText>  
+                  <ProjectSectionText>
+                    Regular meetings with various teams: design, backend Hybris developers, business analysts, client, third-party design and developer agency. The main focus was clarifications, estimates, expectations and workloads
+                  </ProjectSectionText>                                                                                  
+                </ProjectTextRow>
+              </ProjectSectionContent>
+              <ProjectSectionContent>
+                <ProjectTextRow>
+                  <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    Helping to train all departments in how to work with Hybris Accellorator
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Surviving the arctic conditions in Boston, mid-Winter
+                  </ProjectSectionText> 
+                </ProjectTextRow>
+              </ProjectSectionContent>
+            </ProjectSectionColumnsTextOnly>
+          </ProjectSection>  
+        </ThemeProvider> 
 
         <ProjectSection>
           <ProjectSectionColumns>
@@ -180,7 +224,7 @@ export const Goodyear = () => {
                 placeholder={imageGoodyearComponentsImageTwoPlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Goodyear Project Showing New Tire Finder Component Search and Tyre Comparison"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />              
               <Image
@@ -190,60 +234,12 @@ export const Goodyear = () => {
                 placeholder={imageGoodyearComponentsImageOnePlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="Goodyear Project Showing New Tire Finder Component Final Step"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
             </div>
           </ProjectSectionColumns>
         </ProjectSection>  
-
-      <ThemeProvider theme="dark" data-invert>
-        <ProjectSection
-            backgroundOverlayOpacity={0.5}
-            backgroundElement={
-              <Image
-                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
-                width={1280}
-                height={900}
-                placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
-                sizes="100vw"
-              />
-            }
-          >
-          <ProjectSectionColumnsTextOnly>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
-                <ProjectSectionText>
-                  Goodyear were switching over to a new Hybris environment. My main role was to review the static code provided by the design and development team in Costa Rica. Then convert them to Hybris working code.
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  These are the components i focussed on: Tire Finder, Store Locator and PDP Details
-                </ProjectSectionText>  
-                <ProjectSectionText>
-                  Regular meetings with various teams: design, backend Hybris developers, business analysts, client, third-party design and developer agency. The main focus was clarifications, estimates, expectations and workloads
-                </ProjectSectionText>                                                                                  
-              </ProjectTextRow>
-            </ProjectSectionContent>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
-                <ProjectSectionText>
-                  Helping to train all departments in how to work with Hybris Accellorator
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  Surviving the arctic conditions in Boston, mid-Winter
-                </ProjectSectionText> 
-              </ProjectTextRow>
-            </ProjectSectionContent>
-          </ProjectSectionColumnsTextOnly>
-        </ProjectSection>  
-      </ThemeProvider> 
-
-
-
-
       </ProjectContainer>
       <Footer />
     </>

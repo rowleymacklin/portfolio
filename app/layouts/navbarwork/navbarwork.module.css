@@ -12,7 +12,7 @@
     top: auto;
     left: auto;
     right: var(--spaceOuter);
-    bottom: var(--spaceOuter);
+    bottom: var(--spaceOuterAlt);
     z-index: var(--zIndex4);
     isolation: isolate;
 
@@ -121,9 +121,7 @@
   &:nth-child(7):before, 
   &:nth-child(8):before, 
   &:nth-child(9):before, 
-  &:nth-child(10):before, 
-  &:nth-child(11):before,
-  &:nth-child(12):before {
+  &:nth-child(10):before {
       font-size: var(--fontSizeBodyXXS);
       font-family: "Montserrat", sans-serif;
       font-weight: var(--fontWeightLight);
@@ -139,11 +137,11 @@
 
 
 
-    @media (--mediaUseMotion) {
-      &::after {
+  @media (--mediaUseMotion) {
+    &::after {
         transition: transform var(--durationM) var(--bezierFastoutSlowin);
-      }
     }
+  }
 
     &:hover::after,
     &:active::after,

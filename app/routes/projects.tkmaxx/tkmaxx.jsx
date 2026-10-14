@@ -142,95 +142,10 @@ export const Tkmaxx = () => {
               width={1280}
               height={800}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="TKMaxx Project Collage of New Components Used Within Hybris"
             />
           </ProjectSectionContent>
         </ProjectSection>
-
-
-
-
-        <ProjectSection>
-          <ProjectSectionColumns>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Get new frontend environment up and running within Hybris, using gulp and git</ProjectSectionHeading>
-                <ProjectSectionText>
-                  TKMaxx were switching to the Hybris system. For discovery and sprint 1, I had to set up the front end environment using Gulp as the task runner and Git as version control within Hybris Accelerator. This was my first time to set everything up myself. A daunting, But enjoyable task.
-                </ProjectSectionText>
-                <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
-                <ProjectSectionText>
-                  It was quite challenging to get Gulp and Git to work perfectly for both macOS and Windows users. Also, quite a challenge getting server settings working for both.
-                </ProjectSectionText>
-                <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
-                <ProjectSectionText>
-                  Learning new skills and I have to admit the server setup for running Gulp and Git within Hybris tested my patience a bit. But very pleased it all ended up running smoothly for all the front end team, as well as the backend team when they needed it.
-                </ProjectSectionText>       
-              </ProjectTextRow>
-            </ProjectSectionContent>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Co-ordinate front end team tasks & write a front end best practices document</ProjectSectionHeading>
-                <ProjectSectionText>
-                  Every morning before our daily scrums my regular task was to check Jira and the backend team, then delegate tasks to the front end team. I then led the daily scrums. I also wrote a general front end best practices document so the code and the look would be consistent throughout. It was a team effort, so any new suggestions and edits were added regularily.
-                </ProjectSectionText>
-                <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
-                <ProjectSectionText>
-                  Making sure the tasks that were delegated to the front end team matched their skillsets and answering a lot of technical questions. The important thing was not to overload any of the team. The best practices document was a team effort, and a cross-department one, so there were a lot of meetings and discussions and changes made.
-                </ProjectSectionText>
-                <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
-                <ProjectSectionText>
-                  Sprints were completed in time for all Jira tasks. The team wasn't overloaded with work. The front end best practices was used by all departments for a visual guide to every component and piece of content.
-                </ProjectSectionText>       
-              </ProjectTextRow>
-            </ProjectSectionContent>
-          </ProjectSectionColumns>
-        </ProjectSection>   
-
-
-
-        <ProjectSection>
-          <ProjectSectionColumns>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Styling global components & Localised fonts for China/ Korea</ProjectSectionHeading>
-                <ProjectSectionText>
-                  Another task for Mulberry was a total revamp of the look and feel of the global site, to make it more consistent to branding guidelines. These were the components I worked on: Wishlist, Global Header Search, Secondary Header, Video, Product Listing Page. I also added localised fonts for their new China and Korea sites, which turned out to be surprisingly challenging.
-                </ProjectSectionText>
-                <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
-                <ProjectSectionText>
-                  The most challenging aspect of these tasks was numerous changes to the designs, crashing local git environments. The China/ Korean localised fonts proved to be a bit trickier than expected as both localizations had to use specific Asian fonts, as well as the Mulberry font (both using different character encoding). A kind of hybrid of Latin and Asian fonts. My solution was to target specific Unicode ranges within the CSS. Time-consuming but a decent solution to the problem.
-                </ProjectSectionText>
-                <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
-                <ProjectSectionText>
-                  The fonts localisation for China & Korea being the most challenging, was also the most rewarding. A simple, but time-consuming solution and the problem was solved.
-                </ProjectSectionText>       
-              </ProjectTextRow>
-            </ProjectSectionContent>
-            <div className={styles.sidebarImages}>
-              <Image
-                className={styles.sidebarImage}
-                src={imageTkmaxxHybrisImageTwo}
-                srcSet={`${imageTkmaxxHybrisImageTwo} 1080w, ${imageTkmaxxHybrisImageTwoLarge} 2160w`}
-                placeholder={imageTkmaxxHybrisImageTwoPlaceholder}
-                width={260}
-                height={660}
-                alt="Configuration options for a component."
-                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
-              />              
-              <Image
-                className={styles.sidebarImage}
-                src={imageTkmaxxHybrisImageOne}
-                srcSet={`${imageTkmaxxHybrisImageOne} 1080w, ${imageTkmaxxHybrisImageOneLarge} 2160w`}
-                placeholder={imageTkmaxxHybrisImageOnePlaceholder}
-                width={260}
-                height={660}
-                alt="Configuration options for a component."
-                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
-              />
-            </div>
-          </ProjectSectionColumns>
-        </ProjectSection>   
 
       <ThemeProvider theme="dark" data-invert>
         <ProjectSection
@@ -261,8 +176,6 @@ export const Tkmaxx = () => {
                 </ProjectSectionText>                                                                                  
               </ProjectTextRow>
             </ProjectSectionContent>
-
-
             <ProjectSectionContent>
               <ProjectTextRow>
                 <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
@@ -278,6 +191,85 @@ export const Tkmaxx = () => {
           </ProjectSectionColumnsTextOnly>
         </ProjectSection>  
       </ThemeProvider> 
+
+
+
+
+        <ProjectSection>
+          <ProjectTextRow>
+            <ProjectSectionHeading>New Frontend Environment Set Up</ProjectSectionHeading>
+            <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
+            <ProjectSectionText>
+              TKMaxx were switching to the Hybris system. For discovery and sprint 1, I had to set up the front end environment using Gulp as the task runner and Git as version control within Hybris Accelerator. This was my first time to set everything up myself. A daunting, But enjoyable task. It was quite challenging to get Gulp and Git to work perfectly for both macOS and Windows users. Also, quite a challenge getting server settings working for both.
+            </ProjectSectionText>
+            <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
+            <ProjectSectionText>
+              Learning new skills and I have to admit the server setup for running Gulp and Git within Hybris tested my patience a bit. But very pleased it all ended up running smoothly for all the front end team, as well as the backend team when they needed it.
+            </ProjectSectionText>      
+          </ProjectTextRow>
+        </ProjectSection>
+
+        <ProjectSection>
+          <ProjectTextRow>
+            <ProjectSectionHeading>Frontend Team Co-ordination and Best Practices Document</ProjectSectionHeading>
+            <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
+            <ProjectSectionText>
+              Every morning before our daily scrums my regular task was to check Jira and the backend team, then delegate tasks to the front end team. I then led the daily scrums. I also wrote a general front end best practices document so the code and the look would be consistent throughout. It was a team effort, so any new suggestions and edits were added regularily.
+            </ProjectSectionText>
+            <ProjectSectionText>
+               Always making sure the tasks that were delegated to the front end team matched their skillsets and answering a lot of technical questions. The important thing was not to overload any of the team. The best practices document was a team effort, and a cross-department one, so there were a lot of meetings and discussions and changes made.
+            </ProjectSectionText>            
+            <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
+            <ProjectSectionText>
+              Sprints were completed in time for all Jira tasks. The team wasn't overloaded with work. The front end best practices was used by all departments for a visual guide to every component and piece of content.
+            </ProjectSectionText>      
+          </ProjectTextRow>
+        </ProjectSection>
+        
+
+
+        <ProjectSection>
+          <ProjectSectionColumns>
+            <ProjectSectionContent>
+              <ProjectTextRow>
+                <ProjectSectionHeading>Create New Components Within Hybris</ProjectSectionHeading>
+                <ProjectSectionText>
+                  I created various new components for the new Hybris site: the homepage hero component and the Listing page's hero component, footer layout, header icons. I also helped out with global bug fixing when the teams workload was too much.
+                </ProjectSectionText>
+                <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
+                <ProjectSectionText>
+                  The only real challenge was getting the components just right for the design and marketing team.
+                </ProjectSectionText>
+                <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
+                <ProjectSectionText>
+                  The hero component was slightly more complex than usual, as it had multiple layers. So I was really happy with the way it turned out in the end.
+                </ProjectSectionText>       
+              </ProjectTextRow>
+            </ProjectSectionContent>
+            <div className={styles.sidebarImages}>
+              <Image
+                className={styles.sidebarImage}
+                src={imageTkmaxxHybrisImageTwo}
+                srcSet={`${imageTkmaxxHybrisImageTwo} 1080w, ${imageTkmaxxHybrisImageTwoLarge} 2160w`}
+                placeholder={imageTkmaxxHybrisImageTwoPlaceholder}
+                width={260}
+                height={660}
+                alt="TKMaxx Project New Login and Sign Up Form Component"
+                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
+              />              
+              <Image
+                className={styles.sidebarImage}
+                src={imageTkmaxxHybrisImageOne}
+                srcSet={`${imageTkmaxxHybrisImageOne} 1080w, ${imageTkmaxxHybrisImageOneLarge} 2160w`}
+                placeholder={imageTkmaxxHybrisImageOnePlaceholder}
+                width={260}
+                height={660}
+                alt="TKMaxx Project New Product Details Page for Regatta Grren Fleece"
+                sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
+              />
+            </div>
+          </ProjectSectionColumns>
+        </ProjectSection>   
 
 
       </ProjectContainer>

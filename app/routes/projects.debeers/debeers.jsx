@@ -3,6 +3,7 @@
 import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-large.jpg';
 import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from '~/assets/spr-background-volcanism.jpg';
+
 import imageSprComponentsDarkLarge from '~/assets/spr-components-dark-large.png';
 import imageSprComponentsDarkPlaceholder from '~/assets/spr-components-dark-placeholder.png';
 import imageSprComponentsDark from '~/assets/spr-components-dark.png';
@@ -149,10 +150,85 @@ export const Debeers = () => {
               placeholder={imageDebeersIntroImagePlaceholder}
               width={1280}
               height={800}
+              alt="DeBeers Lotus Bracelet"
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
           </ProjectSectionContent>
         </ProjectSection>
+
+      <ThemeProvider theme="dark" data-invert>
+        <ProjectSection
+            backgroundOverlayOpacity={0.5}
+            backgroundElement={
+              <Image
+                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
+                width={1280}
+                height={900}
+                placeholder={imageSprBackgroundVolcanismPlaceholder}
+                alt="A dramatic ocean scene with lava forming a new land mass."
+                sizes="100vw"
+              />
+            }
+          >
+              <ProjectSectionColumnsTextOnly>
+                <ProjectSectionContent>
+                  <ProjectTextRow>
+                    <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
+                    <ProjectSectionText>
+                      Global re-write of existing Rendering Templates, Transformation Templates, Handlebars Templates and JSON Schema Data (to optimize the codebase).
+                    </ProjectSectionText>
+                    <ProjectSectionText>
+                      Initially overhauled and optimized the main dependencies (CSS/ JS), then created a new local environment to run and transpile new and old components locally (Gulp 4, Webpack 4, Handlebars, Babel and Browsersync).
+                    </ProjectSectionText>  
+                    <ProjectSectionText>
+                      Also re-wrote the SCSS codebase using the BEM naming convention and optimized the local SCSS repository to use variables, partials and mixins. This improved code recognition and prevented code duplication.
+                    </ProjectSectionText>     
+                    <ProjectSectionText>
+                      Gradually implemented atomic components to be re-usable across the site for optimization and ease-of-use for the content team.
+                    </ProjectSectionText>      
+                    <ProjectSectionText>
+                      GSAP integration + implementation to animate specific campaign pages.
+                    </ProjectSectionText>   
+                    <ProjectSectionText>
+                      One of the main, regular tasks was to create campaign components based on provided designs, then integrate those new components into the Amplience environment.
+                    </ProjectSectionText>      
+                    <ProjectSectionText>
+                      Accessibility audits and reviewing Accessible360 reports. Implementing changes throughout
+                    </ProjectSectionText>     
+                    <ProjectSectionText>
+                      Regular deep-level audits and reports of designs provided to ensure branding consistency. As there wasn’t a branding/ style guide in place, I was responsible for aligning with the design team to clarify details of campaign designs
+                    </ProjectSectionText>      
+                    <ProjectSectionText>
+                      Regular meetings with various teams: in-house design team, third-party design agency, Amplience developers, Commerce developers (Salesforce), QA, business analysts, client and business. The main areas of focus were: clarifications, estimates, expectations, re-designs and workloads
+                    </ProjectSectionText>    
+                    <ProjectSectionText>
+                      Overseeing the new Amplience team: onboarding, task delegation, peer programming, problem solving and meetings
+                    </ProjectSectionText>                                                                         
+                  </ProjectTextRow>
+                </ProjectSectionContent>
+                <ProjectSectionContent>
+                  <ProjectTextRow>
+                    <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
+                    <ProjectSectionText>
+                      I implemented a standardized file naming convention for easier file navigation and to help with onboarding new developers.
+                    </ProjectSectionText>
+                    <ProjectSectionText>
+                      I introduced and implemented Amplience’s new Smart Images feature, to fully optimize global image quality vs size. Adding to this I then created a new set of media breakpoints and conditions, using a new library of Transformation Templates and Rendering Templates, which were highly optimized. Also introduced a new image format AVIF. It would load in this order: AVIF/ WebP/ JPEG. Images saw an average decrease in file size between 40% to 60%, without losing quality. As an example, a hero banner that loaded at 980KB was reduced to 340KB. Hugely speeding up page load times.
+                    </ProjectSectionText>   
+                    <ProjectSectionText>
+                      For videos, I created a new fallback method, loading in a new order: VP9/ webM/ MP4. Most videos page load file size was reduced by 50% or more. This was especially useful for mobile/ tablet devices.
+                    </ProjectSectionText>  
+                    <ProjectSectionText>
+                      Re-writing the whole frontend codebase using BEM, a new file naming convention, optimized variables/ mixins and partials and removed any redundant code. It required painstaking attention to detail as any errors would break existing components.
+                    </ProjectSectionText>                  
+                    <ProjectSectionText>
+                      Created new visual documentation and comprehensive Amplience step-by-step user guide for the content and development teams to easily reference components and their requirements for content build or future component builds.
+                    </ProjectSectionText>
+                  </ProjectTextRow>
+                </ProjectSectionContent>
+              </ProjectSectionColumnsTextOnly>
+            </ProjectSection>   
+            </ThemeProvider>           
 
           <ProjectSection>
             <ProjectSectionColumns width="full">
@@ -171,11 +247,11 @@ export const Debeers = () => {
                 width={1280}
                 height={800}
                 placeholder={videoDebeersCampaignsGsapPlaceholder}
-                alt="A learning designer building and deploying an interactive lesson on volcanism using the app."
+                alt="DeBeers GSAP Intergration Animation Example"
                 sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
               />
             </ProjectSectionColumns>
-          </ProjectSection>   
+          </ProjectSection>        
 
         <ProjectSection>
           <ProjectTextRow>
@@ -212,7 +288,7 @@ export const Debeers = () => {
                 placeholder={imageDebeersCampaignsImageOnePlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="DeBeers Example of SCSS Code Re-write"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
               <Image
@@ -222,7 +298,7 @@ export const Debeers = () => {
                 placeholder={imageDebeersCampaignsImageTwoPlaceholder}
                 width={260}
                 height={660}
-                alt="Configuration options for a component."
+                alt="DeBeers Example of Handlebars Code"
                 sizes={`(max-width: ${media.mobile}px) 50vw, 25vw`}
               />
             </div>
@@ -230,20 +306,7 @@ export const Debeers = () => {
         </ProjectSection>   
 
 
-      <ThemeProvider theme="dark" data-invert>
-          <ProjectSection
-            backgroundOverlayOpacity={0.5}
-            backgroundElement={
-              <Image
-                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
-                width={1280}
-                height={900}
-                placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
-                sizes="100vw"
-              />
-            }
-          >
+        <ProjectSection>
           <ProjectSectionContent>
             <Image
               key={theme}
@@ -253,11 +316,10 @@ export const Debeers = () => {
               width={1280}
               height={800}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="DeBeers Example of Accessible Carousel Work Showing Jewellery Products"
             />
           </ProjectSectionContent>
         </ProjectSection>
-        </ThemeProvider>
 
 
 
@@ -288,82 +350,6 @@ export const Debeers = () => {
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
-
-      <ThemeProvider theme="dark" data-invert>
-            <ProjectSection
-            backgroundOverlayOpacity={0.5}
-            backgroundElement={
-              <Image
-                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
-                width={1280}
-                height={900}
-                placeholder={imageSprBackgroundVolcanismPlaceholder}
-                alt="A dramatic ocean scene with lava forming a new land mass."
-                sizes="100vw"
-              />
-            }
-          >
-          <ProjectSectionColumnsTextOnly>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
-                <ProjectSectionText>
-                  Global re-write of existing Rendering Templates, Transformation Templates, Handlebars Templates and JSON Schema Data (to optimize the codebase).
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  Initially overhauled and optimized the main dependencies (CSS/ JS), then created a new local environment to run and transpile new and old components locally (Gulp 4, Webpack 4, Handlebars, Babel and Browsersync).
-                </ProjectSectionText>  
-                <ProjectSectionText>
-                  Also re-wrote the SCSS codebase using the BEM naming convention and optimized the local SCSS repository to use variables, partials and mixins. This improved code recognition and prevented code duplication.
-                </ProjectSectionText>     
-                <ProjectSectionText>
-                  Gradually implemented atomic components to be re-usable across the site for optimization and ease-of-use for the content team.
-                </ProjectSectionText>      
-                <ProjectSectionText>
-                  GSAP integration + implementation to animate specific campaign pages.
-                </ProjectSectionText>   
-                <ProjectSectionText>
-                  One of the main, regular tasks was to create campaign components based on provided designs, then integrate those new components into the Amplience environment.
-                </ProjectSectionText>      
-                <ProjectSectionText>
-                  Accessibility audits and reviewing Accessible360 reports. Implementing changes throughout
-                </ProjectSectionText>     
-                <ProjectSectionText>
-                  Regular deep-level audits and reports of designs provided to ensure branding consistency. As there wasn’t a branding/ style guide in place, I was responsible for aligning with the design team to clarify details of campaign designs
-                </ProjectSectionText>      
-                <ProjectSectionText>
-                  Regular meetings with various teams: in-house design team, third-party design agency, Amplience developers, Commerce developers (Salesforce), QA, business analysts, client and business. The main areas of focus were: clarifications, estimates, expectations, re-designs and workloads
-                </ProjectSectionText>    
-                <ProjectSectionText>
-                  Overseeing the new Amplience team: onboarding, task delegation, peer programming, problem solving and meetings
-                </ProjectSectionText>                                                                         
-              </ProjectTextRow>
-            </ProjectSectionContent>
-
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
-                <ProjectSectionText>
-                  I implemented a standardized file naming convention for easier file navigation and to help with onboarding new developers.
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  I introduced and implemented Amplience’s new Smart Images feature, to fully optimize global image quality vs size. Adding to this I then created a new set of media breakpoints and conditions, using a new library of Transformation Templates and Rendering Templates, which were highly optimized. Also introduced a new image format AVIF. It would load in this order: AVIF/ WebP/ JPEG. Images saw an average decrease in file size between 40% to 60%, without losing quality. As an example, a hero banner that loaded at 980KB was reduced to 340KB. Hugely speeding up page load times.
-                </ProjectSectionText>   
-                <ProjectSectionText>
-                  For videos, I created a new fallback method, loading in a new order: VP9/ webM/ MP4. Most videos page load file size was reduced by 50% or more. This was especially useful for mobile/ tablet devices.
-                </ProjectSectionText>  
-                <ProjectSectionText>
-                  Re-writing the whole frontend codebase using BEM, a new file naming convention, optimized variables/ mixins and partials and removed any redundant code. It required painstaking attention to detail as any errors would break existing components.
-                </ProjectSectionText>                  
-                <ProjectSectionText>
-                  Created new visual documentation and comprehensive Amplience step-by-step user guide for the content and development teams to easily reference components and their requirements for content build or future component builds.
-                </ProjectSectionText>                     
-                    
-              </ProjectTextRow>
-            </ProjectSectionContent>
-          </ProjectSectionColumnsTextOnly>
-        </ProjectSection>  
-        </ThemeProvider> 
       </ProjectContainer>
       <Footer />
     </>

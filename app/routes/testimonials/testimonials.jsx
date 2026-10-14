@@ -83,7 +83,7 @@ import styles from './testimonials.module.css';
 
 const title = 'Testimonials';
 const description =
-  "I've been very fortunate to work for some fantastic clients and amazing people. lorem  ipsum";
+  "I've been very fortunate to work with some fantastic clients and amazing people. See below feedback from the designers, PMs, Developers, BAs and founders I've worked alongside.";
 const roles = [
   'DeBeers',
   'Autosport',
@@ -150,7 +150,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Monochrome Photo of Me Pondering a Bug Fix"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -184,7 +184,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="DeBeers Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -218,7 +218,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="DeBeers Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -253,7 +253,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="DeBeers Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -287,7 +287,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="DeBeers Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -321,7 +321,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="DeBeers Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -355,7 +355,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="DeBeers Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -389,7 +389,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Autosport Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -423,7 +423,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Mulberry Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -457,7 +457,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="TKMaxx Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -491,7 +491,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Gucci Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -525,7 +525,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Gucci Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -559,7 +559,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Goodyear Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -593,7 +593,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Sainsbury's Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -627,7 +627,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="eValue Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -661,7 +661,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="eValue Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -695,7 +695,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="eValue Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -729,7 +729,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="eValue Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -763,7 +763,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Blackberry Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -797,7 +797,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Rated People Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -831,7 +831,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Rated People Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -865,7 +865,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Rated People Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -899,7 +899,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Rated People Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -933,7 +933,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Rated People Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -967,7 +967,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Rated People Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -1001,7 +1001,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Cisco Systems Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
@@ -1035,7 +1035,7 @@ export const Testimonials = ({ visible, titleId }) => {
                 height={200}
                 background={('#ffffff')}
                 sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                alt="Cisco Systems Logo"
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>

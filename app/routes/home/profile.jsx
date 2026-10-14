@@ -30,7 +30,7 @@ const ProfileText = ({ visible, titleId }) => (
       I’m full of energy, experience, hard work, enthusiasm, ideas, great interpersonal skills and a relaxed temperament.
     </Text>    
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to go to the gym, watch new and old films and I read a lot. My reading taste usually goes through phases. Last month I went through a Colombian magic realism phase, reading three of Gabriel García Márquez's outstanding books. This month I'm reading an interesting post-apocalyptic series of books by Alex Scarrow, called the Last Light and Afterlight.
+      In my spare time I like to go to the gym, watch new and old films and I read a lot. My reading taste usually goes through phases. Last month I went through a Colombian magic realism phase, reading three of Gabriel García Márquez's outstanding books. This month I'm reading an interesting post-apocalyptic series of books by Alex Scarrow called the Last Light and Afterlight.
     </Text>
   </Fragment>
 );
@@ -75,7 +75,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   width={960}
                   height={1280}
                   sizes={`(max-width: ${media.mobile}px) 100vw, 480px`}
-                  alt="Me smiling like a goofball at the Qwilr office in Sydney"
+                  alt="Monochrome Photo of Me Pondering a Bug Fix"
                 />
                 <svg className={styles.svg} data-visible={visible} viewBox="0 0 136 766">
                   <use href={`${textDecorationProfile}`} />

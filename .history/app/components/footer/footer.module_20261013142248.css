@@ -1,0 +1,131 @@
+@layer components {
+  /* .footer {
+    --lineHeightBody: 1.1;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    width: 100vw;
+    padding: var(--space3XL) var(--spaceL);
+    z-index: var(--zIndex2);
+    position: relative;
+    color: var(--textLight);
+  } */
+
+
+        .footer {
+            padding: 5rem 0;
+            padding-bottom: 0;
+            margin-bottom: -7.75rem;
+            .footerContainer {
+                width: 100%;
+                max-width: 1100px;
+                margin-left: auto;
+                margin-right: auto;
+                color: #ffffff;
+                .footerMain {
+                    display: grid;
+                    grid-template-columns: 1fr; 
+                    gap: 2.5rem;
+                    padding-bottom: 2.5rem;
+                    border-bottom: 1px solid #e1e1e1;
+                    @media (min-width: 769px) {
+                        grid-template-columns: 1fr 1fr; /* Desktop: 2 columns, newsletter wider */
+                        gap: 4rem;
+                    }
+                    .footerTitle {
+                        font-weight: 600;
+                        margin: 0 0 1rem 0;
+                    }
+                    .inlineLink {
+                        display: inline-flex;
+                        margin: 0;
+                    }
+                }  
+                .footerMainLikesDislikes {
+                    padding-top: 2.5rem;    
+                    .footerLikesDislikes {
+                        display: grid;
+                        grid-template-columns: 1fr; 
+                        gap: 2.5rem;
+                        padding-bottom: 2.5rem;
+                        border-bottom: 1px solid #e1e1e141;
+                        @media (min-width: 769px) {
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                            grid-auto-columns: 1fr;
+                            gap: 2rem;   
+                        } 
+                        ul { 
+                            margin: 0; 
+                            padding: 0; 
+                            list-style: none; 
+                            li span { 
+                                font-weight: 500; 
+                            } 
+                            li:not(:last-child) { 
+                                margin-bottom: 0.75rem; 
+                            }
+                        }
+                        .footerLikesDislikesItem {
+                            /* border-left: 0.25px solid #e1e1e1;
+                            padding-left: 3rem; */
+                            &:nth-child(-n+4) {
+                                border-left: 0;
+                                padding-left: 0;
+                                padding-bottom: 2rem;
+                                border-bottom: 0.1px solid #e1e1e141;
+                            }
+                            &:nth-of-type(5) {
+                                border-left: 0;
+                                padding-left: 0;
+                            }                    
+                            .footerTitle {
+                                font-size: 1.1rem;
+                                font-weight: 600;
+                                margin: 0 0 1rem 0;
+                                padding-bottom: 0;
+                                margin-top: 0 !important;
+                            }
+                        }
+                    }  
+                }   
+                @media (min-width: 769px) {       
+                    flex-direction: row;
+                    justify-content: space-between;
+                }  
+                .footerBottom {
+                    padding-top: 2.5rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1.5rem;
+                    text-align: center;
+                    @media (min-width: 769px) {
+                        flex-direction: row; 
+                        justify-content: space-between;
+                    }                     
+                    .footerCopyright {
+                        margin: 0;
+                        font-size: 0.875rem;
+                    }
+                    .link {
+                        display: inline-flex;
+                        margin: 0 0.5rem;
+                        font-size: 0.875rem;
+                    }
+                    .date {
+                        padding-right: var(--spaceXS);
+                        display: inline-flex;
+                        font-size: 0.875rem;
+                    }
+                }          
+            }
+        }
+        .footerAbout p,
+        .footerRandom p {
+            line-height: 1.6;
+            margin: 0 0 1.5rem 0;
+        }
+}
+

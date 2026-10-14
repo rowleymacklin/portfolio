@@ -127,7 +127,7 @@ export const Barbour = () => {
               width={1280}
               height={800}
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 800px, 1000px`}
-              alt="The aero lesson builder app dragging an audio component into a screen about plant cells."
+              alt="Barbour Project Example of Online Form With Bugs Fixed"
             />
           </ProjectSectionContent>
         </ProjectSection>
