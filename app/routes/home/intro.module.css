@@ -87,20 +87,6 @@
   }
 }
 
-.rowTwo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  font-size: 1.8rem;
-  /* margin-top: 1rem; */
-  letter-spacing: 0;
-
-  &[data-hidden='true'] {
-    opacity: 0;
-  }
-}
-
 .rowThree {
   display: flex;
   flex-direction: row;
@@ -207,7 +193,8 @@
   }
 }
 
-.word {
+.word,
+.rowTwoWord {
   position: relative;
   display: flex;
   flex-shrink: 0;
@@ -282,6 +269,24 @@
   100% {
     transform: scaleX(1);
     opacity: 1;
+  }
+}
+
+.rowTwoWord {
+    min-height: 2.25rem;
+}
+
+.rowTwo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  font-size: 1.8rem;
+  /* margin-top: 1rem; */
+  letter-spacing: 0;
+
+  &[data-hidden='true'] {
+    opacity: 0;
   }
 }
 

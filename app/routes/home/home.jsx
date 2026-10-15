@@ -1,67 +1,30 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
-import sliceTextureLarge from '~/assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
-
-import volkiharEnderalLarge from '~/assets/volkihar-enderal-large.jpg';
-import volkiharEnderalLogoLarge from '~/assets/volkihar-enderal-logo-large.png';
-import volkiharEnderalLogoPlaceholder from '~/assets/volkihar-enderal-logo-placeholder.png';
-import volkiharEnderalLogo from '~/assets/volkihar-enderal-logo.png';
-import volkiharEnderalPlaceholder from '~/assets/volkihar-enderal-placeholder.jpg';
-import volkiharEnderal from '~/assets/volkihar-enderal.jpg';
-
 import workDebeersPlaceholder from '~/assets/work-debeers-home-large.jpg';
 import workDebeersMedium from '~/assets/work-debeers-home-large.jpg';
 import workDebeersLarge from '~/assets/work-debeers-home-large.jpg';
-
 import workAutosportPlaceholder from '~/assets/work-autosport-large.jpg';
 import workAutosportMedium from '~/assets/work-autosport-large.jpg';
 import workAutosportLarge from '~/assets/work-autosport-large.jpg';
-
 import workMulberryPlaceholder from '~/assets/work-mulberry-home-large.jpg';
 import workMulberryMedium from '~/assets/work-mulberry-home-large.jpg';
 import workMulberryLarge from '~/assets/work-mulberry-home-large.jpg';
-
-import workAvivaPlaceholder from '~/assets/work-aviva-home-large.jpg';
-import workAvivaMedium from '~/assets/work-aviva-home-large.jpg';
-import workAvivaLarge from '~/assets/work-aviva-home-large.jpg';
-
-import workOasisPlaceholder from '~/assets/work-oasis-home-large.jpg';
-import workOasisMedium from '~/assets/work-oasis-home-large.jpg';
-import workOasisLarge from '~/assets/work-oasis-home-large.jpg';
-
 import workTkmaxxPlaceholder from '~/assets/work-tkmaxx-home-large.jpg';
 import workTkmaxxMedium from '~/assets/work-tkmaxx-home-large.jpg';
 import workTkmaxxLarge from '~/assets/work-tkmaxx-home-large.jpg';
-
 import workGucciPlaceholder from '~/assets/work-gucci-home-large.jpg';
 import workGucciMedium from '~/assets/work-gucci-home-large.jpg';
 import workGucciLarge from '~/assets/work-gucci-home-large.jpg';
-
 import workGoodyearPlaceholder from '~/assets/work-goodyear-home-large.jpg';
 import workGoodyearMedium from '~/assets/work-goodyear-home-large.jpg';
 import workGoodyearLarge from '~/assets/work-goodyear-home-large.jpg';
-
 import workSainsburysPlaceholder from '~/assets/work-sainsburys-home-large.jpg';
 import workSainsburysMedium from '~/assets/work-sainsburys-home-large.jpg';
 import workSainsburysLarge from '~/assets/work-sainsburys-home-large.jpg';
-
 import workBarbourPlaceholder from '~/assets/work-barbour-home-large.jpg';
 import workBarbourMedium from '~/assets/work-barbour-home-large.jpg';
 import workBarbourLarge from '~/assets/work-barbour-home-large.jpg';
-
 import workdrmartensPlaceholder from '~/assets/work-drmartens-home-large.jpg';
 import workdrmartensMedium from '~/assets/work-drmartens-home-large.jpg';
 import workdrmartensLarge from '~/assets/work-drmartens-home-large.jpg';
-
 import workVariousPlaceholder from '~/assets/work-various-home-large.jpg';
 import workVariousMedium from '~/assets/work-various-home-large.jpg';
 import workVariousLarge from '~/assets/work-various-home-large.jpg';

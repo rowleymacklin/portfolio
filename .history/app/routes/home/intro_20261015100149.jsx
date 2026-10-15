@@ -1,5 +1,6 @@
 import { DecoderText } from '~/components/decoder-text';
 import { Heading } from '~/components/heading';
+import { Text } from '~/components/text';
 import { Section } from '~/components/section';
 import { useTheme } from '~/components/theme-provider';
 import { tokens } from '~/components/theme-provider/theme';
@@ -80,7 +81,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                   <span
                     className={styles.word}
                     data-status={status}
-                    style={cssProps({ delay: tokens.base.durationXS })}
+                    style={cssProps({ delay: tokens.base.durationS })}
                   >
                     {config.role}
                   </span>
@@ -98,10 +99,10 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                         <span
                           aria-hidden
                           ref={nodeRef}
-                          className={styles.word}
+                          className={styles.rowTwoWord}
                           data-plus={true}
                           data-status={status}
-                          style={cssProps({ delay: tokens.base.durationL })}
+                          style={cssProps({ delay: tokens.base.durationM })}
                         >
                           {item}
                         </span>
@@ -109,15 +110,57 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                     </Transition>
                   ))}
                 </div>
-                <div className={styles.rowThree}>
-                <VisuallyHidden className={styles.label}>
-                  {`${config.role} + ${introLabel}`}
-                </VisuallyHidden>
-                </div>                
+                <span aria-hidden className={styles.rowThree}>
+                  <span
+                    className={styles.word}
+                    data-status={status}
+                    style={cssProps({ delay: tokens.base.durationXL })}
+                  >
+                    <div>
+                      <span>
+                        Available:
+                      </span>
+                      <span>
+                        01/11/2026
+                      </span>                      
+                    </div>
+                  </span>
+                </span>
+                <span aria-hidden className={styles.rowFour}>
+                  <span
+                    className={styles.word}
+                    data-status={status}
+                    style={cssProps({ delay: tokens.base.durationXL })}
+                  >
+                    <div>
+                      <span>
+                        Location:
+                      </span>
+                      <span>
+                        Watford, Hertfordshire
+                      </span>                      
+                    </div>
+                  </span>
+                </span>   
+                <span aria-hidden className={styles.rowFive}>
+                  <span
+                    className={styles.word}
+                    data-status={status}
+                    style={cssProps({ delay: tokens.base.durationXL })}
+                  >
+                    <div>
+                      <span>
+                        Hello, I'm Rowley and I build pixel-perfect, interactive, and accessible user interfaces. 
+                        I specialize in the sweet spot between design and code, turning wireframes and designs into 
+                        beautifully smooth web experiences. I also have a huge amount of experience working with various CMSs.
+                      </span>
+                    </div>
+                  </span>
+                </span>                                
               </Heading>
             </header>
             <RouterLink
-              to="/#project-1"
+              to="/#Debeers"
               className={styles.scrollIndicator}
               data-status={status}
               data-hidden={scrollIndicatorHidden}
@@ -126,7 +169,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
               <VisuallyHidden>Scroll to projects</VisuallyHidden>
             </RouterLink>
             <RouterLink
-              to="/#project-1"
+              to="/#Debeers"
               className={styles.mobileScrollIndicator}
               data-status={status}
               data-hidden={scrollIndicatorHidden}

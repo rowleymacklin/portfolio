@@ -1,1 +1,0 @@
-export { Random as default, meta } from './random';

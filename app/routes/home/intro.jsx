@@ -99,7 +99,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                         <span
                           aria-hidden
                           ref={nodeRef}
-                          className={styles.word}
+                          className={styles.rowTwoWord}
                           data-plus={true}
                           data-status={status}
                           style={cssProps({ delay: tokens.base.durationM })}
