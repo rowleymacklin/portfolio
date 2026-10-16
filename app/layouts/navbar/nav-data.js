@@ -6,8 +6,8 @@ export const navLinks = [
     pathname: '/#Debeers',
   },
   {
-    label: 'Info',
-    pathname: '/#details',
+    label: 'About me',
+    pathname: '/#about',
   },   
   {
     label: 'Skills',

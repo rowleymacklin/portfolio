@@ -1,49 +1,6 @@
-import backgroundSprLarge from '~/assets/spr-background-large.jpg';
-import backgroundSprPlaceholder from '~/assets/spr-background-placeholder.jpg';
 import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-large.jpg';
 import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from '~/assets/spr-background-volcanism.jpg';
-import backgroundSpr from '~/assets/spr-background.jpg';
-import imageSprComponentsDarkLarge from '~/assets/spr-components-dark-large.png';
-import imageSprComponentsDarkPlaceholder from '~/assets/spr-components-dark-placeholder.png';
-import imageSprComponentsDark from '~/assets/spr-components-dark.png';
-import imageSprComponentsLightLarge from '~/assets/spr-components-light-large.png';
-import imageSprComponentsLightPlaceholder from '~/assets/spr-components-light-placeholder.png';
-import imageSprComponentsLight from '~/assets/spr-components-light.png';
-import imageSprDesignSystemDarkLarge from '~/assets/spr-design-system-dark-large.png';
-import imageSprDesignSystemDarkPlaceholder from '~/assets/spr-design-system-dark-placeholder.png';
-import imageSprDesignSystemDark from '~/assets/spr-design-system-dark.png';
-import imageSprDesignSystemLightLarge from '~/assets/spr-design-system-light-large.png';
-import imageSprDesignSystemLightPlaceholder from '~/assets/spr-design-system-light-placeholder.png';
-import imageSprDesignSystemLight from '~/assets/spr-design-system-light.png';
-import imageSprLessonBuilderDarkLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import imageSprLessonBuilderDarkPlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import imageSprLessonBuilderDark from '~/assets/spr-lesson-builder-dark.jpg';
-import imageSprLessonBuilderLightLarge from '~/assets/spr-lesson-builder-light-large.jpg';
-import imageSprLessonBuilderLightPlaceholder from '~/assets/spr-lesson-builder-light-placeholder.jpg';
-import imageSprLessonBuilderLight from '~/assets/spr-lesson-builder-light.jpg';
-import videoSprMotionLarge from '~/assets/spr-motion-large.mp4';
-import videoSprMotionPlaceholder from '~/assets/spr-motion-placeholder.jpg';
-import videoSprMotion from '~/assets/spr-motion.mp4';
-import imageSprSchema1DarkLarge from '~/assets/spr-schema-1-dark-large.png';
-import imageSprSchema1DarkPlaceholder from '~/assets/spr-schema-1-dark-placeholder.png';
-import imageSprSchema1Dark from '~/assets/spr-schema-1-dark.png';
-import imageSprSchema1LightLarge from '~/assets/spr-schema-1-light-large.png';
-import imageSprSchema1LightPlaceholder from '~/assets/spr-schema-1-light-placeholder.png';
-import imageSprSchema1Light from '~/assets/spr-schema-1-light.png';
-import imageSprSchema2DarkLarge from '~/assets/spr-schema-2-dark-large.png';
-import imageSprSchema2DarkPlaceholder from '~/assets/spr-schema-2-dark-placeholder.png';
-import imageSprSchema2Dark from '~/assets/spr-schema-2-dark.png';
-import imageSprSchema2LightLarge from '~/assets/spr-schema-2-light-large.png';
-import imageSprSchema2LightPlaceholder from '~/assets/spr-schema-2-light-placeholder.png';
-import imageSprSchema2Light from '~/assets/spr-schema-2-light.png';
-import imageSprStoryboarderDarkLarge from '~/assets/spr-storyboarder-dark-large.png';
-import imageSprStoryboarderDarkPlaceholder from '~/assets/spr-storyboarder-dark-placeholder.png';
-import imageSprStoryboarderDark from '~/assets/spr-storyboarder-dark.png';
-import imageSprStoryboarderLightLarge from '~/assets/spr-storyboarder-light-large.png';
-import imageSprStoryboarderLightPlaceholder from '~/assets/spr-storyboarder-light-placeholder.png';
-import imageSprStoryboarderLight from '~/assets/spr-storyboarder-light.png';
-
 
 import backgroundMulberryLarge from '~/assets/work-mulberry-preview-large.jpg';
 import backgroundMulberryPlaceholder from '~/assets/work-mulberry-preview-placeholder.jpg';
@@ -61,7 +18,6 @@ import imageMulberryAmplienceImageTwo from '~/assets/work-mulberry-amplience-2.j
 import imageMulberryAmplienceImageTwoLarge from '~/assets/work-mulberry-amplience-2-large.jpg';
 import imageMulberryAmplienceImageTwoPlaceholder from '~/assets/work-mulberry-amplience-2-placeholder.jpg';
 
-
 import imageMulberryEccentricImageOne from '~/assets/work-mulberry-eccentric-1.jpg';
 import imageMulberryEccentricImageOneLarge from '~/assets/work-mulberry-eccentric-1-large.jpg';
 import imageMulberryEccentricImageOnePlaceholder from '~/assets/work-mulberry-eccentric-1-placeholder.jpg';
@@ -70,7 +26,6 @@ import imageMulberryEccentricImageTwo from '~/assets/work-mulberry-eccentric-2.j
 import imageMulberryEccentricImageTwoLarge from '~/assets/work-mulberry-eccentric-2-large.jpg';
 import imageMulberryEccentricImageTwoPlaceholder from '~/assets/work-mulberry-eccentric-2-placeholder.jpg';
 
-
 import imageMulberryGlobalImageOne from '~/assets/work-mulberry-global-1.jpg';
 import imageMulberryGlobalImageOneLarge from '~/assets/work-mulberry-global-1-large.jpg';
 import imageMulberryGlobalImageOnePlaceholder from '~/assets/work-mulberry-global-1-placeholder.jpg';
@@ -78,12 +33,6 @@ import imageMulberryGlobalImageOnePlaceholder from '~/assets/work-mulberry-globa
 import imageMulberryGlobalImageTwo from '~/assets/work-mulberry-global-2.jpg';
 import imageMulberryGlobalImageTwoLarge from '~/assets/work-mulberry-global-2-large.jpg';
 import imageMulberryGlobalImageTwoPlaceholder from '~/assets/work-mulberry-global-2-placeholder.jpg';
-
-
-
-
-
-
 
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
@@ -146,12 +95,14 @@ export const Mulberry = () => {
           srcSet={`${backgroundMulberry} 1080w, ${backgroundMulberryLarge} 2160w`}
           placeholder={backgroundMulberryPlaceholder}
         />
+
         <ProjectHeader
           title={title}
           description={description}
           url="https://www.mulberry.com/"
           roles={roles}
         />
+
         <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
@@ -170,18 +121,18 @@ export const Mulberry = () => {
 
         <ThemeProvider theme="dark" data-invert>
           <ProjectSection
-              backgroundOverlayOpacity={0.5}
-              backgroundElement={
-                <Image
-                  srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
-                  width={1280}
-                  height={900}
-                  placeholder={imageSprBackgroundVolcanismPlaceholder}
-                  alt="A dramatic ocean scene with lava forming a new land mass."
-                  sizes="100vw"
-                />
-              }
-            >
+            backgroundOverlayOpacity={0.5}
+            backgroundElement={
+              <Image
+                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
+                width={1280}
+                height={900}
+                placeholder={imageSprBackgroundVolcanismPlaceholder}
+                alt="A dramatic ocean scene with lava forming a new land mass."
+                sizes="100vw"
+              />
+            }
+          >
             <ProjectSectionColumnsTextOnly>
               <ProjectSectionContent>
                 <ProjectTextRow>
@@ -303,8 +254,6 @@ export const Mulberry = () => {
             </div>
           </ProjectSectionColumns>
         </ProjectSection>   
-
-
 
         <ProjectSection>
           <ProjectSectionColumns>

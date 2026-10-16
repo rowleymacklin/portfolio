@@ -151,8 +151,8 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                     <div>
                       <span>
                         Hello, I'm Rowley and I build pixel-perfect, interactive, and accessible user interfaces. 
-                        I specialize in the sweet spot between design and code, turning wireframes and designs into 
-                        beautifully smooth web experiences. I also have a huge amount of experience working with various CMSs.
+                        I specialize in the sweet spot between design and code, turning wire-frames and designs into 
+                        beautifully smooth, accessible web experiences. I also have a huge amount of experience working with various CMSs.
                       </span>
                     </div>
                   </span>

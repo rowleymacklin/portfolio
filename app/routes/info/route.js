@@ -1,0 +1,1 @@
+export { Info as default, meta } from './info';

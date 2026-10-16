@@ -1,50 +1,6 @@
-import backgroundSprLarge from '~/assets/spr-background-large.jpg';
-import backgroundSprPlaceholder from '~/assets/spr-background-placeholder.jpg';
 import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-large.jpg';
 import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from '~/assets/spr-background-volcanism.jpg';
-import backgroundSpr from '~/assets/spr-background.jpg';
-import imageSprComponentsDarkLarge from '~/assets/spr-components-dark-large.png';
-import imageSprComponentsDarkPlaceholder from '~/assets/spr-components-dark-placeholder.png';
-import imageSprComponentsDark from '~/assets/spr-components-dark.png';
-import imageSprComponentsLightLarge from '~/assets/spr-components-light-large.png';
-import imageSprComponentsLightPlaceholder from '~/assets/spr-components-light-placeholder.png';
-import imageSprComponentsLight from '~/assets/spr-components-light.png';
-import imageSprDesignSystemDarkLarge from '~/assets/spr-design-system-dark-large.png';
-import imageSprDesignSystemDarkPlaceholder from '~/assets/spr-design-system-dark-placeholder.png';
-import imageSprDesignSystemDark from '~/assets/spr-design-system-dark.png';
-import imageSprDesignSystemLightLarge from '~/assets/spr-design-system-light-large.png';
-import imageSprDesignSystemLightPlaceholder from '~/assets/spr-design-system-light-placeholder.png';
-import imageSprDesignSystemLight from '~/assets/spr-design-system-light.png';
-import imageSprLessonBuilderDarkLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import imageSprLessonBuilderDarkPlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import imageSprLessonBuilderDark from '~/assets/spr-lesson-builder-dark.jpg';
-import imageSprLessonBuilderLightLarge from '~/assets/spr-lesson-builder-light-large.jpg';
-import imageSprLessonBuilderLightPlaceholder from '~/assets/spr-lesson-builder-light-placeholder.jpg';
-import imageSprLessonBuilderLight from '~/assets/spr-lesson-builder-light.jpg';
-import videoSprMotionLarge from '~/assets/spr-motion-large.mp4';
-import videoSprMotionPlaceholder from '~/assets/spr-motion-placeholder.jpg';
-import videoSprMotion from '~/assets/spr-motion.mp4';
-import imageSprSchema1DarkLarge from '~/assets/spr-schema-1-dark-large.png';
-import imageSprSchema1DarkPlaceholder from '~/assets/spr-schema-1-dark-placeholder.png';
-import imageSprSchema1Dark from '~/assets/spr-schema-1-dark.png';
-import imageSprSchema1LightLarge from '~/assets/spr-schema-1-light-large.png';
-import imageSprSchema1LightPlaceholder from '~/assets/spr-schema-1-light-placeholder.png';
-import imageSprSchema1Light from '~/assets/spr-schema-1-light.png';
-import imageSprSchema2DarkLarge from '~/assets/spr-schema-2-dark-large.png';
-import imageSprSchema2DarkPlaceholder from '~/assets/spr-schema-2-dark-placeholder.png';
-import imageSprSchema2Dark from '~/assets/spr-schema-2-dark.png';
-import imageSprSchema2LightLarge from '~/assets/spr-schema-2-light-large.png';
-import imageSprSchema2LightPlaceholder from '~/assets/spr-schema-2-light-placeholder.png';
-import imageSprSchema2Light from '~/assets/spr-schema-2-light.png';
-import imageSprStoryboarderDarkLarge from '~/assets/spr-storyboarder-dark-large.png';
-import imageSprStoryboarderDarkPlaceholder from '~/assets/spr-storyboarder-dark-placeholder.png';
-import imageSprStoryboarderDark from '~/assets/spr-storyboarder-dark.png';
-import imageSprStoryboarderLightLarge from '~/assets/spr-storyboarder-light-large.png';
-import imageSprStoryboarderLightPlaceholder from '~/assets/spr-storyboarder-light-placeholder.png';
-import imageSprStoryboarderLight from '~/assets/spr-storyboarder-light.png';
-
-
 import backgroundTkmaxxLarge from '~/assets/work-tkmaxx-preview-large.jpg';
 import backgroundTkmaxxPlaceholder from '~/assets/work-tkmaxx-preview-placeholder.jpg';
 import backgroundTkmaxx from '~/assets/work-tkmaxx-preview.jpg';
@@ -60,9 +16,6 @@ import imageTkmaxxHybrisImageOnePlaceholder from '~/assets/work-tkmaxx-component
 import imageTkmaxxHybrisImageTwo from '~/assets/work-tkmaxx-components-2.jpg';
 import imageTkmaxxHybrisImageTwoLarge from '~/assets/work-tkmaxx-components-2-large.jpg';
 import imageTkmaxxHybrisImageTwoPlaceholder from '~/assets/work-tkmaxx-components-2-placeholder.jpg';
-
-
-
 
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
@@ -125,12 +78,14 @@ export const Tkmaxx = () => {
           srcSet={`${backgroundTkmaxx} 1080w, ${backgroundTkmaxxLarge} 2160w`}
           placeholder={backgroundTkmaxxPlaceholder}
         />
+
         <ProjectHeader
           title={title}
           description={description}
           url="https://www.tkmaxx.com/"
           roles={roles}
         />
+
         <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
@@ -147,8 +102,8 @@ export const Tkmaxx = () => {
           </ProjectSectionContent>
         </ProjectSection>
 
-      <ThemeProvider theme="dark" data-invert>
-        <ProjectSection
+        <ThemeProvider theme="dark" data-invert>
+          <ProjectSection
             backgroundOverlayOpacity={0.5}
             backgroundElement={
               <Image
@@ -161,39 +116,36 @@ export const Tkmaxx = () => {
               />
             }
           >
-          <ProjectSectionColumnsTextOnly>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
-                <ProjectSectionText>
-                  TKMaxx were refreshing their global site to a new Hybris environment. My main role was to setup the front end environment, lead the front end team and create some of the new components. As well as advise various in-house teams on integration and running Hybris.
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  Converted static components to work in Hybris: homepage hero, listing page hero, footer, global icons
-                </ProjectSectionText>  
-                <ProjectSectionText>
-                  Regular meetings with various teams: design, backend Hybris developers, business analysts, client, third-party design agency. The main focus was clarifications, estimates, expectations and workloads
-                </ProjectSectionText>                                                                                  
-              </ProjectTextRow>
-            </ProjectSectionContent>
-            <ProjectSectionContent>
-              <ProjectTextRow>
-                <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
-                <ProjectSectionText>
-                  It’s always nice to start a project from Discovery phase 1, to get a full picture of requirements and to see the project grow right from the start.
-                </ProjectSectionText>
-                <ProjectSectionText>
-                  Wrote an extensive Front End Best Practice document for the team
-                </ProjectSectionText>                      
-                    
-              </ProjectTextRow>
-            </ProjectSectionContent>
-          </ProjectSectionColumnsTextOnly>
-        </ProjectSection>  
-      </ThemeProvider> 
-
-
-
+            <ProjectSectionColumnsTextOnly>
+              <ProjectSectionContent>
+                <ProjectTextRow>
+                  <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    TKMaxx were refreshing their global site to a new Hybris environment. My main role was to setup the front end environment, lead the front end team and create some of the new components. As well as advise various in-house teams on integration and running Hybris.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Converted static components to work in Hybris: homepage hero, listing page hero, footer, global icons
+                  </ProjectSectionText>  
+                  <ProjectSectionText>
+                    Regular meetings with various teams: design, backend Hybris developers, business analysts, client, third-party design agency. The main focus was clarifications, estimates, expectations and workloads
+                  </ProjectSectionText>                                                                                  
+                </ProjectTextRow>
+              </ProjectSectionContent>
+              <ProjectSectionContent>
+                <ProjectTextRow>
+                  <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
+                  <ProjectSectionText>
+                    It’s always nice to start a project from Discovery phase 1, to get a full picture of requirements and to see the project grow right from the start.
+                  </ProjectSectionText>
+                  <ProjectSectionText>
+                    Wrote an extensive Front End Best Practice document for the team
+                  </ProjectSectionText>                      
+                      
+                </ProjectTextRow>
+              </ProjectSectionContent>
+            </ProjectSectionColumnsTextOnly>
+          </ProjectSection>  
+        </ThemeProvider> 
 
         <ProjectSection>
           <ProjectTextRow>
@@ -226,8 +178,6 @@ export const Tkmaxx = () => {
           </ProjectTextRow>
         </ProjectSection>
         
-
-
         <ProjectSection>
           <ProjectSectionColumns>
             <ProjectSectionContent>
@@ -270,7 +220,6 @@ export const Tkmaxx = () => {
             </div>
           </ProjectSectionColumns>
         </ProjectSection>   
-
 
       </ProjectContainer>
       <Footer />

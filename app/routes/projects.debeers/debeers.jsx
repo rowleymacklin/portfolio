@@ -1,48 +1,6 @@
-
-
 import imageSprBackgroundVolcanismLarge from '~/assets/spr-background-volcanism-large.jpg';
 import imageSprBackgroundVolcanismPlaceholder from '~/assets/spr-background-volcanism-placeholder.jpg';
 import imageSprBackgroundVolcanism from '~/assets/spr-background-volcanism.jpg';
-
-import imageSprComponentsDarkLarge from '~/assets/spr-components-dark-large.png';
-import imageSprComponentsDarkPlaceholder from '~/assets/spr-components-dark-placeholder.png';
-import imageSprComponentsDark from '~/assets/spr-components-dark.png';
-import imageSprComponentsLightLarge from '~/assets/spr-components-light-large.png';
-import imageSprComponentsLightPlaceholder from '~/assets/spr-components-light-placeholder.png';
-import imageSprComponentsLight from '~/assets/spr-components-light.png';
-import imageSprDesignSystemDarkLarge from '~/assets/spr-design-system-dark-large.png';
-import imageSprDesignSystemDarkPlaceholder from '~/assets/spr-design-system-dark-placeholder.png';
-import imageSprDesignSystemDark from '~/assets/spr-design-system-dark.png';
-import imageSprDesignSystemLightLarge from '~/assets/spr-design-system-light-large.png';
-import imageSprDesignSystemLightPlaceholder from '~/assets/spr-design-system-light-placeholder.png';
-import imageSprDesignSystemLight from '~/assets/spr-design-system-light.png';
-import imageSprLessonBuilderDarkLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import imageSprLessonBuilderDarkPlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
-import imageSprLessonBuilderDark from '~/assets/spr-lesson-builder-dark.jpg';
-import imageSprLessonBuilderLightLarge from '~/assets/spr-lesson-builder-light-large.jpg';
-import imageSprLessonBuilderLightPlaceholder from '~/assets/spr-lesson-builder-light-placeholder.jpg';
-import imageSprLessonBuilderLight from '~/assets/spr-lesson-builder-light.jpg';
-import videoSprMotionLarge from '~/assets/spr-motion-large.mp4';
-import videoSprMotionPlaceholder from '~/assets/spr-motion-placeholder.jpg';
-import videoSprMotion from '~/assets/spr-motion.mp4';
-import imageSprSchema1DarkLarge from '~/assets/spr-schema-1-dark-large.png';
-import imageSprSchema1DarkPlaceholder from '~/assets/spr-schema-1-dark-placeholder.png';
-import imageSprSchema1Dark from '~/assets/spr-schema-1-dark.png';
-import imageSprSchema1LightLarge from '~/assets/spr-schema-1-light-large.png';
-import imageSprSchema1LightPlaceholder from '~/assets/spr-schema-1-light-placeholder.png';
-import imageSprSchema1Light from '~/assets/spr-schema-1-light.png';
-import imageSprSchema2DarkLarge from '~/assets/spr-schema-2-dark-large.png';
-import imageSprSchema2DarkPlaceholder from '~/assets/spr-schema-2-dark-placeholder.png';
-import imageSprSchema2Dark from '~/assets/spr-schema-2-dark.png';
-import imageSprSchema2LightLarge from '~/assets/spr-schema-2-light-large.png';
-import imageSprSchema2LightPlaceholder from '~/assets/spr-schema-2-light-placeholder.png';
-import imageSprSchema2Light from '~/assets/spr-schema-2-light.png';
-import imageSprStoryboarderDarkLarge from '~/assets/spr-storyboarder-dark-large.png';
-import imageSprStoryboarderDarkPlaceholder from '~/assets/spr-storyboarder-dark-placeholder.png';
-import imageSprStoryboarderDark from '~/assets/spr-storyboarder-dark.png';
-import imageSprStoryboarderLightLarge from '~/assets/spr-storyboarder-light-large.png';
-import imageSprStoryboarderLightPlaceholder from '~/assets/spr-storyboarder-light-placeholder.png';
-import imageSprStoryboarderLight from '~/assets/spr-storyboarder-light.png';
 
 import backgroundDebeersLarge from '~/assets/work-debeers-preview-large.jpg';
 import backgroundDebeersPlaceholder from '~/assets/work-debeers-preview-large.jpg';
@@ -67,9 +25,6 @@ import imageDebeersCampaignsLandscapePlaceholder from '~/assets/work-debeers-cam
 import videoDebeersCampaignsGsap from '~/assets/work-debeers-campaigns-gsap-video.mp4';
 import videoDebeersCampaignsGsapLarge from '~/assets/work-debeers-campaigns-gsap-video-large.mp4';
 import videoDebeersCampaignsGsapPlaceholder from '~/assets/work-debeers-campaigns-gsap-placeholder.jpg';
-
-
-
 
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
@@ -99,7 +54,7 @@ const title = 'De Beers';
 const date = 'Jan 2021 - Jul 2026';
 const job = 'Lead Frontend developer';
 const description =
-  'I worked as the Lead Frontent Developer/ Software Engineer on a huge variety of really enjoyable tasks. I was with DeBeers for nearly 6 years and enjoyed every single project. We had some great achievements here, including: Optimizing the rendered media by 50%, introducing new visual documentation for new developers and for all teams to have visibility of the whole eco-system, re-writing the whole codebase for easier readability and of course exciting new campaigns every month.';
+  'I worked as the Lead Frontent Developer on a huge variety of really enjoyable tasks. I was with DeBeers for nearly 6 years and enjoyed every single project. We had some great achievements here, including: Optimizing the rendered media by 50%, introducing new visual documentation for new developers and for all teams to have visibility of the whole eco-system, re-writing the whole codebase for easier readability and of course exciting new campaigns every month.';
 const roles = [
   'CSS (SCSS/SASS) · HTML · Responsive Design · Media Compression & Optimization · Web Performance Optimization · Testing & Debugging · UI/ UX Design Principles · Accessible Code/Guidelines · JSON Data · Handlebars Templates · jQuery · JavaScript · Amplience CMS · Bootstrap CSS · Git · CMS Content Editing & Development · Azure Devops · Salesforce · Generative AI Fundamentals · Gulp · Figma · GSAP · Design Patterns & Principles',
   'Frontend Development',
@@ -140,6 +95,7 @@ export const Debeers = () => {
           url="https://www.debeers.com"
           roles={roles}
         />
+
         <ProjectSection padding="top">
           <ProjectSectionContent>
             <ProjectImage
@@ -156,8 +112,8 @@ export const Debeers = () => {
           </ProjectSectionContent>
         </ProjectSection>
 
-      <ThemeProvider theme="dark" data-invert>
-        <ProjectSection
+        <ThemeProvider theme="dark" data-invert>
+          <ProjectSection
             backgroundOverlayOpacity={0.5}
             backgroundElement={
               <Image
@@ -228,30 +184,30 @@ export const Debeers = () => {
                 </ProjectSectionContent>
               </ProjectSectionColumnsTextOnly>
             </ProjectSection>   
-            </ThemeProvider>           
+        </ThemeProvider>           
 
-          <ProjectSection>
-            <ProjectSectionColumns width="full">
-              <ProjectSectionContent width="full">
-                <ProjectTextRow width="s">
-                  <ProjectSectionHeading>GSAP Integration</ProjectSectionHeading>
-                  <ProjectSectionText>
-                    As specific animation and page scroll anomations were requested by business I integrated GSAP into the Amplience system. The main challenge was limiting it to specific pages, not to overload the page load speed for all pages. This was done carefully with page specific dependencies.
-                  </ProjectSectionText>
-                </ProjectTextRow>
-              </ProjectSectionContent>
-              <Image
-                raised
-                className={styles.video}
-                srcSet={`${videoDebeersCampaignsGsap} 1280w, ${videoDebeersCampaignsGsapLarge} 2560w`}
-                width={1280}
-                height={800}
-                placeholder={videoDebeersCampaignsGsapPlaceholder}
-                alt="DeBeers GSAP Intergration Animation Example"
-                sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
-              />
-            </ProjectSectionColumns>
-          </ProjectSection>        
+        <ProjectSection>
+          <ProjectSectionColumns width="full">
+            <ProjectSectionContent width="full">
+              <ProjectTextRow width="s">
+                <ProjectSectionHeading>GSAP Integration</ProjectSectionHeading>
+                <ProjectSectionText>
+                  As specific animation and page scroll anomations were requested by business I integrated GSAP into the Amplience system. The main challenge was limiting it to specific pages, not to overload the page load speed for all pages. This was done carefully with page specific dependencies.
+                </ProjectSectionText>
+              </ProjectTextRow>
+            </ProjectSectionContent>
+            <Image
+              raised
+              className={styles.video}
+              srcSet={`${videoDebeersCampaignsGsap} 1280w, ${videoDebeersCampaignsGsapLarge} 2560w`}
+              width={1280}
+              height={800}
+              placeholder={videoDebeersCampaignsGsapPlaceholder}
+              alt="DeBeers GSAP Intergration Animation Example"
+              sizes={`(max-width: ${media.mobile}px) 100vw, 50vw`}
+            />
+          </ProjectSectionColumns>
+        </ProjectSection>        
 
         <ProjectSection>
           <ProjectTextRow>
@@ -264,8 +220,7 @@ export const Debeers = () => {
           </ProjectTextRow>
         </ProjectSection>       
 
-
-          <ProjectSection>
+        <ProjectSection>
           <ProjectSectionColumns>
             <ProjectSectionContent>
               <ProjectTextRow>
@@ -305,7 +260,6 @@ export const Debeers = () => {
           </ProjectSectionColumns>
         </ProjectSection>   
 
-
         <ProjectSection>
           <ProjectSectionContent>
             <Image
@@ -321,9 +275,7 @@ export const Debeers = () => {
           </ProjectSectionContent>
         </ProjectSection>
 
-
-
-          <ProjectSection>
+        <ProjectSection>
           <ProjectTextRow>
             <ProjectSectionHeading>Media Optimization</ProjectSectionHeading>
             <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
@@ -338,7 +290,7 @@ export const Debeers = () => {
               For videos, I created a new fallback method, loading in a new order: VP9/ webM/ MP4. Most videos page load file size was reduced by 50% or more. This was especially useful for mobile/ tablet devices.
             </ProjectSectionText>       
           </ProjectTextRow>
-          </ProjectSection>
+        </ProjectSection>
 
         <ProjectSection>
           <ProjectSectionContent>
@@ -350,6 +302,7 @@ export const Debeers = () => {
             </ProjectTextRow>
           </ProjectSectionContent>
         </ProjectSection>
+
       </ProjectContainer>
       <Footer />
     </>

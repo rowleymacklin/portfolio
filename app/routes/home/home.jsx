@@ -33,18 +33,13 @@ import workVariousLarge from '~/assets/work-various-home-large.jpg';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
-import { Profile } from './profile';
+import { About } from './about';
 import { Skills } from './skills';
 import { ProjectSummary } from './project-summary';
-import { Image } from '~/components/image';
-import { Button } from '~/components/button';
 import { useEffect, useRef, useState } from 'react';
-import { media } from '~/utils/style';
-import { useScrollToHash, useWindowSize } from '~/hooks';
 import config from '~/config.json';
 import styles from './home.module.css';
 
-// Prefetch draco decoader wasm
 export const links = () => {
   return [
     {
@@ -85,11 +80,11 @@ export const Home = () => {
   const Barbour = useRef(); 
   const Drmartens = useRef();  
   const Various = useRef();
-  const details = useRef();
+  const about = useRef();
   const skills = useRef();
 
   useEffect(() => {
-    const sections = [intro, Debeers, Autosport, Mulberry, Tkmaxx, Gucci, Goodyear, Sainsburys, Barbour, Drmartens, Various, details, skills];
+    const sections = [intro, Debeers, Autosport, Mulberry, Tkmaxx, Gucci, Goodyear, Sainsburys, Barbour, Drmartens, Various, about, skills];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -373,10 +368,10 @@ export const Home = () => {
           ],
         }}
       />
-      <Profile
-        sectionRef={details}
-        visible={visibleSections.includes(details.current)}
-        id="details"
+      <About
+        sectionRef={about}
+        visible={visibleSections.includes(about.current)}
+        id="about"
       />
       <Skills
         sectionRef={skills}
