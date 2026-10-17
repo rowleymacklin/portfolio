@@ -97,7 +97,7 @@
     margin: 25px 0 0;
     width: 100%;
     &:before {
-      background-image: url(/static/quote-left.bb4c1a22.svg);
+      background-image: url(/static/quote-left.svg);
       vertical-align: top;
       content: "";
       background-repeat: no-repeat;
@@ -107,7 +107,7 @@
       opacity: 1;
     }
     &:after {
-      background-image: url(/static/quote-right.7a33a8dd.svg);
+      background-image: url(/static/quote-right.svg);
       margin-left: 6px;
       vertical-align: middle;
       content: "";

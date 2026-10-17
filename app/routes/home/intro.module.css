@@ -259,6 +259,12 @@
   }
 }
 
+.wordIntroFirst {
+  &:first-of-type {
+    margin-bottom: 1rem;
+  }
+}
+
 
 @keyframes introLine {
   0% {

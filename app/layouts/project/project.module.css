@@ -412,8 +412,10 @@
     &[data-width='full'] {
       max-width: 100%;
     }
+    strong {
+      font-weight: 500;
+    }
   }
-
   .sectionHeading {
     margin-bottom: 0.6em;
   }

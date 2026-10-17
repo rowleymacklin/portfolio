@@ -29,7 +29,6 @@ import workVariousPlaceholder from '~/assets/work-various-home-large.jpg';
 import workVariousMedium from '~/assets/work-various-home-large.jpg';
 import workVariousLarge from '~/assets/work-various-home-large.jpg';
 
-
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
 import { Intro } from './intro';
@@ -134,8 +133,11 @@ export const Home = () => {
         title="De Beers"
         projectDate="May 2021 - Jul 2026"
         projectJobTitle="Lead Frontend developer"   
-        description="Primary tasks: Creating responsive, accessible, usable components for campaigns and adding them to the Amplience CMS environment. I also worked on a lot of code optimization locally and within Amplience, introducing Atomic Components to improve content team's workflow."
-        descriptionTwo="Proudest of: Optimizing global media by introducing high media compression (image and video) for page performance as well as numerous other tasks. Most image and video file sizes reduced by 45%." 
+
+        description="I worked as the Lead Frontend Developer on a huge variety of really enjoyable tasks. I was with DeBeers for nearly 6 years and enjoyed every single project and task. I had some great achievements here, including: Optimizing the rendered media (Videos + Images) by 50%, introducing new visual documentation for new developers and for all teams to have visibility of the whole code eco-system, introducing GSAP animation to pages, creating a new local environment, re-writing the whole frontend and Amplience codebase for easier readability and optimization.  And of course exciting new campaigns every month, which I call the bread and butter of my work."
+
+        descriptionTwo="Proudest of: Optimizing global media by introducing high media compression (image and video) for page performance as well as numerous other tasks. Most image and video file sizes reduced by 50%." 
+
         skills="CSS (SCSS/SASS) | HTML | Responsive Design | Media Compression & Optimization | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | Accessible Code/Guidelines | JSON Data | Handlebars Templates | jQuery | JavaScript | Amplience CMS | Bootstrap CSS | Git | CMS Content Editing & Development | Azure Devops | Salesforce | Generative AI Fundamentals | Gulp | Figma | GSAP | Design Patterns & Principles | Problem-solving | Client meetings"
         buttonText="View project"
         buttonLink="/projects/debeers"
@@ -160,7 +162,7 @@ export const Home = () => {
         title="Autosport"
         projectDate="Mar 2019 - Feb 2021"
         projectJobTitle="Frontend developer"        
-        description="Primary tasks: Setup and integrated new components to use the new digital experience platform; Piano content experience platform. Also worked on multiple microsites and existing component re-styling."
+        description="I was initially contracted for three months at Autosport to help integrate and style the new Piano digital business platform. Admittedly, it was a challenging first few weeks getting to grips with Piano but that made it all the more enjoyable and I hit the ground running. Let’s just say, the Piano documentation reads like War & Peace 2 (very long). As I loved working here and Autosport had piles of outstanding work, the contract was extended multiple times. Sadly, due to the Covid-19 crisis affecting most racing events and budgets, my contract wasn’t extended."
         descriptionTwo="Proudest of: Learning the Piano content experience platform at pace and implementing styling and layout changes within Piano for the content team" 
         skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | jQuery | JavaScript | Git | CMS Content Editing & Development | Gulp | Zeplin | Photoshop | Piano DXP | AMP (Accelerated Mobile Pages) | Attention to Detail | Adaptability | Time Management | Problem Solving | Client Meetings"
         buttonText="View project"

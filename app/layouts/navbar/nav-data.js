@@ -6,7 +6,7 @@ export const navLinks = [
     pathname: '/#Debeers',
   },
   {
-    label: 'About me',
+    label: 'About',
     pathname: '/#about',
   },   
   {
