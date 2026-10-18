@@ -56,20 +56,17 @@ const job = 'Designer | Web Analyst | Frontend Developer';
 const description =
   'Between 2001 and 2012 my roles varied quite a lot. I started out as a web designer back in the early middle ages, as well as doing some design work. Mostly these were new logo’s for clients and leaflets. My big change came when I started out at Cisco Systems, getting into coding more, and user interaction. I ended up working as a Web Analyst there, over-seeing a team of off-shore developers who updated the Cisco website. I eventually left Cisco to go on a World backpacking trip for a year in 2007. Not because of the work, but as it was a life’s dream of mine and I had to do this while I could still shoulder a backpack. On my return I settled down for what was my work passion, front end development. The roles varied, from permenant to contracting.';
 const roles = [
-  '2012: eValue/Aviva - front end developer | Blackberry - front end developer | M&G/ Man Group - design & front end work | Financial Express - leaflet design',
-  '2011: Dorset Cereals - front end developer | Peugeot 508 - front end developer | Kellogg’s Coco Pops 2011 - front end developer | Luna Di Miele - logo design',
-  '2010: Rated People - front end developer',
-  '2009: Africasolo - front end developer',  
-  '2008: Rolls Round the World - front end developer & travel',   
-  '2005: Cisco Systems - designer/ web analyst',     
-  '2004: Diginuts - front end developer | Laura Carstensen - front end developer | PW Finlayson - leaflet design & logo design | Football Mitoo - logo design | Edible Systems - logo design | L Jalley & Co - logo design',    
-  '2002: Nikkei NEEDS - front end developer',
-  '2001: NHK Japan - front end developer | Portobello Festival - front end developer'
-
-  // '2003: Football Mitoo - Logo Designer | PW Finlayson - Designer'
-  // '2002: Supply Serve - Designer and Web Designer | L Jalley & Co - Logo Designer | Edible Systems - Logo Designer'
-  // '2001: Nikkei NEEDS - Web Designer | NHK Japan - Web Designer'
-  // '2000: Portobello Festival - Designer and Web Designer'
+  '2012: Financial Express - Designer and Frontend Developer | M&G/ Man Group - Designer and Frontend Developer | Blackberry - Frontend Developer | eValue/Aviva - Frontend Developer',
+  '2011: Luna Di Miele - Designer and Frontend Developer | Kellogg’s Coco Pops - Frontend Developer | Peugeot 508 - Frontend Developer | Dorset Cereals - Frontend Developer',
+  '2010: Rated People - Frontend Developer',
+  '2009: Africasolo - Frontend Developer',
+  '2008: Rolls Round the World - Frontend Developer and Travel',
+  '2005: Cisco Systems - Designer, Frontend Developer, Web Analyst',
+  '2004: Laura Carstensen - Frontend Developer | Diginuts - Frontend Developer',
+  '2003: Football Mitoo - Logo Designer | PW Finlayson - Designer',
+  '2002: Supply Serve - Designer and Web Designer | L Jalley & Co - Logo Designer | Edible Systems - Logo Designer',
+  '2001: Nikkei NEEDS - Web Designer | NHK Japan - Web Designer',
+  '2000: Portobello Festival - Designer and Web Designer'
 ];
 
 export const meta = () => {

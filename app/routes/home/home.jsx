@@ -161,9 +161,11 @@ export const Home = () => {
         index={2}
         title="Autosport"
         projectDate="Mar 2019 - Feb 2021"
-        projectJobTitle="Frontend developer"        
+        projectJobTitle="Frontend developer"   
+
         description="I was initially contracted for three months at Autosport to help integrate and style the new Piano digital business platform. Admittedly, it was a challenging first few weeks getting to grips with Piano but that made it all the more enjoyable and I hit the ground running. Let’s just say, the Piano documentation reads like War & Peace 2 (very long). As I loved working here and Autosport had piles of outstanding work, the contract was extended multiple times. Sadly, due to the Covid-19 crisis affecting most racing events and budgets, my contract wasn’t extended."
-        descriptionTwo="Proudest of: Learning the Piano content experience platform at pace and implementing styling and layout changes within Piano for the content team" 
+
+        descriptionTwo="Proudest of: Learning the Piano Content Experience Platform at pace and implementing styling and layout changes within Piano for the content team" 
         skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | jQuery | JavaScript | Git | CMS Content Editing & Development | Gulp | Zeplin | Photoshop | Piano DXP | AMP (Accelerated Mobile Pages) | Attention to Detail | Adaptability | Time Management | Problem Solving | Client Meetings"
         buttonText="View project"
         buttonLink="/projects/autosport"
@@ -185,9 +187,11 @@ export const Home = () => {
         index={3}
         title="Mulberry"
         projectDate="Sept 2016 - Dec 2018"
-        projectJobTitle="Frontend developer"      
-        description="Primary tasks: Set up and integrate all existing and new components for Amplience usage. There was also a lot of work on Microsites for Fashion Week."
-        descriptionTwo="Proudest of: Learning Amplience CMS at pace and creating a new codebase to add to Amplience. I had to hit the road running as I'd never used Amplience before." 
+        projectJobTitle="Frontend developer"  
+
+        description="I was working at Mulberry for rolling 3 month contracts for each main chunk of tasks. The first task was to set up and style the main Mulberry components in Amplience so the content editors could easily update products, text, product images, videos and pricing ranges. As I was new to Amplience it was a very challenging first few weeks, but really enjoyable getting stuck into a new experience. The last task was to re-vamp the global site and components. Outside of Amplience the core of the site was within Hybris, which I’d worked with before. Fantastic place to work, with the added bonus of being a 20 minute walk from home, when I lived in Central London."
+
+        descriptionTwo="Proudest of: Learning Amplience CMS and creating a new codebase to add to Amplience. I had to hit the road running as I'd never used Amplience before." 
         skills="CSS (SCSS/SASS) | HTML | Responsive Design | Media Compression & Optimization | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | JSON Data | Handlebars Templates | jQuery | JavaScript | Amplience CMS | Bootstrap CSS | CMS Content Editing & Development | Figma | Problem-solving | Client meetings"
         buttonText="View project"
         buttonLink="/projects/mulberry"
@@ -209,8 +213,10 @@ export const Home = () => {
         index={6}
         title="TKMaxx"
         projectDate="Jan 2016 - Jul 2016"
-        projectJobTitle="Lead Frontend Developer"        
-        description="Primary tasks: TKMaxx were refreshing their global site to a new Hybris environment. My main role was to setup the front end environment, lead the front end team and create some of the new components. As well as advise various in-house teams on integration and running Hybris."
+        projectJobTitle="Lead Frontend Developer"    
+
+        description="TKMaxx were refreshing their global site to a new Hybris environment. My main role was to setup the front end environment, lead the front end team and create some of the new components. As well as advise various in-house teams on integration and running Hybris. It’s always nice to start a project from Discovery phase 1, to get a full picture of requirements and to see the project grow right from the start."
+
         descriptionTwo="Proudest of: For discovery phase and sprint 1 I had to set up the front end environment using Gulp as the task runner and Git as version control within Hybris Accelerator. This was my first time to set everything up myself. A daunting, but enjoyable task." 
         skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | JSON Data | Handlebars Templates | jQuery | JavaScript | Hybris (Now SAP Hybris) | Bootstrap CSS | CMS Content Editing & Development | Figma | Problem-solving | Client meetings"
         buttonText="View project"
@@ -233,8 +239,10 @@ export const Home = () => {
         index={7}
         title="Gucci"
         projectDate="Aug 2014 - Dec 2015"
-        projectJobTitle="Lead Frontend Developer"        
-        description="Primary tasks: Gucci were switching their global site over to a new Hybris environment. My main role was to review the static code provided by the Gucci in-house designers and developers. Then convert them to Hybris working code."
+        projectJobTitle="Lead Frontend Developer"   
+
+        description="This was the most challenging, and therefore my favourite role by far. I was lead front end for over a year here and it was the most intense project I’d ever worked on. As Gucci is a luxury brand they were understandably very particular about the look and feel of the site. This made the work extra challenging but very rewarding in the end, which I loved. Gucci were switching their global site over to a new Hybris environment. My main role was to review the static code provided by the Gucci in-house designers and developers. Then convert them to Hybris working code."
+
         descriptionTwo="Proudest of: Optimizing the provided code for efficiency and also for compatability within Hybris. And as a bonus the whole site went live slightly earlier than expected." 
         skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | JSP | TAG Files | jQuery | JavaScript | Hybris (Now SAP Hybris) | Bootstrap CSS | CMS Content Editing & Development | Figma | Problem-solving | Client meetings | Diplomacy | Adaptability | Mentoring | Agile | Code Audits"
         buttonText="View project"
@@ -257,8 +265,10 @@ export const Home = () => {
         index={8}
         title="Goodyear"
         projectDate="Feb 2014 - Aug 2014"
-        projectJobTitle="Frontend Developer"        
-        description="Primary tasks: Goodyear were switching their global site over to a new Hybris environment. My main role was to review the static code provided by off-shore designers and developers in Costa Rica. Then I integrated the code within Hybris."
+        projectJobTitle="Frontend Developer"    
+
+        description="Goodyear were switching their global site over to a new Hybris environment. My main role was to review the static code provided by off-shore designers and developers in Costa Rica. Then I integrated the code within Hybris. This was a brilliant contract role as I not only started from Discovery Phase 1 to Production, but as a little bonus it was based in Boston, USA (pronounced locally as Bwoaaastan). It was the first time I’d worked abroad and even though I arrived during the coldest winter they’d experienced in 1,000 years (apparently), I loved it."
+
         descriptionTwo="Proudest of: Optimizing the provided code for efficiency. Helping to train all departments in how to work with Hybris Accelerator. And of course, surviving the arctic conditions of mid-Winter Boston." 
         skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | jQuery | JavaScript | Hybris (Now SAP Hybris) | JSP | TAG Files | Bootstrap CSS | CMS Content Editing & Development | Problem-solving | Client meetings | Diplomacy | Adaptability | Mentoring | Agile | Code Audits"
         buttonText="View project"
@@ -281,8 +291,10 @@ export const Home = () => {
         index={9}
         title="Sainsbury's Tu"
         projectDate="Dec 2013 - Feb 2014"
-        projectJobTitle="Frontend Developer"        
-        description="Primary tasks: I came onboard this project mid-sprint. My main focus for the three sprints was form data. I worked on most of the Sainsbury's Tu forms."
+        projectJobTitle="Frontend Developer"       
+
+        description="I joined the project from sprint 4 to sprint 9, then was pulled off the project for Goodyear in Boston. Most of my Jira tasks were converting flat designs to semantic code: all the form elements and hero components. As well as some bug fixing."
+
         descriptionTwo="Proudest of: Producing very functional forms perfectly matching designs and vision." 
         skills="CSS (SCSS/SASS) | HTML | Responsive Design | Testing & Debugging | jQuery | JavaScript | Hybris (Now SAP Hybris) | JSP | TAG Files | Bootstrap CSS | CMS Content Editing & Development | Problem-solving | Client meetings |  Agile"
         buttonText="View project"
@@ -305,8 +317,10 @@ export const Home = () => {
         index={10}
         title="Barbour"
         projectDate="Nov 2013 - Dec 2013"
-        projectJobTitle="Frontend Developer"        
-        description="Primary tasks: I was brought onto this project purely for go-live bug fixing within Hybris."
+        projectJobTitle="Frontend Developer"    
+
+        description="I came into the Barbour project just before phase 2 production release, the last two sprints. Most of my daily tasks were bug fixing and problem solving and just generally supporting the front end team before production. I really enjoyed this role as it was ‘all hands on deck’ for bug fixing within Hybris, with a limited time constraint."
+
         descriptionTwo="Proudest of: Hitting the ground running understanding the project and codebase and fixing many varied bugs: functional, styling, accessbility and optimisation." 
         skills="CSS (SCSS/SASS) | HTML | Responsive Design | Testing & Debugging | jQuery | JavaScript | Hybris (Now SAP Hybris) | JSP | TAG Files | Bootstrap CSS | CMS Content Editing & Development | Problem-solving | Client meetings |  Agile"
         buttonText="View project"
@@ -330,7 +344,9 @@ export const Home = () => {
         title="Dr Martens"
         projectDate="May 2013 - Oct 2013"
         projectJobTitle="Designer | Lead Frontend Developer"        
-        description="Primary tasks: Create new wireframes and designs based on notes and requirements from the client. These were then converted to code directly within Hybris."
+
+        description="Create new wireframes and designs based on notes and requirements from the client. These were then converted to code directly within Hybris. I really enjoyed this role as I joined from the start of Discovery Phase 1 all the way to Production, and beyond. As well as writing the code, I created the base designs to work from for the client. Being my first delve into the Hybris world, I had to learn extremely quickly. Hybris documentation being notoriously scarce, I had to learn the hard way. This proved extremely challenging, but very rewarding."
+
         descriptionTwo="Proudest of: The designs came out really well and was appreciated by the client: focussing on the black and yellows colour theme and large, over-bold text to represent the strangth of Dr Martens footwear. Ultimately the whole project was released to production on time." 
         skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | JSP | TAG Files | jQuery | JavaScript | Hybris (Now SAP Hybris) | Bootstrap CSS | CMS Content Editing & Development | Figma | Problem-solving | Client meetings | Diplomacy | Adaptability | Mentoring | Agile | Photoshop | Illustrator"
         buttonText="View project"
@@ -353,8 +369,10 @@ export const Home = () => {
         index={12}
         title="Various"
         projectDate="Jan 2000 - Apr 2013"
-        projectJobTitle="Designer | Web Designer | Web Analyst | Frontend Developer"        
-        description="Primary tasks: These ranged from logo designs to corporate web analysis."
+        projectJobTitle="Designer | Web Designer | Web Analyst | Frontend Developer"   
+
+        description="This was an amazing and varied period of work in my life. Ranging from logo designing, leaflet designing, old school web designing, web analysis and eventually frontend developemnt."
+
         descriptionTwo="Proudest of: Working at Cisco Systems was probaly the most impactful role I've ever had, as I learned a whole set of new skillsets. This ranged from meetings etiquette to managing a team of remote developers, as well as real world frontend development within a very large corporation. The work here set me up until now. Also, in hindshight it was interesting creating vanilla CSS without the use of SCSS/ SASS or preprocessors, as this was before SASS they were introduced globally." 
         skills="CSS | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | Problem-solving | Client meetings | Client Relationship Management | Diplomacy | Adaptability | Mentoring | Agile | Photoshop | ImageReady | Illustrator | Typography Principles | Colour Theory"
         buttonText="View project"
