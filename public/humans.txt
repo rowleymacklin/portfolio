@@ -11,10 +11,9 @@ The original base was kindly made public by Hamish Williams: https://hamishw.com
 I have used his base as a React learning experiment. His original is a brilliant piece of development work. 
 In my opinion, his portfolio is much cleaner and visually better than mine, but I've made some major changes to everything, including: layout, navigation, colour theme, pages, font layout and page loading.
 Most importantly I've taken a gamble on having x11 (rather than x3) threeJS instances on one page (for desktop),
-which hopefully won't impact the users experience. I removed this for mobile, 
-for fear of memory drain and very slow user experience.
+which hopefully won't impact the users experience.
 
-DESIGNER - LATEST
+DESIGNER - LATEST ITERATION
 
 Rowley Macklin
 
