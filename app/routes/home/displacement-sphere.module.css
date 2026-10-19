@@ -10,4 +10,11 @@
   &[data-visible='true'] {
     opacity: 1;
   }
+
+    @media (max-width: 768px) {
+        max-height: 100vh;
+        right: 0;
+        left: auto;
+    }
+
 }

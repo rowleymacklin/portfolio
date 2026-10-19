@@ -52,15 +52,29 @@
   max-width: 1096px;
 }
 
+.testimonialsTextRow {
+  animation: projectFadeSlide 1.5s var(--bezierFastoutSlowin) var(--initDelay) forwards;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-right: 0;
+    max-width: 88%;
+  } 
+} 
+
 ._sectionInner {
   /* padding-top: 0;
   padding-bottom: 0; */
 }
 
+
 .sectionColumnsTestimonials {
   padding-bottom: 5rem;
   padding-top: 5rem;
   border-bottom: 1px solid color-mix(in lab, var(--text) 10%, transparent);
+  @media (max-width: 768px) {
+    border-bottom: 1px solid color-mix(in lab, var(--text) 50%, transparent);
+    padding-top: 0;
+  } 
   span {
     font-size: var(--fontSizeBodyM);
     display: block;

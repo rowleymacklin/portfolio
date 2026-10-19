@@ -123,8 +123,8 @@ export default function App() {
           <VisuallyHidden showOnFocus as="a" className={styles.skip} href="#main-content">
             Skip to main content
           </VisuallyHidden>
+          <NavbarWork />          
           <Navbar />
-          <NavbarWork />
           <main
             id="main-content"
             className={styles.container}

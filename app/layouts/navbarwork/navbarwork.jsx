@@ -193,6 +193,9 @@ export const NavbarWork = () => {
           </nav>
         )}
       </Transition>
+
+
+      
       {!isMobile && <ThemeToggle data-navbar-item />}
     </header>
   );

@@ -36,7 +36,7 @@ import styles from './testimonials.module.css';
 
 const title = 'Testimonials';
 const description =
-  "I've been very fortunate to work with some fantastic clients and amazing people. See below feedback from the designers, PMs, Developers, BAs and founders I've worked alongside.";
+  "I've been very fortunate to work with some fantastic clients and amazing people. See below feedback from the whole spectrum of project teams I've worked with. It would be an understatement to say a lot of people below have inspired and taught me much of what I know.";
 const roles = [
   'DeBeers',
   'Autosport',
@@ -107,7 +107,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   July 2026
                 </span>      
@@ -141,7 +141,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   June 2026
                 </span>      
@@ -175,7 +175,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   February 2026
                 </span>      
@@ -210,7 +210,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   January 2026
                 </span>      
@@ -244,7 +244,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   January 2026
                 </span>      
@@ -278,7 +278,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   January 2026
                 </span>      
@@ -312,7 +312,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   January 2026
                 </span>      
@@ -346,7 +346,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   November 2020
                 </span>      
@@ -380,7 +380,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   March 2018
                 </span>      
@@ -414,7 +414,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   July 2016
                 </span>      
@@ -448,7 +448,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   December 2015 2016
                 </span>      
@@ -482,7 +482,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   December 2015
                 </span>      
@@ -516,7 +516,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   August 2014
                 </span>      
@@ -550,7 +550,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   February 2014
                 </span>      
@@ -584,7 +584,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   May 2013
                 </span>      
@@ -618,7 +618,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   April 2013
                 </span>      
@@ -652,7 +652,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   April 2013
                 </span>      
@@ -686,7 +686,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   April 2013
                 </span>      
@@ -720,7 +720,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   June 2012
                 </span>      
@@ -754,7 +754,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   March 2011
                 </span>      
@@ -788,7 +788,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   January 2011
                 </span>      
@@ -822,7 +822,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   January 2011
                 </span>      
@@ -856,7 +856,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   January 2011
                 </span>      
@@ -890,7 +890,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   January 2011
                 </span>      
@@ -924,7 +924,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   January 2011
                 </span>      
@@ -958,7 +958,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   February 2005
                 </span>      
@@ -992,7 +992,7 @@ export const Testimonials = ({ visible, titleId }) => {
               />
             </div>            
             <ProjectSectionContent className={styles.testimonialsSection}>
-              <ProjectTextRow>
+              <ProjectTextRow className={styles.testimonialsTextRow}>
                 <span>
                   February 2005
                 </span>      
