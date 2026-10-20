@@ -55,16 +55,16 @@ export const Footer = ({ className }) => (
                                 Random
                             </Heading>  
                             <p>
-                            My personal inspirations, like my taste in films and music is very eclectic. I have a real soft spot for classic comedy and especially Stan Laurel and Oliver Hardy, who I consider to be absolute geniuses in comedy. And as for art, I’m a huge fan of Leonardo Da Vinci’s work.
+                                My personal inspirations, like my taste in films, and music is very eclectic. I have a real soft spot for classic comedy and especially Stan Laurel and Oliver Hardy, who I consider to be absolute geniuses in comedy. And as for art, I’m a huge fan of Leonardo Da Vinci’s work.
                             </p>
                             <p>
-                            My taste in music varies so much I can’t actually pinpoint any style or genre. It ranges from Classical/ Opera, to Green Day and Led Zeppelin to Hip-Hop and Smooth Soul, Blues and Guilty Pleasures. I like the whole spectrum of music. The only genre I’ve never really got into is modern jazz.
+                                My taste in music varies so much I can’t actually pinpoint any style or genre. It ranges from Classical/ Opera, to Green Day and Led Zeppelin to Hip-Hop and Smooth Soul, Blues and Guilty Pleasures. I like the whole spectrum of music. The only genre I’ve never really got into is modern jazz.
                             </p>
                             <p>
-                            Film favourites range from black & white classics (Laurel & Hardy, Citizen Kane, Casablanca) to Hollywood (Wellywood) blockbusters (Armageddon, Fight Club, Lord of the Rings), to foreign language (Cinema Paradiso, Oldboy, Amelie). If there was any genre of film I could say I’ve watched all of them, it would be Zombie, or Apocolyptic/ Post Apocolyptic (Dawn of the Dead 2004, The Road, The Train to Busan).
+                                Film favourites range from black & white classics (Laurel & Hardy, Citizen Kane, Casablanca) to Hollywood (Wellywood) blockbusters (Armageddon, Fight Club, Lord of the Rings), to foreign language (Cinema Paradiso, Oldboy, Amelie). If there was any genre of film I could say I’ve watched all of them, it would be Zombie, or Apocolyptic/ Post Apocolyptic (Dawn of the Dead 2004, The Road, The Train to Busan).
                             </p>
                             <p>
-                            Without a doubt the best job I’ve ever had was setting up and running an Ostrich farm in Kenya, on the outskirts of Nairobi from 1991 to 1992. And by far the worst job was my first ever experience of work in my teens as a soft drink monitor at the Britvic factory. I had to do 3 hour shifts watching a tank of orange juice empty out. The highlight of the shift was to press a big green button to refill the tank. The challenge and stress level reached critical when I had to press a big red button to stop the refill at the max point.
+                                Without a doubt, the best job I’ve ever had was setting up and running an Ostrich farm in Kenya, on the outskirts of Nairobi from 1991 to 1992. And by far the worst job was my first ever experience of work in my teens as a soft drink monitor at the Britvic factory. I had to do 3 hour shifts watching a tank of orange juice empty. The highlight of the shift was to press a big green button to refill the tank. The challenge and stress level reached critical when I had to press a big red button to stop the refill at the max point.
                             </p>
                         </div>
                         <div className={styles.footerRandom}>

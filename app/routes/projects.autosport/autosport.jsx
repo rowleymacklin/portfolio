@@ -208,7 +208,7 @@ export const Autosport = () => {
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
                 <ProjectSectionText>
-                  Styling and tweaking the OOTB templates was quite a challenge for me as the backend logic Piano used was Angular, and I’d never worked with it before. But I picked up on the logic and navigating the Piano environment fairly quickly. Also, some of the components were shared, so slight changes for one would break others. I learned this the hard way, but soon fixed it. Testing and double testing each change regularly was a must.
+                  Styling and tweaking the OOTB templates was quite a challenge for me as the backend logic Piano used was Angular, and I’d never worked with it before. But I picked up on the logic and navigating the Piano environment fairly quickly. Also, some components were shared, so slight changes for one would break others. I learned this the hard way, but soon fixed it. Testing and double testing each change regularly was a must.
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
                 <ProjectSectionText>
@@ -304,15 +304,15 @@ export const Autosport = () => {
               <ProjectTextRow>
                 <ProjectSectionHeading>Re-style existing components and global navigation</ProjectSectionHeading>
                 <ProjectSectionText>
-                  Using the provided Zeplin files I coded the new global top nav bar, for both desktop and mobile. The main reasons for the redesign was to move content higher above the fold, make it more user-friendly and to encourage more subscriptions.
+                  Using the provided Zeplin files, I coded the new global top nav bar for both desktop and mobile. The main reasons for the redesign was to move content higher above the fold, make it more user-friendly and to encourage more subscriptions.
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
                 <ProjectSectionText>
-                  The main challenge was making the nav responsive for all viewports. I injected Foundation’s new XY grid framework (base only), so I could make use of it's awesome flex capabilities. Especially the vertical and horizontal flexing. Also, fitting as many nav items as possible for a minimum mobile viewport width of 320px was challenging.
+                  The main challenge was making the nav responsive for all viewports. I injected Foundation’s new XY grid framework (base only), so I could make use of its awesome flex capabilities. Especially the vertical and horizontal flexing. Also, fitting as many nav items as possible for a minimum mobile viewport width of 320px was challenging.
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
                 <ProjectSectionText>
-                  I was mostly proud of the responsiveness of the whole navigation bar. It turned out perfect for all viewports. There was also a big increase in subscriptions and site usage after the new navigation went live. Always good if navigation is clearer and more logical to use.
+                  I was proudest of the responsiveness of the whole navigation bar. It turned out perfect for all viewports. There was also a big increase in subscriptions and site usage after the new navigation went live. Always good if navigation is clearer and more logical to use.
                 </ProjectSectionText>       
               </ProjectTextRow>
             </ProjectSectionContent>
@@ -351,7 +351,7 @@ export const Autosport = () => {
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
                 <ProjectSectionText>
-                  Probably the most challenging part of this project was the logic to show/ hide content based on the user being subscribed/ registered or anonymous. Only certain sections could be visible for different users. I did have some help from the in-house PHP developer as my PHP knowledge was pretty basic.
+                  Probably the most challenging part of this project was the logic to show/ hide content based on the user being subscribed/ registered or anonymous. Only certain sections could be visible for different users. I had some help from the in-house PHP developer, as my PHP knowledge was pretty basic.
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
                 <ProjectSectionText>
@@ -418,17 +418,17 @@ export const Autosport = () => {
           <ProjectSectionColumns>
             <ProjectSectionContent>
               <ProjectTextRow>
-                <ProjectSectionHeading>Microsite: Code and style the annual Autosport Powerlist of 50 Most Influential People in Motorsport</ProjectSectionHeading>
+                <ProjectSectionHeading>Microsite: Code and style the annual Autosport Top 50 Drivers of 2019</ProjectSectionHeading>
                 <ProjectSectionText>
-                  I was tasked with creating the pages based on flat Photoshop designs. Autosport already used Zurb Foundation 5 on the live site and the layout wasn't overly complex, so I just kept using this version.
+                  Again, for this project, I was given the flat Photoshop and Zeplin files, which I converted to code within the Foundation framework. As the homepage used a full page horizontal and vertical grid, I injected Foundation’s XY Grid into the existing framework. I did this for the Flexbox options like vertical and horizontal alignment and automatic sizing.
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
                 <ProjectSectionText>
-                  Probably the most challenging part of this project was the logic to show/ hide content based on the user being subscribed/ registered or anonymous. Only certain sections could be visible for different users. I did have some help from the in-house PHP developer as my PHP knowledge was pretty basic.
+                  Again, I found the PHP logic quite challenging and getting the homepage grid just right. Space for copy was very limited, so the grid items had to be just right. Also, as some of the motorsport seasons hadn’t finished until the day before go-live, there was a frantic 36 hours of the editors providing new content and changing existing content.
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
                 <ProjectSectionText>
-                  I really liked the navigation of the pages and the nominees headers. It all worked out to be very logical to use and read with the usage of very large header fonts and high contrast background and text. I was also quite pleased I’d developed some new skills working with PHP and Twig.
+                  The navigation worked out really well for me, including the layout and way of showing the top 50 in a slide-in list format. The homepage grid also came out pretty solid responsively. And the layout of the grid items was just right.
                 </ProjectSectionText>       
               </ProjectTextRow>
             </ProjectSectionContent>
@@ -463,7 +463,7 @@ export const Autosport = () => {
               <ProjectTextRow>
                 <ProjectSectionHeading>Microsite: Code and style the annual Autosport Awards 2019</ProjectSectionHeading>
                 <ProjectSectionText>
-                  Another annual event, to celebrate motorsport riders and drivers. Using the provided Zeplin files I styled this one page site. I used Foundation 5 standard grid layout for this one, as the grid wasn’t too complex and relied more on rows of content.
+                  Another annual event, to celebrate motorsport riders and drivers. Using the provided Zeplin files, I styled this one page site. I used Foundation 5 standard grid layout for this one, as the grid wasn’t too complex and relied more on rows of content.
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
                 <ProjectSectionText>
@@ -471,7 +471,7 @@ export const Autosport = () => {
                 </ProjectSectionText>
                 <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
                 <ProjectSectionText>
-                  The card layout and card select functionality worked out really well in the end. Nice effect selecting the chosen card, and monochroming the non-selected items.
+                  The card layout and card select functionality worked out really well in the end. Nice effect selecting the chosen card, and mono chroming the non-selected items.
                 </ProjectSectionText>       
               </ProjectTextRow>
             </ProjectSectionContent>

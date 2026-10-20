@@ -1,1 +1,0 @@
-export { Oasis as default, meta } from './oasis';

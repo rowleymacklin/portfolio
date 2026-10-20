@@ -150,13 +150,10 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                   >
                     <div>
                       <p className={styles.wordIntroFirst} size="m" as="p">
-                        {/* Hello, I'm Rowley and I build pixel-perfect, interactive, and accessible user interfaces. 
-                        I specialize in the sweet spot between design and code, turning wire-frames and designs into 
-                        beautifully smooth, accessible web experiences. I also have a huge amount of experience working with various CMSs. */}
-                        Hello! I'm Rowley, a frontend developer and I like building accessible, pixel-perfect experiences for the web. I take pride in having a sharp eye for the little details that separate a good product from an exceptional one. I really enjoy working where design meets engineering, where great user experience meets clean, scalable code.
+                        Hello! I'm Rowley, a frontend developer and I enjoy building accessible, pixel-perfect experiences for the web. I take pride in having a sharp eye for the little details that separate a good product from an exceptional one. I really enjoy working where design meets engineering, where great user experience meets clean, scalable code.
                       </p>
                       <p className={styles.wordIntroFirst} size="m" as="p">
-                        One of the many things I love about the work I do is constantly learning. No two projects are the same and I take a pragmatic approach to each job I take on, focussing on delivering code that is as accessible and optimized as possible.
+                        One of the many things I love about the work I do is constantly learning. No two projects are the same and I take a pragmatic approach to each job I take on, focussing on delivering code that is as accessible and optimised as possible.
                       </p>                      
                     </div>
                   </span>

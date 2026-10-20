@@ -161,22 +161,36 @@ export const Tkmaxx = () => {
           </ProjectTextRow>
         </ProjectSection>
 
-        <ProjectSection>
-          <ProjectTextRow>
-            <ProjectSectionHeading>Frontend Team Co-ordination and Best Practices Document</ProjectSectionHeading>
-            <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
-            <ProjectSectionText>
-              Every morning before our daily scrums my regular task was to check Jira and the backend team, then delegate tasks to the front end team. I then led the daily scrums. I also wrote a general front end best practices document so the code and the look would be consistent throughout. It was a team effort, so any new suggestions and edits were added regularily.
-            </ProjectSectionText>
-            <ProjectSectionText>
-               Always making sure the tasks that were delegated to the front end team matched their skillsets and answering a lot of technical questions. The important thing was not to overload any of the team. The best practices document was a team effort, and a cross-department one, so there were a lot of meetings and discussions and changes made.
-            </ProjectSectionText>            
-            <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
-            <ProjectSectionText>
-              Sprints were completed in time for all Jira tasks. The team wasn't overloaded with work. The front end best practices was used by all departments for a visual guide to every component and piece of content.
-            </ProjectSectionText>      
-          </ProjectTextRow>
-        </ProjectSection>
+        <ThemeProvider theme="dark" data-invert>
+          <ProjectSection
+            backgroundOverlayOpacity={0.5}
+            backgroundElement={
+              <Image
+                srcSet={`${imageSprBackgroundVolcanism} 1280w, ${imageSprBackgroundVolcanismLarge} 2560w`}
+                width={1280}
+                height={900}
+                placeholder={imageSprBackgroundVolcanismPlaceholder}
+                alt="A dramatic ocean scene with lava forming a new land mass."
+                sizes="100vw"
+              />
+            }
+          >
+            <ProjectTextRow>
+              <ProjectSectionHeading>Frontend Team Co-ordination and Best Practices Document</ProjectSectionHeading>
+              <ProjectSectionSubHeading>The Challenge</ProjectSectionSubHeading>
+              <ProjectSectionText>
+                Every morning before our daily scrums my regular task was to check Jira and the backend team, then delegate tasks to the front end team. I then led the daily scrums. I also wrote a general front end best practices document so the code and the look would be consistent throughout. It was a team effort, so any new suggestions and edits were added regularily.
+              </ProjectSectionText>
+              <ProjectSectionText>
+                Always making sure the tasks that were delegated to the front end team matched their skillsets and answering a lot of technical questions. The important thing was not to overload any of the team. The best practices document was a team effort, and a cross-department one, so there were a lot of meetings and discussions and changes made.
+              </ProjectSectionText>            
+              <ProjectSectionSubHeading>Proudest Of</ProjectSectionSubHeading>
+              <ProjectSectionText>
+                Sprints were completed in time for all Jira tasks. The team wasn't overloaded with work. The front end best practices was used by all departments for a visual guide to every component and piece of content.
+              </ProjectSectionText>      
+            </ProjectTextRow>
+          </ProjectSection>
+        </ThemeProvider>
         
         <ProjectSection>
           <ProjectSectionColumns>
