@@ -1,0 +1,10 @@
+node_modules
+
+/.cache
+.env
+
+.wrangler
+.dev.vars
+
+public/draco
+storybook-static
