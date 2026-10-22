@@ -34,7 +34,7 @@ npm run dev:storybook
 ## Deployment
 
 I've set up the site using Cloudflare for hosting. 
-This was probably the toughest thing to tweak. In the end I use Github to version control, Cloudfare to store and build and Hostinger for Domain linking. Bit of a mess, but it works.
+This was probably the toughest thing to tweak. In the end I used Github to version control, Cloudfare to store and build and Hostinger for Domain linking. Bit of a mess, but it works.
 Deploy the site to Cloudflare Pages:
 
 ```bash

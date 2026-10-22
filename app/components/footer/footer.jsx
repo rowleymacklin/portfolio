@@ -197,38 +197,38 @@ export const Footer = ({ className }) => (
                     </div>
                     <div className={styles.footerBottom}>
                         {/* <p className={styles.footerCopyright}>&copy; 2025 Your Blog Name. All Rights Reserved.</p> */}
-                        <Text size="s" align="center">
+                        {/* <Text size="s" align="center">
                             <span className={styles.footerCopyright}>
                             {`© ${new Date().getFullYear()} ${config.name}.`}
                             </span>
                             <Link secondary className={styles.link} href="/humans.txt" target="_self">
                             Re-design by Rowley Macklin
                             </Link>
-                        </Text>
+                        </Text> */}
                         <div className={styles.footerPortfolioArchive}>
                         <Text size="s" align="center">
                             <span className={styles.date}>
-                            My portfolio iterations through the ages:
+                                My portfolio iterations through the ages:
                             </span>
-                            <Link secondary className={styles.link} href="/humans.txt" target="_self">
-                            2004
+                            <Link secondary className={styles.link} href="https://rowleymacklin.com/diginuts-2004/">
+                                2004
                             </Link>
                             |
-                            <Link secondary className={styles.link} href="/humans.txt" target="_self">
-                            2013
+                            <Link secondary className={styles.link} href="https://rowleymacklin.com/diginuts-2013/">
+                                2013
                             </Link>   
                             |
-                            <Link secondary className={styles.link} href="/humans.txt" target="_self">
-                            2016
+                            <Link secondary className={styles.link} href="https://rowleymacklin.com/diginuts-2016/">
+                                2016
                             </Link>
                             |
-                            <Link secondary className={styles.link} href="/humans.txt" target="_self">
-                            2018
+                            <Link secondary className={styles.link} href="https://rowleymacklin.com/fullershade-2018">
+                                2018
                             </Link>  
                             |
-                            <Link secondary className={styles.link} href="/humans.txt" target="_self">
-                            2022
-                            </Link>                       
+                            {/* <Link secondary className={styles.link} href="/humans.txt" target="_self">
+                                2022
+                            </Link>                        */}
                         </Text>
                         </div>
                     </div>
