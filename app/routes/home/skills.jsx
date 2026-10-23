@@ -148,7 +148,7 @@ const SkillsText = ({ visible, titleId }) => (
         </Heading>   
         <List>
           <ListItem>
-            Piano DXP
+            Piano Digital Business Platform
           </ListItem>
           <ListItem>
             Shopify
@@ -260,9 +260,10 @@ const SkillsText = ({ visible, titleId }) => (
         </List>
       </div>
     </div>
-    <Text className={styles.description} data-visible={visible} size="xs" as="p">
-      Comfort Zone = 10+ years and day-to-day use | Competent = 5+ years and sporadic use | Basics = Rarely used but have some experience and understanding
-
+    <Text className={styles.descriptionSmall} data-visible={visible} size="xs" as="p">
+      {/* Comfort Zone = 10+ years and day-to-day use <br></br>Competent = 5+ years and sporadic use<br></br>Basics = Rarely used but have some experience and understanding
+<br></br> */}
+      Comfort Zone = Daily use <strong> | </strong> Competent = Sporadic use <strong> | </strong> Basics = Some use
     </Text>
 
   </Fragment>

@@ -163,11 +163,11 @@ export const Home = () => {
         projectDate="Mar 2019 - Feb 2021"
         projectJobTitle="Frontend developer"   
 
-        description="I was initially contracted for three months at Autosport to help integrate and style the new Piano digital business platform. Admittedly, it was a challenging first few weeks getting to grips with Piano but that made it all the more enjoyable and I hit the ground running. Let’s just say, the Piano documentation reads like War & Peace 2 (very long). As I loved working here and Autosport had piles of outstanding work, they extended the contract multiple times. Sadly, because of the Covid-19 crisis affecting most racing events and budgets, my contract wasn’t extended."
+        description="I was initially contracted for three months at Autosport to help integrate and style the new Piano Digital Business Platform. Admittedly, it was a challenging first few weeks getting to grips with Piano but that made it all the more enjoyable and I hit the ground running. Let’s just say, the Piano documentation reads like War & Peace 2 (very long). As I loved working here and Autosport had piles of outstanding work, they extended the contract multiple times. Sadly, because of the Covid-19 crisis affecting most racing events and budgets, my contract wasn’t extended."
 
-        descriptionTwo="Proudest of: Learning the Piano Content Experience Platform at pace and implementing styling and layout changes within Piano for the content team." 
+        descriptionTwo="Proudest of: Learning Piano at pace and implementing styling and layout changes within Piano for the content team." 
 
-        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | jQuery | JavaScript | Git | CMS Content Editing & Development | Gulp | Zeplin | Photoshop | Piano DXP | AMP (Accelerated Mobile Pages) | Attention to Detail | Adaptability | Time Management | Problem Solving | Client Meetings"
+        skills="CSS (SCSS/SASS) | HTML | Responsive Design | Web Performance Optimization | Testing & Debugging | UI/ UX Design Principles | jQuery | JavaScript | Git | CMS Content Editing & Development | Gulp | Zeplin | Photoshop | Piano Digital Business Platform | AMP (Accelerated Mobile Pages) | Attention to Detail | Adaptability | Time Management | Problem Solving | Client Meetings"
         buttonText="View project"
         buttonLink="/projects/autosport"
         model={{

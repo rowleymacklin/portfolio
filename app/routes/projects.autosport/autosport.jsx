@@ -91,13 +91,13 @@ const title = 'Autosport';
 const date = 'Mar 2019 - Feb 2021';
 const job = 'Frontend developer';
 const description =
-  'I was initially contracted for three months at Autosport to help integrate and style the new Piano digital business platform. Admittedly, it was a challenging first few weeks getting to grips with Piano but that made it all the more enjoyable and I hit the ground running. Let’s just say, the Piano documentation reads like War & Peace 2 (very long). As I loved working here and Autosport had piles of outstanding work, the contract was extended multiple times. Sadly, due to the Covid-19 crisis affecting most racing events and budgets, my contract wasn’t extended.';
+  'I was initially contracted for three months at Autosport to help integrate and style the new Piano Digital Business Platform. Admittedly, it was a challenging first few weeks getting to grips with Piano but that made it all the more enjoyable and I hit the ground running. Let’s just say, the Piano documentation reads like War & Peace 2 (very long). As I loved working here and Autosport had piles of outstanding work, the contract was extended multiple times. Sadly, due to the Covid-19 crisis affecting most racing events and budgets, my contract wasn’t extended.';
 const roles = [
-  'CSS (SCSS/SASS) · HTML · Responsive Design · CSS (SCSS/SASS) · Web Performance Optimization · Testing & Debugging · UI/ UX Design Principles · jQuery · JavaScript · Sublime · CMS Content Editing & Development · Zeplin · Photoshop · Illustrator · Piano DXP · AMP (Accelerated Mobile Pages) · Attention to detail · Adaptability · Creative thinking · Time Management · Problem-solving · Client meetings',
+  'CSS (SCSS/SASS) · HTML · Responsive Design · CSS (SCSS/SASS) · Web Performance Optimization · Testing & Debugging · UI/ UX Design Principles · jQuery · JavaScript · Sublime · CMS Content Editing & Development · Zeplin · Photoshop · Illustrator · Piano Digital Business Platform · AMP (Accelerated Mobile Pages) · Attention to detail · Adaptability · Creative thinking · Time Management · Problem-solving · Client meetings',
 
   'Frontend Development',
   'Global Bug Fixing',
-  'Piano Content Experience Platform Integration',
+  'Piano Digital Business Platform Integration',
   'AMP',
   'Seasonal Microsites'
 ];
@@ -170,7 +170,7 @@ export const Autosport = () => {
                 <ProjectTextRow>
                   <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
                   <ProjectSectionText>
-                    Setup and integrated new components to use the new digital experience platform, Piano content experience platform
+                    Setup and integrated new components to use the new digital experience platform, Piano Digital Business Platform
                   </ProjectSectionText>
                   <ProjectSectionText>
                     Converted main components to run in AMP (Accelerated Mobile Pages)
@@ -187,7 +187,7 @@ export const Autosport = () => {
                 <ProjectTextRow>
                   <ProjectSectionHeading>Key Achievements</ProjectSectionHeading>
                   <ProjectSectionText>
-                    Learning the Piano content experience platform and implementing styling and layout changes within Piano for the content team
+                    Learning the Piano Digital Business Platform and implementing styling and layout changes within Piano for the content team
                   </ProjectSectionText>
                   <ProjectSectionText>
                     Also learning AMP (Accellerated Mobile Pages) for optimising mobile content
@@ -202,7 +202,7 @@ export const Autosport = () => {
           <ProjectSectionColumns>
             <ProjectSectionContent>
               <ProjectTextRow>
-                <ProjectSectionHeading>Setup and integrate new components to use Piano (digital business platform)</ProjectSectionHeading>
+                <ProjectSectionHeading>Setup and integrate new components to use Piano Digital Business Platform</ProjectSectionHeading>
                 <ProjectSectionText>
                   As Autosport wanted to set up a new Subscription platform, using Piano, it was my task for 3-4 months to style the new components and templates within the Piano environment.
                 </ProjectSectionText>
