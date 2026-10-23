@@ -135,6 +135,19 @@
 }
 
 
+body[data-theme='dark'] {
+  .sectionColumnsTestimonials {
+      p.testimonialsMainDescr {
+        &:before {
+          background-image: url(/static/quote-left-light.svg);
+        }
+        &:after {
+          background-image: url(/static/quote-right-light.svg);
+        }
+      }
+    } 
+  }
+
 .image {
   /* margin: 5rem; */
   img {
