@@ -134,7 +134,7 @@ export const Home = () => {
         projectDate="May 2021 - Jul 2026"
         projectJobTitle="Lead Frontend developer"   
 
-        description="I worked as the Lead Frontend Developer on a huge variety of really enjoyable tasks. I was with De Beers for nearly 6 years and enjoyed every single project and task. I had some great achievements here, including: Optimising the rendered media (Videos + Images) by 50%, introducing new visual documentation for new developers and for all teams to have visibility of the whole code eco-system, introducing GSAP animation to pages, creating a new local environment, re-writing the whole frontend and Amplience codebase for easier readability and optimisation. And of course exciting new campaigns every month, which I call the bread and butter of my work."
+        description="I worked as the Lead Frontend Developer on a huge variety of really enjoyable tasks. I was with De Beers for 5 years and enjoyed every single project and task. I had some great achievements here, including: Optimising the rendered media (Videos + Images) by 50%, introducing new visual documentation for new developers and for all teams to have visibility of the whole code eco-system, introducing GSAP animation to pages, creating a new local environment, re-writing the whole frontend and Amplience codebase for easier readability and optimisation. And of course exciting new campaigns every month, which I call the bread and butter of my work."
 
         descriptionTwo="Proudest of: Optimising global media by introducing high media compression (image and video) for page performance, as well as numerous other tasks. Most image and video file sizes reduced by 50%." 
 
