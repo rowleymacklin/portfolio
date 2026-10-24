@@ -131,7 +131,7 @@ export const Home = () => {
         visible={visibleSections.includes(Debeers.current)}
         index={1}
         title="De Beers"
-        projectDate="May 2021 - Jul 2026"
+        projectDate="Apr 2021 - Jul 2026"
         projectJobTitle="Lead Frontend developer"   
 
         description="I worked as the Lead Frontend Developer on a huge variety of really enjoyable tasks. I was with De Beers for 5 years and enjoyed every single project and task. I had some great achievements here, including: Optimising the rendered media (Videos + Images) by 50%, introducing new visual documentation for new developers and for all teams to have visibility of the whole code eco-system, introducing GSAP animation to pages, creating a new local environment, re-writing the whole frontend and Amplience codebase for easier readability and optimisation. And of course exciting new campaigns every month, which I call the bread and butter of my work."
@@ -214,7 +214,7 @@ export const Home = () => {
         visible={visibleSections.includes(Tkmaxx.current)}
         index={6}
         title="TKMaxx"
-        projectDate="Jan 2016 - Jul 2016"
+        projectDate="Sep 2015 - Jul 2016"
         projectJobTitle="Lead Frontend Developer"    
 
         description="TKMaxx was refreshing their global site to a new Hybris environment. My main role was to set up the front end environment, lead the front end team and create some of the new components. As well as advise various in-house teams on integration and running Hybris. It’s always nice to start a project from Discovery Phase 1, to get a full picture of requirements and to see the project grow right from the start."
@@ -241,7 +241,7 @@ export const Home = () => {
         visible={visibleSections.includes(Gucci.current)}
         index={7}
         title="Gucci"
-        projectDate="Aug 2014 - Dec 2015"
+        projectDate="Aug 2014 - Sep 2015"
         projectJobTitle="Lead Frontend Developer"   
 
         description="This was the most challenging, and therefore my favourite role by far. I was lead front end for over a year here and it was the most intense project I’d ever worked on. As Gucci is a luxury brand, they were understandably very particular about the look and feel of the site. This made the work extra challenging but very rewarding in the end, which I loved. Gucci were switching their global site over to a new Hybris environment. My main role was to review the static code provided by the Gucci in-house designers and developers. Then convert them to Hybris working code."
@@ -349,7 +349,7 @@ export const Home = () => {
         visible={visibleSections.includes(Drmartens.current)}
         index={11}
         title="Dr Martens"
-        projectDate="May 2013 - Oct 2013"
+        projectDate="Jun 2013 - Nov 2013"
         projectJobTitle="Designer | Lead Frontend Developer"        
 
         description="I created new wireframes and designs based on notes and requirements from the client. I then converted these to code directly within Hybris. I really enjoyed this role as I joined from the start of Discovery Phase 1 all the way to production and beyond. As well as writing the code, I created the base designs to work from for the client. Being my first delve into the Hybris world, I had to learn extremely quickly. Hybris documentation being notoriously scarce, I had to learn the hard way. This proved extremely challenging, but very rewarding."

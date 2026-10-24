@@ -50,12 +50,13 @@ import { Suspense, lazy, useMemo } from 'react';
 import { media } from '~/utils/style';
 import styles from './various.module.css';
 
-const title = 'Various Pre-2013';
-const date = 'Jan 2001 - Apr 2013';
+const title = 'Various Pre-2016';
+const date = 'Jan 2001 - Apr 2016';
 const job = 'Designer | Web Analyst | Frontend Developer';
 const description =
-  'Between 2001 and 2012 my roles varied quite a lot. I started out as a web designer back in the early middle ages, as well as doing some design work. Mostly these were new logo’s for clients and leaflets. My big change came when I started out at Cisco Systems, getting into coding more, and user interaction. I ended up working as a Web Analyst there, over-seeing a team of off-shore developers who updated the Cisco website. I eventually left Cisco to go on a World backpacking trip for a year in 2007. Not because of the work, but as it was a life’s dream of mine and I had to do this while I could still shoulder a backpack. On my return I settled down for what was my work passion, front end development. The roles varied, from permenant to contracting.';
+  'Between 2001 and 2016 my roles varied quite a lot. I started out as a web designer back in the early middle ages, as well as doing some design work. Mostly these were new logo’s for clients and leaflets. My big change came when I started out at Cisco Systems, getting into coding more, and user interaction. I ended up working as a Web Analyst there, over-seeing a team of off-shore developers who updated the Cisco website. I eventually left Cisco to go on a World backpacking trip for a year in 2007. Not because of the work, but as it was a life’s dream of mine and I had to do this while I could still shoulder a backpack. On my return I settled down for what was my work passion, front end development. The roles varied, from permenant to contracting.';
 const roles = [
+  '2016: Oasis Fashion - Frontend Developer | Aviva - Frontend Developer',  
   '2012: Financial Express - Designer and Frontend Developer | M&G/ Man Group - Designer and Frontend Developer | Blackberry - Frontend Developer | eValue/Aviva - Frontend Developer',
   '2011: Luna Di Miele - Designer and Frontend Developer | Kellogg’s Coco Pops - Frontend Developer | Peugeot 508 - Frontend Developer | Dorset Cereals - Frontend Developer',
   '2010: Rated People - Frontend Developer',
@@ -133,6 +134,9 @@ export const Various = () => {
                 <ProjectTextRow>
                   <ProjectSectionHeading>Key Responsibilities</ProjectSectionHeading>
                   <ProjectSectionText>
+                    2013: Nitrogen Group - Frontend Developer
+                  </ProjectSectionText>
+                  <ProjectSectionText>
                     2012: eValue/Aviva - Frontend Developer
                   </ProjectSectionText>
                   <ProjectSectionText>
@@ -142,7 +146,7 @@ export const Various = () => {
                     2012: M&G/ Man Group - Designer and Frontend Developer
                   </ProjectSectionText>     
                   <ProjectSectionText>
-                    2012: Financial Express - Designer and Frontend Developer
+                    2011: Financial Express - Designer and Frontend Developer
                   </ProjectSectionText>      
                   <ProjectSectionText>
                     2011: Dorset Cereals - Frontend Developer
@@ -157,7 +161,7 @@ export const Various = () => {
                     2011: Luna Di Miele - Designer and Frontend Developer
                   </ProjectSectionText>      
                   <ProjectSectionText>
-                    2010: Rated People - Frontend Developer
+                    2009: Rated People - Frontend Developer
                   </ProjectSectionText>    
                   <ProjectSectionText>
                     2009: Africasolo - Frontend Developer
@@ -187,7 +191,7 @@ export const Various = () => {
                     2002: L Jalley & Co - Logo Designer
                   </ProjectSectionText>  
                   <ProjectSectionText>
-                    2002: Supply Serve - Designer and Web Designer
+                    2001: Supply Serve - Designer and Web Designer
                   </ProjectSectionText>                  
                   <ProjectSectionText>
                     2001: Nikkei NEEDS - Web Designer
@@ -214,7 +218,7 @@ export const Various = () => {
                     Producing graphics and websites for clients, which the clients' were very happy with and I was very proud of them as a junior designer
                   </ProjectSectionText>  
                   <ProjectSectionText>
-                    Working at Cisco Systems was probaly the most impactful role I've ever had, as I learned a whole set of new skillsets. This ranged from meetings etiquette to managing a team of remote developers, as well as real world frontend development within a very large corporation. The work here set me up until now. Also, in hindshight it was interesting creating vanilla CSS without the use of SCSS/ SASS or preprocessors, as this was before they were introduced globally.
+                    Working at Cisco Systems was probably the most impactful role I've ever had, as I learned a whole set of new skill sets. This ranged from meetings etiquette to managing a team of remote developers, as well as real world frontend development within a very large corporation. The work here set me up until now. Also, in hindsight it was interesting creating vanilla CSS without the use of SCSS/ SASS or preprocessors, as this was before they were introduced globally.
                   </ProjectSectionText>                     
                       
                 </ProjectTextRow>

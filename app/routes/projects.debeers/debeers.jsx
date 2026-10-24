@@ -53,7 +53,7 @@ import { media } from '~/utils/style';
 import styles from './debeers.module.css';
 
 const title = 'De Beers';
-const date = 'Jan 2021 - Jul 2026';
+const date = 'Apr 2021 - Jul 2026';
 const job = 'Lead Frontend developer';
 const description =
   'I worked as the Lead Frontend Developer on a huge variety of really enjoyable tasks. I was with De Beers for 5 years and enjoyed every single project and task. I had some great achievements here, including: Optimising the rendered media (Videos + Images) by 50%, introducing new visual documentation for new developers and for all teams to have visibility of the whole code eco-system, introducing GSAP animation to pages, creating a new local environment, re-writing the whole frontend and Amplience codebase for easier readability and optimisation. And of course exciting new campaigns every month, which I call the bread and butter of my work.';
