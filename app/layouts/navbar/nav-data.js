@@ -23,7 +23,7 @@ export const socialLinks = [
 
   {
     label: 'Cv',
-    url: 'https://rowleymacklin.com/RMacklin-frontEndDeveloper-2026-q4.pdf',
+    url: 'https://rowleymacklin.com/cv-rmacklin-q4-2026.pdf',
     icon: 'cv',
   },  
 
