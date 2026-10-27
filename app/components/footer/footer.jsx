@@ -196,15 +196,6 @@ export const Footer = ({ className }) => (
                         </div>
                     </div>
                     <div className={styles.footerBottom}>
-                        {/* <p className={styles.footerCopyright}>&copy; 2025 Your Blog Name. All Rights Reserved.</p> */}
-                        {/* <Text size="s" align="center">
-                            <span className={styles.footerCopyright}>
-                            {`© ${new Date().getFullYear()} ${config.name}.`}
-                            </span>
-                            <Link secondary className={styles.link} href="/humans.txt" target="_self">
-                            Re-design by Rowley Macklin
-                            </Link>
-                        </Text> */}
                         <div className={styles.footerPortfolioArchive}>
                         <Text size="s" align="center">
                             <span className={styles.date}>

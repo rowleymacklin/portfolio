@@ -60,7 +60,7 @@ const AboutText = ({ visible, titleId }) => (
       During the winter of 1998, on a whim, I bought the game Half-Life. I wasn't a gamer in any way before this, but had read some rave reviews. Once I started playing, it had me hooked. Then, with the release of Counterstrike and Team Fortress, I discovered you could change the controls, settings and configs with simple lines of code. This intrigued me immensely, and I wanted to learn more. After becoming quite the expert in configs and creating my own skins for the game, I had an epiphany moment. I wanted to transfer this enthusiasm to the web and somehow do a job that I have a real passion for.
     </Text>
     <Text className={styles.description} data-visible={visible} size="m" as="p">
-      Rather than try to enrol at Uni as a senior, I compressed my learning with a Newmedia course at a local college. As well as finishing the course there and helping the tutors with a new batch of students in class, I also bought a pile of study books: JavaScript, HTML, CSS and Design Principles. So began my entry to Design and ultimately frontend development.
+      Rather than try to enrol at Uni as a senior, I compressed my learning with a New Media course at a local college. As well as finishing the course there and helping the tutors with a new batch of students in class, I also bought a pile of study books: JavaScript, HTML, CSS and Design Principles. So began my entry to Design and ultimately frontend development.
     </Text>  
     <Heading className={styles.title} data-visible={visible} level={4} id={titleId}>
       <DecoderText text="And So It Begins..." start={visible} delay={500} />
