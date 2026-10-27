@@ -142,6 +142,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                     </div>
                   </span>
                 </span>   
+                
                 <span aria-hidden className={styles.rowFive}>
                   <span
                     className={styles.word}
