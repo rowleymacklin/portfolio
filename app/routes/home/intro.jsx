@@ -151,7 +151,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                   >
                     <div>
                       <p className={styles.wordIntroFirst} size="m" as="p">
-                        Hello, I'm Rowley—a Frontend Developer specializing in building pixelperfect, interactive, and accessible user interfaces. I thrive in the sweet spot between design and engineering, translating wireframes into smooth web experiences with extensive CMS platform expertise. As a visually driven developer with a sharp eye for aesthetics, I bridge the gap between creative teams and backend engineers. I bring high energy, fresh ideas, and strong collaborative skills to every project, balanced by a relaxed, grounded mindset.
+                        Hello, I'm Rowley—a Frontend Developer specializing in building pixel-perfect, interactive, and accessible user interfaces. I thrive in the sweet spot between design and engineering, translating wireframes into smooth web experiences with extensive CMS platform expertise. As a visually driven developer with a sharp eye for aesthetics, I bridge the gap between creative teams and backend engineers. I bring high energy, fresh ideas, and strong collaborative skills to every project, balanced by a relaxed, grounded mindset.
                       </p>
                     </div>
                   </span>
