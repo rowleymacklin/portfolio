@@ -1,1 +1,0 @@
-export { Gucci as default, meta } from './gucci';

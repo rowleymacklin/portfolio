@@ -1,1 +1,0 @@
-export { autosport as default, meta } from './autosport';

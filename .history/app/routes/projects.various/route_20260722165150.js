@@ -1,1 +1,0 @@
-export { Various as default, meta } from './various';

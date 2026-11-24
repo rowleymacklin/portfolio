@@ -1,1 +1,0 @@
-export { Sainsburys as default, meta } from './sainsburys';
